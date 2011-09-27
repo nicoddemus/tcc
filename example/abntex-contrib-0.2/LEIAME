@@ -1,0 +1,33 @@
+$Id: LEIAME,v 1.1 2003/04/10 11:32:56 gweber Exp $
+
+Prezado(a) Colega
+
+O diretório contrib contém contribuições voluntárias de
+usuários do abnTeX. Cada uma destas contribuições foi
+disponibilizada sob os termos de uma licença que está
+sempre descrita no arquivo LICENCA em cada um dos
+subdiretórios. Por favor gaste alguns poucos minutos
+e leia os termos destas licenças antes de usar esses
+arquivos. Por favor, respeite o que cada autor determinou.
+Em geral você pode estudar esses arquivos, mas não pode
+copiar o seu conteúdo intelectual. Enfim, use o seu bom 
+senso e estando na dúvida: pergunte!
+
+A divisão dos diretórios é feita por categoria de trabalhos
+e dentro de uma categoria há um diretório por autor 
+caraterizado por suas iniciais. Há sempre um arquivo 
+Makefile (linux/unix) onde com um simples "make" todo
+o arquivo é processado.
+
+Todo trabalho do abnTeX é feito por voluntários. Você pode
+usar o abnTeX à vontade, nada se pede em troca. Mas se 
+você tiver vontade de agradecer faça a sua contribuição:
+disponibilize seu trabalho para os outros colegas. Assim
+você estará dando aos outros a mesma oportunidade que foi
+dada a você. Lembre-se, quanto mais pessoas forem usar o 
+abnTeX mais bem aceito ele será pro aí afora.
+
+Um grande abraço e bom trabalho
+
+a equipe do abnTeX
+http://abntex.codigolivre.org.br

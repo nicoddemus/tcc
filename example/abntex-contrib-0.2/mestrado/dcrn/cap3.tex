@@ -1,0 +1,861 @@
+% $Id: cap3.tex,v 1.1 2003/04/10 23:12:59 gweber Exp $
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Terceiro capitulo:
+%% Resultados
+%% Copyright 2003 Dehon Charles Regis Nogueira.
+%% Este documento é distribuído nos termos da licença
+%% descrita no arquivo LICENCA que o acompanha.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Resultados e Discussões}
+
+\section{Introdução}
+
+Realizadas as medidas das propriedades elétricas das diversas amostras, passaremos a analisar os resultados obtidos. Serão discutidas primeiramente as características das gasolinas A e C e interpretados os resultados das medidas realizadas com elas.
+
+Em seguida, serão verificados os comportamentos de três misturas: Gasolina C com Álcool Etílico Hidratado, Álcool Etílico Hidratado com Água e Gasolina C com Aguarrás. As medições das duas primeiras misturas serão comparadas com modelos de misturas existentes na literatura.
+
+Serão também estudados os valores da atenuação, obtidos de três modos diferentes, para algumas amostras, sendo discutida a viabilidade desse tipo de análise.
+
+A seguir serão analisados os dados provenientes das amostras coletadas junto aos postos BR, chamados aqui de Posto 1, Posto 3, Posto 5, Posto 6 e Posto 10. Essa lista é composta por 10 postos, dos quais 5 foram escolhidos para ter seu combustível analisado.
+
+Na seqüência, será feita a verificação dos dados obtidos das amostras provenientes do Laboratório de Combustíveis e Lubrificantes da UFC. É ilustrativo verificar se as amostras rejeitadas apresentam variações significantes das propriedades elétricas com relação àquelas aprovadas pelo LCL.
+
+Ao final, serão apresentados alguns resultados de medições feitas com outros combustíveis e diversos líquidos, o que pode dar uma boa noção das diferenças entre suas propriedades elétricas e as das gasolinas tipos A e C.
+
+Para diversas das análises citadas acima, foram realizadas medidas tanto na faixa de rádio-freqüência -- através de um impedancímetro -- quanto na de microondas -- com um analisador de redes.
+
+
+
+\section{Gasolinas A e C}
+
+As figuras \ref{fig:GasA_GasC_Imp} e \ref{fig:GasA_GasC_Trans} apresentam as curvas de permissividade e do parâmetro de transmissão para duas amostras de gasolina dos tipos A e C. 
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=9.5cm,width=13cm]{figuras/GasA_GasC_Imp.eps.gz}
+\caption{Gasolinas A e C: Permissividade}
+\label{fig:GasA_GasC_Imp}
+\end{figure}
+
+A gasolina A provém das refinarias de petróleo e é isenta de álcool etílico. Seus valores de permissividade são mais baixos que aqueles observados para a gasolina C -- encontrada nos postos de combustível -- que possui álcool etílico misturado em sua composição. O parâmetro de transmissão é mais elevado na gasolina A do que na C. O teor de etanol obedece à legislação vigente e variou no decorrer das coletas aqui estudadas. Essa variação e suas implicações serão apresentadas com mais detalhes posteriormente.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=9.5cm,width=13cm]{figuras/GasA_GasC_Trans.eps.gz}
+\caption{Gasolinas A e C: Transmissão}
+\label{fig:GasA_GasC_Trans}
+\end{figure}
+
+A tabela \ref{tab:GasA_GasC_Imp_Trans} apresenta os valores de permissividade -- em 10 MHz -- e do parâmetro de transmissão -- em 3 GHz -- para as duas amostras de gasolina A e C mostradas nas figuras \ref{fig:GasA_GasC_Imp} e \ref{fig:GasA_GasC_Trans}. Pode-se perceber a grande diferença entre os resultados encontrados. A presença de álcool na gasolina C altera bastante as propriedades elétricas do combustível. O valor da permissividade é mais que duplicado enquanto que o parâmetro de transmissão -- um indicador do quanto o material é capaz de atenuar um sinal eletromagnético -- vai de um nível de -2,6 dB para a gasolina A, até valores menores que -18,4 dB para a gasolina C (utilizando a célula de 12 cm de comprimento).
+
+\begin{table}[htp]
+	\begin{center}
+		\begin{tabular}{|c|c|c|} \hline
+						& Transmissão [dB]	&	Permissividade	\\	\hline
+Gasolina A 	&				-2,6				&			2,19				\\	\hline
+Gasolina C 	&				-18,4				&			5,41				\\	\hline
+		\end{tabular}
+	\end{center}
+	\caption{Permissividade e Transmissão: Gasolinas A e C}
+	\label{tab:GasA_GasC_Imp_Trans}
+\end{table}
+
+Os valores de permissividade exibidos pela figura \ref{fig:GasA_GasC_Imp} mostram um crescimento com a freqüência, comportamento este discordante do esperado. Uma possível explicação para esse fenômeno é que, devido às características geométricas da célula, o aumento da permissividade nessa faixa de freqüências é ocasionado pela aproximação de uma ressonância. Em sessão posterior, serão mostrados gráficos de permissividade para diversas substâncias que apresentam ressonância na faixa de freqüência entre 1 e 100 MHz.
+
+O gráfico da gasolina A na figura \ref{fig:GasA_GasC_Trans} apresenta um aspecto ondulado porque a célula utilizada foi projetada para medição com gasolina C. Essa ondulação aparecerá quando houver altos valores de transmissão. Para transmissões menores, os gráficos terão comportamento similar ao da gasolina C nessa mesma figura.
+
+
+\section{Misturas}
+
+\subsection{Gasolina C x Álcool Etílico}
+
+As figuras \ref{fig:GasC_Alc_Mistura_Imp} e \ref{fig:GasC_Alc_Mistura_Trans} mostram o comportamento de uma amostra de gasolina C à qual é adicionado um certo volume de álcool etílico hidratado. Inicia-se com um valor pequeno de etanol, apenas $0,5\%$ em volume, passando depois para $1\%$, $2\%$, $3\%$, $4\%$ e finalmente chegando a $5\%$.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[height=9.5cm,width=13cm]{figuras/GasC_Alc_Mistura_Imp.eps.gz}
+\caption{Permissividade da Mistura: Gasolina C x Álcool}
+\label{fig:GasC_Alc_Mistura_Imp}
+\end{figure}
+
+\begin{figure}[htp]
+\centering
+\includegraphics[height=9.5cm,width=13cm]{figuras/GasC_Alc_Mistura_Trans.eps.gz}
+\caption{Transmissão na Mistura: Gasolina C x Álcool}
+\label{fig:GasC_Alc_Mistura_Trans}
+\end{figure}
+
+Pode-se perceber que a simples adição de $0,5\%$ em volume de álcool provoca uma alteração considerável nos valores dos gráficos, o que demonstra a sensibilidade dos métodos de análise de propriedades elétricas. Em 10 MHz, o valor da constante dielétrica da amostra com $100\%$ de gasolina C é de $5,38$. Quando adiciona-se meio porcento de álcool, a permissividade torna-se $5,61$, ou seja, uma diferença de aproximadamente $4\%$. No caso do parâmetro de transmissão, para uma variação de $0,5\%$ em volume, temos uma diminuição da ordem de $6,8\%$ -- de $-17,3$ dB para $-18,5$ dB. A tabela \ref{tab:Perm_Trans_GasC_Alc} mostra os valores da constante dielétrica -- em 10 MHz -- e do parâmetro de transmissão -- em 3 GHz -- para cada uma das concentrações acima referidas (utilizando a célula de 12 cm de comprimento).
+
+\begin{table}[htp]
+	\begin{center}
+		\begin{tabular}{|c|c|c|} \hline
+Gasolina [\% em Vol]	& Permissividade - 10 MHz	&	Transmissão [dB] - 3 GHz 	\\	\hline
+								100		&					5,38    			  &						-17,33					\\	\hline
+								99,5	&					5,61   					&						-18,50				 	\\	\hline
+								99		&					5,69						&						-18,78					\\	\hline
+								98		&					5,91						&						-19,63					\\	\hline
+								97		&					6,00						&						-20,19					\\	\hline
+								96		&					6,20						&						-20,99					\\	\hline
+								95	  &					6,36						&						-21,95					\\	\hline
+		\end{tabular}
+	\end{center}
+	\caption{Permissividade e Transmissão: Gasolina C x Etanol}
+	\label{tab:Perm_Trans_GasC_Alc}
+\end{table}
+
+Pelos gráficos das figuras \ref{fig:GasC_Alc_Mistura_Imp} e \ref{fig:GasC_Alc_Mistura_Trans} podemos perceber o constante aumento da permissividade e a diminuição do parâmetro de transmissão com a correspondente elevação do teor de álcool na mistura. O álcool etílico hidratado apresenta uma constante dielétrica bem mais elevada do que a gasolina C -- algo em torno de $27$ contra $5,4$ da gasolina. Essa maior tendência de polarização também se mostra no parâmetro de transmissão. A atenuação sofrida na transmissão do sinal é bem mais elevada no etanol do que na gasolina. Assim sendo, os resultados encontrados para essas misturas estão de acordo com o esperado.
+
+A figura \ref{fig:GasC_Alc_Mist_Imp_Mod} mostra o aumento da constante dielétrica -- determinada experimentalmente -- de uma amostra de gasolina C misturada com álcool etílico à medida que o teor alcoólico vai aumentando. Esses dados experimentais são comparados com os valores obtidos pelos modelos teóricos mostrados nas equações: \ref{eq:Mist_Cap_Serie} para fases em série; \ref{eq:Mist_Cap_Paralelo} para fases em paralelo; \ref{eq:Mistura_Maxwell} para o modelo de Maxwell; e \ref{eq:Mistura_Lichtenecker} para o modelo de Lichtenecker -- com os teores alcoólicos de $0,5\%$, $1\%$, $2\%$, $3\%$, $4\%$ e $5\%$.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[height=9.5cm,width=13cm]{figuras/GasC_Alc_Mistura_Imp_Modelos.eps.gz}
+\caption{Modelos de Misturas de Dielétricos: Gasolina C x Álcool}
+\label{fig:GasC_Alc_Mist_Imp_Mod}
+\end{figure}
+
+Pela figura \ref{fig:GasC_Alc_Mist_Imp_Mod} podemos observar que o comportamento dos valores experimentais obtidos para a mistura \textit{gasolina C x álcool} assemelha-se bastante àquele descrito pelo modelo de fases em paralelo, obtido pela equação \ref{eq:Mist_Cap_Paralelo}. Dos modelos apresentados, o que mais se distanciou dos dados observados foi o modelo de fases em série. Os modelos de Maxwell e de Lichtenecker têm comportamentos muito similares, apresentando valores intermediários entre os modelos de fases em paralelo e em série.
+
+
+\subsection{Gasolina C x Aguarrás}
+
+Segundo a definição encontrada na página do \textit{Petroportal} na Internet
+
+\begin{citacao}
+Aguarrás -- Produto obtido pelo processo de destilação atmosférica do petróleo no intervalo de temperatura (150ºC-210ºC), classificado numa faixa de destilação intermediária entre a nafta pesada e o querosene. É um solvente muito utilizado na indústria de ceras, graxas e tintas.
+\end{citacao}
+
+Após as medições efetuadas com álcool etílico e gasolina, foi realizada uma análise da mistura de gasolina C com aguarrás. 
+
+\begin{figure}[htp]
+\centering
+\includegraphics[height=9.5cm,width=13cm]{figuras/GasC_Aguarras_Mistura_Imp.eps.gz}
+\caption{Permissividade da Mistura: Gasolina C x Aguarrás}
+\label{fig:GasC_Arras_Mist_Imp}
+\end{figure}
+
+\begin{figure}[htp]
+\centering
+\includegraphics[height=9.5cm,width=13cm]{figuras/GasC_Aguarras_Mistura_Trans.eps.gz}
+\caption{Transmissão na Mistura: Gasolina C x Aguarrás -- Medida realizada com célula de 24,9 cm de comprimento}
+\label{fig:GasC_Arras_Mist_Trans}
+\end{figure}
+
+As figuras \ref{fig:GasC_Arras_Mist_Imp} e \ref{fig:GasC_Arras_Mist_Trans} mostram os gráficos de permissividade e do parâmetro de transmissão para diversos valores de mistura entre a gasolina C e uma amostra de aguarrás obtida no mercado local. A constante dielétrica do aguarrás é de ordem muito próxima àquela encontrada na gasolina tipo A. Como a gasolina C possui álcool etílico em sua composição, sua permissividade é superior à da gasolina A. Assim sendo, a adição de aguarrás à gasolina C deveria provocar uma diminuição de sua constante dielétrica. Podemos observar esse fenômeno na figura \ref{fig:GasC_Arras_Mist_Imp}.
+
+A figura \ref{fig:GasC_Arras_Mist_Imp} mostra a variação da constante dielétrica de uma mistura gasolina C x aguarrás. Pose-se perceber que, com o aumento do teor de aguarrás na mistura, a permissividade vai sendo reduzida, como esperado. A partir de uma certa fração, o valor da constante dielétrica reduz-se de maneira aproximadamente uniforme.
+
+Foi observado nas medidas de impedância que, para pequenas frações volumétricas de aguarrás na mistura, o valor da constante dielétrica aumentava, ao invés de diminuir, como seria esperado. Após um certo teor de aguarrás, a permissividade iniciava um processo de redução constante. Esse fenômeno também foi observado nas medidas de microondas. Quando o teor de aguarrás era da ordem de $1\%$ ou $2\%$, o valor do parâmetro de transmissão da mistura chegava a ser menor que o da gasolina C. Com o aumento do volume de aguarrás, o parâmetro de transmissão começava a aumentar.
+
+A figura \ref{fig:GasC_Arras_Mist_Trans} mostra a variação do parâmetro de transmissão na mistura gasolina C x aguarrás. Percebe-se um aumento do parâmetro de transmissão com a elevação da quantidade de aguarrás na mistura.
+
+A tabela \ref{tab:Perm_Trans_GasC_Arras} mostra os valores da constante dielétrica -- em 10 MHz -- e do parâmetro de transmissão -- em 3 GHz -- para cada uma das concentrações analisadas.
+
+\begin{table}[htp]
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|} \hline
+Gas C [\% em Vol]	& $\kappa'$ - 10 MHz	&	Gas C [\% em Vol] & Transmissão [dB] - 3 GHz 	\\	\hline
+			100		&			5,46     	&			100			&			-32,73					\\	\hline
+			93  	&			5,23   		&			94			&			-28,96				 	\\	\hline
+			91		&			5,05			&			91			&			-25,12					\\	\hline
+			87		&			4,66			&			86			&			-20,66					\\	\hline
+			83		&			4,38			&			75			&			-14,36					\\	\hline
+			77		&			3,81			&			-				&			  -	    				\\	\hline
+		\end{tabular}
+	\end{center}
+	\caption{Permissividade e Transmissão: Gasolina C x Aguarrás -- Célula de 24,9 cm}
+	\label{tab:Perm_Trans_GasC_Arras}
+\end{table}
+
+%Deve-se salientar que nas medidas do parâmetro de transmissão foi utilizada a célula de combustível do Laboratório de Dispositivos e Nanoestruturas da UFPe, a qual possui um comprimento maior, o que implica num aumento na atenuação do sinal. Assim sendo, os valores mostrados na figura \ref{fig:GasC_Arras_Mist_Trans} e na tabela \ref{tab:Perm_Trans_GasC_Arras} não podem ser comparados com os anteriormente descritos, já que as medições foram efetuadas em células diferentes.
+
+
+\subsection{Álcool Etílico x Água}
+
+Foram realizadas medições envolvendo a mistura de álcool etílico, adquirido em um posto local, e água destilada. As misturas utilizadas tiveram composições que variaram de $0\%$ a $100\%$ de cada um dos dois componentes envolvidos.
+
+A figura \ref{fig:Agua_Alc_Mist_Imp} apresenta o comportamento dos dados experimentais e dos modelos teóricos descritos na Revisão Bibliográfica -- fases em série, fases em paralelo, Maxwell e Lichtenecker.
+
+De maneira similar ao que foi observado na análise da mistura de gasolina C e álcool etílico, nota-se que o comportamento dos dados experimentais assemelha-se bastante, pelo nenos na faixa que vai de $0\%$ a $25\%$ de água destilada, ao obtido através do modelo de fases em paralelo -- equação \ref{eq:Mist_Cap_Paralelo}. O modelo que mais se distancia do observado é o de fases em série -- equação \ref{eq:Mist_Cap_Serie}. Os modelos de Maxwell -- equação \ref{eq:Mistura_Maxwell} -- e de Lichtenecker -- equação \ref{eq:Mistura_Lichtenecker} -- apresentam valores intermediários de permissividade.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[height=9.5cm,width=13cm]{figuras/Agua_Alc_Mistura_Imp.eps.gz}
+\caption{Permissividade da Mistura: Álcool Etílico x Água Destilada}
+\label{fig:Agua_Alc_Mist_Imp}
+\end{figure}
+
+Para as misturas com teores de água superiores a aproximadamente $25\%$, nenhum dos modelos representa adequadamente o comportamento da mistura. Contudo, como o objetivo deste trabalho é a análise de combustíveis e não da água, e visto que $25\%$ de água em um combustível qualquer representa uma contaminação bastante considerável, o modelo de fases em paralelo representa com considerável precisão o comportamento da mistura \textit{etanol x água}.
+
+
+
+\section{Medidas de Atenuação}
+
+Para todas as amostras coletadas dos postos de combustível, além das medidas de permissividade e do parâmetro de transmissão, foram também analisadas as curvas de atenuação para esses mesmos dados.
+
+As curvas de atenuação provenientes das medições de impedância, através dos parâme-\\tros capacitância e tangente de perda, foram determinadas pela equação \ref{eq:AlfaImp}, enquanto que as curvas obtidas através das medidas de microondas são provenientes da equação \ref{eq:AlfaTrans}. Uma relação similar a esta última também foi utilizada para a determinação da atenuação pelos parâmetros de ganho e fase utilizando o impedancímetro. Deve-se lembrar que as medidas de impedância foram realizadas numa faixa de freqüência que vai de 1 MHz a 100 MHz, enquanto que as de microondas estendem-se de 300 kHz a 3 GHz.
+
+A figura \ref{fig:Am4773_Aten} mostra as três curvas de atenuação para uma amostra de gasolina obtida junto ao Laboratório de Combustíveis e Lubrificantes da UFC -- LCL --, denominada 4773.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=9.5cm,width=13cm]{figuras/Am4773_Aten.eps.gz}
+\caption{Atenuação: Amostra 4773 LCL}
+\label{fig:Am4773_Aten}
+\end{figure}
+
+Pode-se perceber que existe uma tendência geral de aumento da atenuação com a freqüência, embora os dados obtidos por microondas estejam menos estáveis. Para todas as amostras estudadas neste trabalho, a faixa inicial do espectro varrido pela técnica de microondas apresentou valores que seguem o padrão observado na figura \ref{fig:Am4773_Aten}: nos primeiros pontos, uma diminuição da atenuação seguida por um aumento que, como pode ser deduzido pela análise dos diversos gráficos do parâmetro de transmissão, ocorre para todas as demais freqüências. Entretanto, apenas esta estreita faixa de freqüência -- de 1 a 100 MHz -- é comum aos dois métodos e a instabilidade dos valores obtidos por microondas dificulta qualquer comparação que vise a uma análise da qualidade.
+
+As duas outras curvas da figura \ref{fig:Am4773_Aten} foram feitas utilizando um impedancímetro, sendo diferentes apenas os parâmetros medidos. A curva obtida pela medição de ganho e fase resulta mais diretamente da medição experimental, pois os dados são coletados já em decibéis. É levado em consideração apenas o comprimento da célula. Já a curva obtida através dos parâmetros capacitância e perda resulta da utilização da equação \ref{eq:AlfaImp}. %Seu comportamento mais uniforme deriva justamente do formato da curva da capacitância, que é o mesmo da curva da permissividade.
+
+As figuras \ref{fig:Posto3C1_Aten}, \ref{fig:Posto3C2_Aten} e \ref{fig:Posto3C3_Aten} representam a comparação entre a atenuação obtida através da análise de impedância -- capacitância e perda -- e da análise de microondas para as amostras do Posto 3. Os valores exibidos nos gráficos estão mostrados na tabela \ref{tab:Posto3Atenua}. No caso das coletas 2 e 3, o teor alcoólico da gasolina é de $24 \pm 1\%$, enquanto que na coleta 1 é de $22 \pm 1\%$.
+
+Há dois fatos importantes a ressaltar na análise dos gráficos e da tabela:
+
+\begin{enumerate}
+
+	\item Observa-se claramente que a atenuação, quando medida por impedância, apresenta um valor maior nas amostras 2 e 3 do que na amostra 1. Esse comportamento era esperado, pois, como a constante dielétrica dessas amostras mais recentes é maior, pois o teor alcoólico aumentou em $2\%$ com relação à amostra 1, a atenuação provocada por elas também deve aumentar. Deve-se salientar, contudo, que as medidas de $\tan \delta$ -- que é um componente importante no cálculo da atenuação, como pode ser visto na equação \ref{eq:AlfaImp} --, apresentaram menor repetibilidade do que as de permissividade. Entretanto, essas variações nas medições da tangente de perda foram parcialmente compensadas pelo fato de $\kappa'$ também figurar na equação \ref{eq:AlfaImp}. Ainda assim, pelas curvas de atenuação obtidas para os demais postos, através da análise de impedância, e que não estão mostradas neste trabalho por serem bastante redundantes, pode-se afirmar que a medida da permissividade é mais recomendável do que a de perda como índice de balizamento da qualidade da gasolina.
+
+	\item Os valores de atenuação derivados das medidas em microondas não apresentam consistência nessas baixas freqüências. Deve-se lembrar que os pontos de convergência entre as duas técnicas estão situados na faixa de 1 a 100 MHz. A técnica de microondas aqui utilizada varreu o espectro de 0,3 MHz a 3 GHz. Assim, a intersecção entre os dois métodos é muito restrita. Como pode ser visto na figura \ref{fig:Posto3_Trans}, só existe uma diferenciação no parâmetro de transmisssão -- cujo valor está diretamente relacionado à atenuação -- entre as amostras 1, 2 e 3 na parte final do espectro. Assim, os valores iniciais não se distingüem muito uns dos outros. Existem referências \cite{Folgero} em que o parâmetro de transmissão não é utilizado na faixa de freqüências abaixo de 100 MHz. Assim sendo, medidas de atenuação utilizando a técnica de microondas não apresentam, para as freqüências mais baixas, definição suficiente para serem utilizadas na distinção entre diversas amostras de combustível. %Essa inconsistência dos dados de atenuação medidos por microondas na faixa de freqüência de 1 a 100 MHz pode dever-se a problemas na calibração do equipamento ou à inadequação da própria célula nestas freqüências mais baixas.
+
+\end{enumerate}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=9.5cm,width=13cm]{figuras/P3C1_Aten.eps.gz}
+\caption{Posto 3 Coleta 1 -- Atenuação}
+\label{fig:Posto3C1_Aten}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=9.5cm,width=13cm]{figuras/P3C2_Aten.eps.gz}
+\caption{Posto 3 Coleta 2 -- Atenuação}
+\label{fig:Posto3C2_Aten}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[height=9.5cm,width=13cm]{figuras/P3C3_Aten.eps.gz}
+\caption{Posto 3 Coleta 3 -- Atenuação}
+\label{fig:Posto3C3_Aten}
+\end{figure}
+
+\begin{table}[htp]
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|} \hline
+\multicolumn{7}{|c|}{Valores de Atenuação [dB/m]} \\ \hline
+					& Posto3C1 & Posto3C1	& Posto3C2 & Posto3C2	& Posto3C3	& Posto3C3	\\	\hline
+Freq [MHz]&	Imp 		& Trans		&	Imp			& Trans 	& Imp 		&	Trans 	\\	\hline
+			1		&	0,0053	&	1,9503	&	0,0097	&	1,7226	&	0,0077	&	1,9139 	\\	\hline
+			10	&	0,0159	&	1,4586	&	0,0228	&	1,4768	&	0,0278	&	1,3311	\\	\hline
+			30	&	0,0575	&	0,9213	&	0,0712	&	1,1217	&	0,0925	&	1,3402	\\	\hline
+			45	&	0,1344	&	1,1854	&	0,1648	&	1,1581	&	0,1996	&	1,1581	\\	\hline
+			60	&	0,2617	&	0,2657	&	0,3241	&	0,3477	&	0,3705	&	0,6391	\\	\hline
+			75	&	0,4673	&	1,4677	&	0,5665	&	1,2491	&	0,6215	&	1,5405	\\	\hline
+			90	&	0,7991	&	1,1854	&	0,9453	&	1,0215	&	1,0085	&	1,1672	\\	\hline
+ 100/105	& 1,1000	&	1,2856	&	1,3019	&	1,5223	&	1,3784	&	1,4130 	\\	\hline
+		\end{tabular}
+	\end{center}
+	\caption{Posto 3 -- Atenuação}
+	\label{tab:Posto3Atenua}
+\end{table}
+
+As amostras dos demais postos de combustível reforçam o que já foi exposto, ou seja, que tanto na análise da atenuação derivada de medidas de impedância, quanto naquela proveniente de medidas de microondas, a atenuação não mostrou ser um parâmetro confiável, pelo menos na faixa de 1 a 100 MHz, segundo os métodos aqui utilizados, para a determinação da qualidade da gasolina. Assim, no estudo dos postos feito a seguir, serão utilizados como forma de comparação apenas valores de permissividade e do parâmetro de transmissão em suas respectivas faixas de freqüência.
+
+
+
+\section{Posto 1}
+
+A figura \ref{fig:Posto1_Imp} mostra a variação da parte real da permissividade relativa ($\kappa'$) da gasolina C comum coletada no Posto 1. A faixa de freqüência utilizada nessa análise vai de 1 MHz a 100 MHz. Vale ressaltar que todas as medidas de constante dielétrica em ``baixa freqüência'', mostradas neste trabalho, foram realizadas utilizando esse mesmo intervalo. As amostras em questão são as provenientes das coletas 2 e 3. No período dessas coletas, o teor de álcool etílico utilizado era de $24\%$ em volume. Na freqüência de 10 MHz, por exemplo, a amostra 2 tem um valor de $\kappa' = 5,45$, enquanto que a amostra 3 apresenta um valor de $\kappa' = 5,42$, o que resulta em uma diferença percentual inferior a 0,6\%. Esse valor está dentro da faixa de erro do método, indicando uma consistência dos valores obtidos das duas amostras.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=9.5cm,width=13cm]{figuras/Posto1_Imp.eps.gz}
+\caption{Posto 1 -- Permissividade}
+\label{fig:Posto1_Imp}
+\end{figure}
+
+A figura \ref{fig:Posto1_Trans} mostra o resultado da análise em microondas do parâmetro de transmissão para as mesmas amostras 2 e 3 do Posto 1. Pode-se verificar que, como no caso da análise na faixa de rádio-freqüência, os valores obtidos são bastante próximos. A 3 GHz, por exemplo, a amostra 2 apresenta um valor do parâmetro de transmissão de aproximadamente $-17,34$ dB, enquanto que a amostra 3 possui um valor de $-17,21$ dB, o que resulta em uma diferença de $0,76\%$, valor inferior ao erro considerado.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=9.5cm,width=13cm]{figuras/Posto1_Trans.eps.gz}
+\caption{Posto 1 -- Parâmetro de Transmissão}
+\label{fig:Posto1_Trans}
+\end{figure}
+
+%A figura \ref{fig:Posto1C2_Aten} mostra dois gráficos representanto a atenuação $\alpha$ em $dB/m$ da amostra 2 do Posto 1 calculada a partir dos dados obtidos em microondas e em rádio-freqüência. Os pontos representados por quadrados preenchidos referem-se à atenuação calculada à partir do parâmetro de transmissão. Existe, como é possível observar, uma tendência de elevação da atenuação com o aumento da freqüência em ambos os casos. Contudo, essa tendência é menos visível, ou pelo menos está menos consolidada, no gráfico proveniente das medidas de transmissão. Isto talvez se explique porque, nessas freqências mais baixas -- o gráfico mostra apenas os pontos de contato, os quais situam-se na faixa de 1 a 100 MHz --, o coeficiente de transmissão esteja sujeito a uma maior instabilidade. Fica clara, contudo, uma elevação da atenuação obtida através do parâmetro de transmissão para freqüências superiores a 100 MHz, como é possível observar na figura \ref{fig:Posto1_Trans}. Folgero, em seu trabalho, não utilizou o coeficiente de transmissão na faixa que vai de 1 a 100 MHz.
+
+%\begin{figure}[htbp]
+%\centering
+%\includegraphics[height=9.5cm,width=13cm]{figuras/P1C2_Aten.eps.gz}
+%\caption{Posto 1 Coleta 2 -- Atenuação}
+%\label{fig:Posto1C2_Aten}
+%\end{figure}
+
+%Um comportamento semelhante ao encontrado na figura \ref{fig:Posto1C2_Aten} pode ser observado na figura \ref{fig:Posto1C3_Aten}. Existe uma tendência de elevação na atenuação com o aumento da freqüência. Deve-se salientar que no gráfico derivado das medições de impedância, o resultado, em freqüências baixas como as aqui analisadas, possui um comportamento bem mais estável.
+
+%\begin{figure}[htbp]
+%\centering
+%\includegraphics[height=9.5cm,width=13cm]{figuras/P1C3_Aten.eps.gz}
+%\caption{Posto 1 Coleta 3 -- Atenuação}
+%\label{fig:Posto1C3_Aten}
+%\end{figure}
+
+%A tabela \ref{tab:Posto1Atenua} apresenta os dados vistos nas figuras \ref{fig:Posto1C2_Aten} e \ref{fig:Posto1C3_Aten}. O último valor de freqüência é de 100 MHz para o valor de atenuação obtido pelo método de impedância e de 105 MHz para aquele derivado da medida de transmissão. Essa diferença deve-se ao fato de que as medidas utilizando o analisador de redes foram realizadas tendo como intervalo entre cada um dos pontos de medição o valor de 15 MHz. Assim, a freqüência mais próxima de 100 MHz, que é a máxima lida pelo impedancímetro, é de 105 MHz.
+
+%\begin{table}[htp]
+	%\begin{center}
+		%\begin{tabular}{|c|c|c|c|c|} \hline
+%\multicolumn{5}{|c|}{Valores de Atenuação [dB/m]} \\ \hline
+%					& Posto1C2 & Posto1C2	& Posto1C3	& Posto1C3	\\	\hline
+%Freq [MHz]&	Imp			& Trans 	& Imp 		&	Trans 	\\	\hline
+%			1		&	0,0042	&	1,3584	&	0,0070	&	1,7044 	\\	\hline
+%			10	&	0,0179	&	1,4130	&	0,0159	&	1,3948	\\	\hline
+%			30	&	0,0681	&	0,9942	&	0,0532	&	1,6316	\\	\hline
+%			45	&	0,1690	&	1,3857	&	0,1296	&	0,8394	\\	\hline
+%			60	&	0,3390	&	0,4296	&	0,2814	&	-0,3080 \\	\hline
+%			75	&	0,5962	&	1,3038	&	0,5282	&	1,3857	\\	\hline
+%			90	&	0,9950  &	2,0778	&	0,9279	&	1,4130	\\	\hline
+% 100/105	& 1,3717	&	2,5240	&	1,2930  &	3,0066 	\\	\hline
+%		\end{tabular}
+%	\end{center}
+%	\caption{Posto 1 -- Atenuação}
+%	\label{tab:Posto1Atenua}
+%\end{table}
+
+Vale explicar o porquê do fato de terem sido analisadas acima apenas as amostras das coletas 2 e 3 do Posto 1. A amostra da coleta 1 estava nitidamente fora das especificações. Com um simples exame visual era possível observar que se tratavam de duas fases distintas. Quando medida a permissividade dessa amostra, os valores obtidos apresentaram sempre grande variação, dependendo de qual das fases estava em maior quantidade no momento da análise. A figura \ref{fig:Posto1C1_Perm} mostra a variação ocorrida entre as várias medições. Pode-se perceber que, em determinados momentos, os valores da constante dielétrica aproximam-se de 5 (em 10 MHz), o que está próximo do esperado. Contudo, em outros momentos, a permissividade cai para níveis próximos a 3, indicando a presença maior de uma substância com constante dielétrica baixa, possivelmente um solvente.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=9.5cm,width=13cm]{figuras/Posto1C1_Perm.eps.gz}
+\caption{Posto 1 Coleta 1 -- Permissividade}
+\label{fig:Posto1C1_Perm}
+\end{figure}
+
+
+
+\section{Posto 3}
+
+No gráfico da figura \ref{fig:Posto3_Imp}, encontramos um comportamento entre as amostras 2 e 3 semelhante ao observado na figura \ref{fig:Posto1_Imp}. Os valores das permissividades relativas são próximos: na freqüência de 10 MHz, $\kappa' = 5,45$ e $\kappa' = 5,42$ para as amostras 2 e 3 do Posto 1, respectivamente, enquanto que $\kappa' = 5,47$ e $\kappa' = 5,52$ para as respectivas amostras do Posto 3.
+
+Apesar de as amostras do Posto 3 apresentarem valores próximos, é preciso notar que a constante dielétrica da amostra 3 é relativamente elevada, situada fora da faixa considerada como ``normal''.
+
+Dentro das medições de permissivadade com amostras consideradas ``dentro das especificações'', pôde-se constatar que valores próximos a $5,43$ (na freqüência de 10 MHz) foram os mais representativos. Considerando um erro estimado para o método da ordem de $\pm1\%$, temos um intervalo ``de segurança'' variando de aproximadamente $5,37$ a $5,49$.
+
+Assim sendo, a amostra 3 do Posto 3, que tem, a 10 MHz, um valor de $\kappa'$ igual a $5,52$ revela certos ``indícios'' que poderiam ser melhor esclarecidos por um laboratório equipado para analisar a qualidade de combustíveis através de procedimentos normatizados.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=9.5cm,width=13cm]{figuras/Posto3_Imp.eps.gz}
+\caption{Posto 3 -- Permissividade}
+\label{fig:Posto3_Imp}
+\end{figure}
+
+A figura \ref{fig:Posto3_Trans} descreve a variação do parâmetro de transmissão para as amostras do Posto 3. Aqui, novamente, temos consistência entre esses dados, que representam valores pertencentes até a faixa de microondas , com aqueles provenientes da análise através de impedância. Novamente podemos ver que a amostra 3 apresenta um ``descolamento'' da amostra 2, tendo um menor valor de transmissão na freqüência de 3 GHz  ($-18,27$ dB comparado a $-17,90$ dB). Isso significa que o sinal que atravessa a amostra 3 é mais atenuado pelo combustível do que aquele viajando pela amostra 2.
+
+Através da análise de constante dielétrica por impedância, constatamos que a amostra 3 apresenta valores maiores que a 2. Por transmissão, vemos que a atenuação naquela amostra também é superior à desta. %Esses dados são bastante coerentes, pois é de se supor que um material com maior permissividade apresente uma polarização mais acentuada do que um de menor permissividade. Como a polarização é maior, a perda também o é, pois o fator dissipativo é mais elevado. Assim, para maiores valores de constante dielétrica, espera-se maiores valores -- em módulo -- para o parâmetro de transmissão e, conseqüentemente, para a atenuação.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=9.5cm,width=13cm]{figuras/Posto3_Trans.eps.gz}
+\caption{Posto 3 -- Parâmetro de Transmissão}
+\label{fig:Posto3_Trans}
+\end{figure}
+
+Um fato muito importante, e fortuito, deve agora ser salientado. Durante o decorrer deste trabalho de análise, ocorreu uma mudança na legislação quanto ao teor alcoólico máximo permitido na gasolina. Quando as amostras 1 de cada posto foram recolhidas, o nível máximo tolerado de álcool era de $22\% \pm 1\%$. Na época de recolher as amostras 2 e 3, a legislação discriminava um teor limite de $24\% \pm 1\%$. Essa alteração de $2\%$ no teor alcoólico representou uma grande diferença no valor da permissividade e também, pelas razões anteriormente citadas, do parâmetro de transmissão. Isso pode ser facilmente verificado com a análise das figuras \ref{fig:Posto3_Imp} e \ref{fig:Posto3_Trans}. Pode-se perceber um nítido descolamento da amostra 1 em relação às amostras 2 e 3.
+
+Essa variação ascendente de $2\%$ no teor alcoólico ocasionou um aumento de aproximadamente 10\% no valor da constante dielétrica -- $\kappa'$ passou de $4,94$ para $5,47$ com relação à amostra 2. Fala-se em valor aproximado de $10\%$ porque essas amostras estão sob análise, não podendo ser utilizadas como parâmetros precisos. Contudo, verifica-se nos outros postos um comportamento bastante semelhante a este.
+
+A alteração de 2\% no teor alcoólico também ocasionou alteração no parâmetro de transmissão. Para a amostra 1, a 3 GHz, temos um valor de $-15,53$ dB, enquanto que para a amostra 2, na mesma freqüência, temos $-17,90$ dB. Essa elevação é ainda maior que a registrada pela permissividade, sendo de aproximadamente $15\%$
+%As figuras \ref{fig:Posto3C1_Aten}, \ref{fig:Posto3C2_Aten} e \ref{fig:Posto3C3_Aten} representam a comparação entre a atenuação obtida através da análise de impedância e da análise de microondas para as amostras do Posto 3. Os valores exibidos nos gráficos estão mostrados na tabela \ref{tab:Posto3Atenua}.
+
+%\begin{figure}[htbp]
+%\centering
+%\includegraphics[height=9.5cm,width=13cm]{figuras/P3C1_Aten.eps.gz}
+%\caption{Posto 3 Coleta 1 -- Atenuação}
+%\label{fig:Posto3C1_Aten}
+%\end{figure}
+
+%\begin{figure}[htbp]
+%\centering
+%\includegraphics[height=9.5cm,width=13cm]{figuras/P3C2_Aten.eps.gz}
+%\caption{Posto 3 Coleta 2 -- Atenuação}
+%\label{fig:Posto3C2_Aten}
+%\end{figure}
+
+%\begin{figure}[ht]
+%\centering
+%\includegraphics[height=9.5cm,width=13cm]{figuras/P3C3_Aten.eps.gz}
+%\caption{Posto 3 Coleta 3 -- Atenuação}
+%\label{fig:Posto3C3_Aten}
+%\end{figure}
+
+%\begin{table}[htp]
+%	\begin{center}
+%		\begin{tabular}{|c|c|c|c|c|c|c|} \hline
+%\multicolumn{7}{|c|}{Valores de Atenuação [dB/m]} \\ \hline
+%					& Posto3C1 & Posto3C1	& Posto3C2 & Posto3C2	& Posto3C3	& Posto3C3	\\	\hline
+%Freq [MHz]&	Imp 		& Trans		&	Imp			& Trans 	& Imp 		&	Trans 	\\	\hline
+%			1		&	0,0053	&	1,9503	&	0,0097	&	1,7226	&	0,0077	&	1,9139 	\\	\hline
+%			10	&	0,0159	&	1,4586	&	0,0228	&	1,4768	&	0,0278	&	1,3311	\\	\hline
+%			30	&	0,0575	&	0,9213	&	0,0712	&	1,1217	&	0,0925	&	1,3402	\\	\hline
+%			45	&	0,1344	&	1,1854	&	0,1648	&	1,1581	&	0,1996	&	1,1581	\\	\hline
+%			60	&	0,2617	&	0,2657	&	0,3241	&	0,3477	&	0,3705	&	0,6391	\\	\hline
+%			75	&	0,4673	&	1,4677	&	0,5665	&	1,2491	&	0,6215	&	1,5405	\\	\hline
+%			90	&	0,7991	&	1,1854	&	0,9453	&	1,0215	&	1,0085	&	1,1672	\\	\hline
+% 100/105	& 1,1000	&	1,2856	&	1,3019	&	1,5223	&	1,3784	&	1,4130 	\\	\hline
+%		\end{tabular}
+%	\end{center}
+%	\caption{Posto 3 -- Atenuação}
+%	\label{tab:Posto3Atenua}
+%\end{table}
+
+%Há dois fatos importantes a ressaltar na análise dos gráficos e da tabela:
+
+%\begin{enumerate}
+%	\item Observa-se claramente que a atenuação, quando medida por impedância, apresenta um valor maior nas amostras 2 e 3 do que na amostra 1. Esse comportamento era esperado, pois, como a constante dielétrica dessas amostras mais recentes é maior, pois o teor alcoólico aumentou em $2\%$ com relação à amostra 1, a atenuação provocada por elas também deve aumentar. Deve-se salientar, contudo, que as medidas de $\tan \delta$ -- que é um componente importante no cálculo da atenuação, como pode ser visto na equação \ref{eq:AlfaImp} --, apresentaram menor repetibilidade do que as de permissividade. Entretanto, essas variações nas medições da tangente de perda foram parcialmente compensadas pelo fato de $\kappa'$ também figurar na equação \ref{eq:AlfaImp}.
+%	\item Os valores de atenuação derivados das medidas em microondas não apresentam consistência nessas baixas freqüências. Deve-se lembrar que os pontos de convergência entre as duas técnicas estão situados na faixa de 1 a 100 MHz. A técnica de microondas aqui utilizada varreu o espectro de 0,3 MHz a 3 GHz. Assim, a intersecção entre os dois métodos é muito restrita. Como pode ser visto na figura \ref{fig:Posto3_Trans}, só existe uma diferenciação no parâmetro de transmisssão, cujo módulo é diretamente proporcional à atenuação, entre as amostras 1, 2 e 3 na parte final do espectro. Assim, os valores iniciais não se distingüem muito uns dos outros. Existem referências \cite{Folgero} em que o parâmetro de transmissão não é utilzado na faixa de freqüências abaixo de 100 MHz. Assim sendo, medidas de atenuação utilizando a técnica de microondas não apresentam, para as freqüências mais baixas, definição suficiente para ser utilizadas na distinção entre diversas amostras de combustível.
+%\end{enumerate}
+
+
+
+\section{Posto 5}
+
+Analisando a figura \ref{fig:Posto5_Imp}, relativa à permissividade observada nas amostras do Posto 5, pode-se perceber novamente a diferença existente entre as amostras 2 e 3 e a amostra 1. Como já foi dito anteriormente, essa variação deve-se à menor quantidade de álcool etílico presente na primeira.
+
+Podemos perceber, contudo, que, diferentemente dos postos 1 e 3, onde havia grande proximidade entre as amostras 2 e 3 -- ainda que no Posto 3 o valor da terceira amostra tenha sido muito elevado --, no caso do Posto 5, os números são bastante diferentes. Na freqüência de 10 MHz, temos que, para a amostra 2, o valor de $\kappa'$ é de $5,49$, situado ainda dentro dos limites de nossa ``faixa segura''. A amostra 3 apresenta, na mesma freqüência, um valor para a permissividade de $\kappa' = 5,38$, também dentro do intervalo considerado normal. Assim, apesar de serem números bastante distintos, ambas situam-se dentro da faixa de tolerância, ainda que nos extremos opostos.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[height=9.5cm,width=13cm]{figuras/Posto5_Imp.eps.gz}
+\caption{Posto 5 -- Permissividade}
+\label{fig:Posto5_Imp}
+\end{figure}
+
+Analisando a figura \ref{fig:Posto5_Trans}, vemos que o parâmetro de transmissão para a amostra 2 apresenta valores bem menores do que os verificados na amostra 3.
+
+Para a amostra 2, a 3 GHz, o parâmetro de transmissão é de $-17,94$ dB, enquanto que para a amostra 3, nessa mesma freqüência, é de $-17,01$ dB, ambos situados entre $-17$ e $-18$ dB.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[height=9.5cm,width=13cm]{figuras/Posto5_Trans.eps.gz}
+\caption{Posto 5 -- Parâmetro de Transmissão}
+\label{fig:Posto5_Trans}
+\end{figure}
+
+%As figuras \ref{fig:Posto5C1_Aten}, \ref{fig:Posto5C2_Aten} e \ref{fig:Posto5C3_Aten} referem-se à atenuação detectada nas amostras do Posto 5 segundo as técnicas de impedância e microondas. Os valores dos pontos estão discriminados na tabela \ref{tab:Posto5Atenua}.
+
+%\begin{figure}[ht]
+%\centering
+%\includegraphics[height=9.5cm,width=13cm]{figuras/P5C1_Aten.eps.gz}
+%\caption{Posto 5 Coleta 1 -- Atenuação}
+%\label{fig:Posto5C1_Aten}
+%\end{figure}
+
+%\begin{figure}[ht]
+%\centering
+%\includegraphics[height=9.5cm,width=13cm]{figuras/P5C2_Aten.eps.gz}
+%\caption{Posto 5 Coleta 2 -- Atenuação}
+%\label{fig:Posto5C2_Aten}
+%\end{figure}
+
+%\begin{figure}[ht]
+%\centering
+%\includegraphics[height=9.5cm,width=13cm]{figuras/P5C3_Aten.eps.gz}
+%\caption{Posto 5 Coleta 3 -- Atenuação}
+%\label{fig:Posto5C3_Aten}
+%\end{figure}
+
+%\begin{table}[htp]
+%	\begin{center}
+%		\begin{tabular}{|c|c|c|c|c|c|c|} \hline
+%\multicolumn{7}{|c|}{Valores de Atenuação [dB/m]} \\ \hline
+%					& Posto5C1 & Posto5C1	& Posto5C2 & Posto5C2	& Posto5C3	& Posto5C3	\\	\hline
+%Freq [MHz]&	Imp 		& Trans		&	Imp			& Trans 	& Imp 		&	Trans 	\\	\hline
+%			1		&	0,0042	&	2,1505	&	0,0086	&	1,8724	&	0,0049	&	2,0578 	\\	\hline
+%			10	&	0,0167	&	1,6592	&	0,0212	&	1,3533	&	0,0142	&	1,4182	\\	\hline
+%			30	&	0,0644	&	1,1679	&	0,0708	&	1,0660	&	0,0498	&	0,8620	\\	\hline
+%			45	&	0,1469	&	1,1865	&	0,1633	&	1,1957	&	0,1242	&	1,4089	\\	\hline
+%			60	&	0,2879	&	0,4449	&	0,3204	&	0,8620	&	0,2685	&	0,5098	\\	\hline
+%			75	&	0,5169	&	1,1957	&	0,5622	&	0,8991	&	0,5070	&	0,7693	\\	\hline
+%			90	&	0,8814	&	1,2606	&	0,9412  &	0,9084	&	0,9005	&	1,7427	\\	\hline
+% 100/105	& 1,2152	&	1,7149	&	1,2958	&	1,5943	&	1,2544  &	1,6870 	\\	\hline
+%		\end{tabular}
+%	\end{center}
+%	\caption{Posto 5 -- Atenuação}
+%	\label{tab:Posto5Atenua}
+%\end{table}
+
+%Ao contrário do que foi visto no Posto 3, aqui as os valores de atenuação provenientes das medidas de impedância não apresentam um comportamento similar à permissividade e ao parâmetro de transmissão.
+
+%A atenuação da amostra 1, obtida por medida de impedância, não apresenta grande variação em relação àquela observada nas amostras 2 e 3. Pelo contrário, a amostra 3 possui diversos valores de atenuação inferiores aos da amostra 1.
+
+%O mesmo pode ser dito quanto à atenuação obtida pelo parâmetro de transmissão. Quando o Posto 3 foi analisado, percebeu-se que esse tipo de análise, pelo menos na faixa de freqüência em questão, não apresenta resultados satisfatórios para que se possa caracterizar determinada amostra. No caso do Posto 5, o mesmo fenômeno pode ser observado. Para diversas das freqüências observadas, a amostra 1 possui valores de atenuação superiores àqueles das amostras 2 e 3, o que tornaria inviável uma análise através do parâmetro de transmissão nessas freqüências mais baixas.
+
+%Assim, devido a diferentes motivos, os gráficos de atenuação não são conclusivos. Com relação ao método por impedância, temos muita variação na medida de perda -- $\tan\delta$ --, o que deixa bastante instáveis os resultados. Quanto ao método de microondas, em freqüências baixas, como aquelas onde há intersecção entre as duas técnicas, a qualidade dos dados não apresenta confiabilidade. A freqüências maiores, medidas do parâmetro de transmissão apresentam valores bem mais conclusivos.
+
+
+\section{Posto 6}
+
+A figura \ref{fig:Posto6_Imp} mostra os valores da constante dielétrica para as três amostras do Posto 6. Neste caso, temos praticamente a sobreposição das curvas das amostras 2 e 3, o que revela valores muito próximos de permissividade. Novamente, a amostra 1 tem um valor inferior ao das outras, pois possui um menor teor alcoólico.
+
+Na freqüência de 10 MHz, o valor da permissividade da amostra 2 é de $5,42$ e o da amostra 3 é de $5,43$. A diferença entre as duas medidas é inferior a $0,2\%$. Para se ter uma idéia, essa diferença é menor do que aquela observada entre duas medidas consecutivas -- realizadas num intervalo de $24$ horas -- de uma mesma amostra. Deve-se salientar, ainda, que ambas situam-se muito próximas ao valor médio obtido com amostras aprovadas pelo Laboratório de Combustíveis e Lubrificantes, sendo que a amostra 3 apresenta justamente o mesmo valor ($5,43$).
+
+\begin{figure}[ht]
+\centering
+\includegraphics[height=9.5cm,width=13cm]{figuras/Posto6_Imp.eps.gz}
+\caption{Posto 6 -- Permissividade}
+\label{fig:Posto6_Imp}
+\end{figure}
+
+Com relação à medida do parâmetro de transmissão, a sobreposição das curvas não é tão clara (figura \ref{fig:Posto6_Trans}). Mesmo assim, os valores estão muito próximos. 
+
+Para a amostra 2, o valor do parâmetro de transmissão é de $-17,29$ dB, enquanto que para a amostra 3 é de $-17,59$ dB. A diferença é de aproximadamente $1,7\%$. Como pode ser observado, essa variação é bastante superior àquela verificada com o método de impedância.
+
+A amostra 1 apresenta um valor para o parâmetro de transmissão de $-16,28$ dB, que é cerca de $5,8\%$ inferior ao obtido com a amostra 2.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[height=9.5cm,width=13cm]{figuras/Posto6_Trans.eps.gz}
+\caption{Posto 6 -- Parâmetro de Transmissão}
+\label{fig:Posto6_Trans}
+\end{figure}
+
+%\begin{figure}[ht]
+%\centering
+%\includegraphics[height=9.5cm,width=13cm]{figuras/P6C1_Aten.eps.gz}
+%\caption{Posto 6 Coleta 1 -- Atenuação}
+%\label{fig:Posto6C1_Aten}
+%\end{figure}
+
+%\begin{figure}[ht]
+%\centering
+%\includegraphics[height=9.5cm,width=13cm]{figuras/P6C2_Aten.eps.gz}
+%\caption{Posto 6 Coleta 2 -- Atenuação}
+%\label{fig:Posto6C2_Aten}
+%\end{figure}
+
+%A figuras \ref{fig:Posto6C1_Aten}, \ref{fig:Posto6C2_Aten} e \ref{fig:Posto6C3_Aten} representam os valores da atenuação do Posto 6 calculados a partir das medidas de impedância e de microondas. Esses valores estão discriminados na tabela \ref{tab:Posto6Atenua}.
+
+%\begin{figure}[ht]
+%\centering
+%\includegraphics[height=9.5cm,width=13cm]{figuras/P6C3_Aten.eps.gz}
+%\caption{Posto 6 Coleta 3 -- Atenuação}
+%\label{fig:Posto6C3_Aten}
+%\end{figure}
+
+%\begin{table}[htp]
+%	\begin{center}
+%		\begin{tabular}{|c|c|c|c|c|c|c|} \hline
+%\multicolumn{7}{|c|}{Valores de Atenuação [dB/m]} \\ \hline
+%					& Posto6C1 & Posto6C1	& Posto6C2 & Posto6C2	& Posto6C3	& Posto6C3	\\	\hline
+%Freq [MHz]&	Imp 		& Trans		&	Imp			& Trans 	& Imp 		&	Trans 	\\	\hline
+%			1		&	0,0089  &	1,8539	&	0,0060	&	1,7519	&	0,0071	&	1,9281 	\\	\hline
+%			10	&	0,0199	&	1,3811	&	0,0165	&	1,6870	&	0,0214	&	1,2235	\\	\hline
+%			30	&	0,0615	&	1,4738	&	0,0643	&	1,0660	&	0,0717	&	0,8435	\\	\hline
+%			45	&	0,1342	&	1,3626	&	0,1638	&	1,0196	&	0,1622	&	0,6674	\\	\hline
+%			60	&	0,2594	&	-0,4358	&	0,3325	&	0,0277	&	0,3244	&	0,3244	\\	\hline
+%			75	&	0,3946	&	1,2977	&	0,5867	&	1,5016  &	0,5667	&	1,4831	\\	\hline
+%			90	&	0,8103	&	1,5758	&	0,9754  &	1,7797	&	0,9511	&	1,5573	\\	\hline
+% 100/105	& 1,1262	&	2,1783	&	1,3465	&	2,6233	&	1,3166  &	2,5491 	\\	\hline
+%		\end{tabular}
+%	\end{center}
+%	\caption{Posto 6 -- Atenuação}
+%	\label{tab:Posto6Atenua}
+%\end{table}
+
+%Analisando os valores de atenuação obtidos por medida de impedância, podemos observar que para as freqüências de 1 e 10 MHz, o valor da amostra 1 chega a ser superior a um ou ambos os valores das amostras 2 e 3. Para as freqüências superiores, a atenuação da amostra 1 é inferior àquela observada nas amostras 2 e 3, o que seria esperado caso o método apresentasse bom desempenho nessa faixa de freqüências. A amostra 2 apresenta valores um pouco superiores aos da amostra 3 na parte final do espectro, o que é oposto ao encontra nas medidas de permissividade e de transmissão. Assim, esses dados de atenuação novamente podem ser dados como inconclusivos.
+
+%Quanto à análise da atenuação calculada a partir do parâmetro de transmissão, não é possível, de novo, perceber uma comportamento consistente entre as diversas amostras. Nas freqüências mais baixas, a amostra 1 também tem, algumas vezes, valores superiores aos das amostras 2 e 3. Esse quadro só se alterna na parte final do espectro, onde existe uma elevação relativa dos valores referentes às amostras 2 e 3. Tanto neste caso quanto na atenuação obtida através de medida de impedância, o valor da atenuação ocorrida na amostra 2 é superior ao observado na amostra 3 nas últimas freqüências consideradas.
+
+%Apesar da atenuação ter comportamento semelhante quando as duas técnicas são analisadas -- amostra 1 com altos valores nas primeiras freqüências e valores mais baixos no final, bem como a amostra 2 tendo uma atenuação superior à da amostra 3 nas últimas freqüências consideradas --, esses dados não se mostram adequados para a devida caracterização dos combustíveis em análise.
+
+
+
+\section{Posto 10}
+
+A figura \ref{fig:Posto10_Imp} apresenta os gráficos da constante dielétrica das amostras do Posto 10. Pode-se perceber que os valores de permissividade das amostras 2 e 3 estão bastante próximos, principalmente na faixa final do espectro. %Essa aliás, tem sido uma característica importante: o valor da constante dielétrica das amostras 2 e 3 dos postos tendem a aproximar-se com o aumento da freqüência.
+
+O valor da permissividade da amostra 2 a 10 MHz é de $5,46$, enquanto que o da amostra 3 é de $5,41$. Ambos os valores situam-se próximos de $5,43$, estando dentro da faixa tolerada.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[height=9.5cm,width=13cm]{figuras/Posto10_Imp.eps.gz}
+\caption{Posto 10 -- Permissividade}
+\label{fig:Posto10_Imp}
+\end{figure}
+
+A figura \ref{fig:Posto10_Trans} apresenta os valores do parâmetro de transmissão para as amostras do Posto 10. Os resultados novamente são compatíveis com aqueles obtidos através da análise por impedância. A amostra 2 apresenta um valor menor do parâmetro de transmissão do que o da amostra 3.
+
+O valor do parâmetro de transmissão da amostra 2, a 3 GHz, é de $-17,45$ dB, enquanto que a amostra 3 apresenta um valor de $-17,20$ dB na mesma freqüência.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[height=9.5cm,width=13cm]{figuras/Posto10_Trans.eps.gz}
+\caption{Posto 10 -- Parâmetro de Transmissão}
+\label{fig:Posto10_Trans}
+\end{figure}
+
+%\begin{figure}[htp]
+%\centering
+%\includegraphics[height=9.5cm,width=13cm]{figuras/P10C1_Aten.eps.gz}
+%\caption{Posto 10 Coleta 1 -- Atenuação}
+%\label{fig:Posto10C1_Aten}
+%\end{figure}
+
+%A figuras \ref{fig:Posto10C1_Aten}, \ref{fig:Posto10C2_Aten} e \ref{fig:Posto10C3_Aten} representam os valores da atenuação do Posto 10 calculados a partir das medidas de impedância e de microondas. Esses valores estão discriminados na tabela \ref{tab:Posto10Atenua}.
+
+%\begin{figure}[htp]
+%\centering
+%\includegraphics[height=9.5cm,width=13cm]{figuras/P10C2_Aten.eps.gz}
+%\caption{Posto 10 Coleta 2 -- Atenuação}
+%\label{fig:Posto10C2_Aten}
+%\end{figure}
+
+%\begin{figure}[htp]
+%\centering
+%\includegraphics[height=9.5cm,width=13cm]{figuras/P10C3_Aten.eps.gz}
+%\caption{Posto 10 Coleta 3 -- Atenuação}
+%\label{fig:Posto10C3_Aten}
+%\end{figure}
+
+%\begin{table}[htp]
+%	\begin{center}
+%		\begin{tabular}{|c|c|c|c|c|c|c|} \hline
+%\multicolumn{7}{|c|}{Valores de Atenuação [dB/m]} \\ \hline
+%					& P10C1 & P10C1	& P10C2 & P10C2	& P10C3	& P10C3	\\	\hline
+%Freq [MHz]&	Imp 		& Trans		&	Imp			& Trans 	& Imp 		&	Trans 	\\	\hline
+%			1		&	0,0047  &	1,9837	&	0,0049	&	1,8910	&	0,0062	&	1,7797 	\\	\hline
+%			10	&	0,0172	&	1,3162	&	0,0241	&	1,1772	&	0,0210	&	1,2514	\\	\hline
+%			30	&	0,0617	&	1,6870	&	0,0942	&	1,6963	&	0,0721	&	1,6407	\\	\hline
+%			45	&	0,1402	&	0,7786	&	0,2105	&	0,6581	&	0,1686	&	1,3441	\\	\hline
+%			60	&	0,2780	&	-0,2782	&	0,3844	&	-0,1113 &	0,3457	&	-0,6304 \\	\hline
+%			75	&	0,5073	&	1,6129  &	0,6396	&	1,9095  &	0,6136	&	1,7149	\\	\hline
+%			90	&	0,8796	&	1,5480	&	1,0253  &	2,0300	&	1,0341	&	1,6778	\\	\hline
+% 100/105	& 1,2210	&	2,4472  &	1,3827	&	1,8910	&	1,4319  &	2,7809 	\\	\hline
+%		\end{tabular}
+%	\end{center}
+%	\caption{Posto 10 -- Atenuação}
+%	\label{tab:Posto10Atenua}
+%\end{table}
+
+%Pode-se verificar a partir da análise da tabela \ref{tab:Posto10Atenua} que os valores de atenuação obtidos por medidas de impedância da amostra 1 são menores do que os das amostras 2 e 3. Neste caso, ocorreu um comportamento relativamente dentro do previsto -- para todas as freqüências em estudo.
+
+%Os valores de atenuação derivados da análise por microondas não apresentam grandes diferenças entre as amostras 1, 2 e 3, sendo que seus valores relativos variam bastante nas freqüências estudadas. Por diversas vezes a amostra 1, com menor teor alcoólico, apresenta uma atenuação maior. Isso é incoerente com o que se podia esperar dos valores de permissividade e do parâmetro de transmissão. As razões para isto já foram discutidas anteriormente.
+
+
+\section{Amostras do LCL-UFC}
+
+Passaremos agora à análise das amostras provenientes do Laboratório de Combustíveis e Lubrificantes da UFC. As amostras estudadas são as seguintes: 13075, 4644, 4646, 4665, 4773 e 4791.
+
+A amostra 13075 não está presente nas figuras que se seguem porque o laudo respectivo a ela não pôde ser providenciado em tempo hábil. Contudo, seus valores de permissividade estão fora da faixa tida como normal.
+
+A tabela \ref{tab:AmLCL} apresenta os dados referentes à análise das amostras obtidas junto ao Laboratório de Combustíveis e Lubrificantes da UFC.
+
+\begin{table}[htp]
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|} \hline
+Análises 					 & Unidade & 4644 	& 4646 		& 4665 	 & 4773    & 4791   \\ \hline
+\multicolumn{2}{|c|}{Tipo de Gasolina} & Comum & Aditivada & Comum & Aditivada & Comum \\ \hline
+Aspecto 					 & - 			& LIMS * 	& LIMS * 	& LIMS * & LIMS *  & LIMS * \\ \hline
+Teor Alcoólico 		 & \% vol & 23 			& 25 			& 25 		 & 23 		 & 23 		\\ \hline
+Cor 							 & - 		  & Amarela & Amarela & Verde  & Amarela & Verde 	\\ \hline
+Dens (20/4ºC) 	   & -      & 0,7559  & 0,749 	& 0,7626 & 0,7554  & 0,7555	\\ \hline
+Destil. PIE   	   & ºC 		& 42			& 40			& 42		 & 40			 & 43			\\ \hline
+Destil. 5\%				 & ºC 	  & 52		  & 50      & 52     & 51      & 47,5	  \\ \hline
+Destil. 10\%			 & ºC 	  & 55,5		& 54		  & 55,5	 & 54,5		 & 53		  \\ \hline
+Destil. 20\%			 & ºC 		& 61			& 60			& 62		 & 61			 & 59			\\ \hline
+Destil. 30\%			 & ºC			& 66			& 65,5		& 67		 & 66			 & -			\\ \hline
+Destil. 40\%			 & ºC			& 70			& 70			& 71		 & 70			 & -			\\ \hline
+Destil. 50\%			 & ºC			& 73			& 73			& 73,5	 & 73			 & 72  		\\ \hline
+Destil. 60\%			 & ºC			& 75			& 75,5		& 76		 & 76			 & 75,5		\\ \hline
+Destil. 70\%			 & ºC 		& 126			& 123			& 130		 & 127		 & -			\\ \hline
+Destil. 80\%			 & ºC			& 147			& 148			& 152		 & 152		 & 139		\\ \hline
+Destil. 90\%			 & ºC 		& 181			& 174			& 174		 & 180		 & 168,5	\\ \hline
+Destil. 95\% 			 & ºC 		& -				& 196			& -			 & 209		 & 188		\\ \hline
+Destil. PFE				 & ºC		  & 229			& 207			& 216    & 214,5	 & 209	  \\ \hline
+Residuo						 & ml			& 3				& 1,2			& 3,2		 & 1			 & 1,2		\\ \hline
+MON								 & - 			& 83,3		& 82,9		& 83,9	 & 83,4		 & 83,1 	\\ \hline
+RON								 & - 		  & 99			& 98,9		& 100,7	 & 99,4		 & 99,1		\\ \hline
+IAD 					  	 & -			& 91,1		& 90,9		& 92,3	 & 91,4		 & 91,1		\\ \hline
+Benzeno						 & \%vol  & 0,97		& 0,47		& 0,72	 & 0,5		 & 0,4		\\ \hline
+Olefinas					 & -			& 25,9		& 18,5		& 17,1	 & 23,1 	 & 20,6		\\ \hline
+Aromáticos				 & - 			& 21,9		& 18,3		& 26,2	 & 19,4		 & 18,1		\\ \hline
+Saturados					 & - 			& 26,7		& 36,3		& 29		 & 31,4		 & 35,4		\\ \hline
+Enxofre						 & \%m/m  & 0,02		& -				& -		   & -			 & -			\\ \hline
+\end{tabular}
+\caption{Amostras LCL}
+	\label{tab:AmLCL}
+\end{table}
+
+Das cinco amostras representadas na tabela \ref{tab:AmLCL}, duas apresentam valores fora dos padrões estabelecidos pela norma. Os valores de referência utilizados nessa análise correspondem àqueles discriminados na Portaria Nº 309, de 27 de dezembro de 2001, da ANP -- Agência Nacional de Petróleo. Posteriormente, o valor máximo tolerado de álcool na gasolina C passou de $22 \pm 1\%$ para $24 \pm 1\%$. As descrições das técnicas a serem utilizadas, das normas a serem seguidas e dos valores de referência discriminados pela Portaria Nº 309 estão em anexo.
+
+As amostras 4644 e 4665 representadas na tabela \ref{tab:AmLCL} possuem valores fora da tolerância permitida pela legislação vigente.
+
+A amostra 4644 apresentou um ponto final de ebulição de 229 ºC, onde a especificação indica um limite de 220 ºC. Essa elevação na temperatura final de ebulição indica a presença de constituintes ``mais pesados'' na gasolina, ou seja, de moléculas maiores. Sabemos que os solventes e outros contaminantes de origem petrolífera apresentam moléculas maiores que as da gasolina. Um alto PFE pode indicar a presença de algumas dessas substâncias. Além disso, a amostra 4644 apresentou uma quantidade maior de resíduos, ao final do processo de destilação, maior do que a permitida, o que também indica a presença excessiva de componentes mais pesados que os da gasolina.
+
+As alterações apresentadas pela amostra 4665 em relação ao que determina a legislação dizem respeito apenas ao volume máximo de resíduos. A indicação legal é de um limite de $2 \%$ do volume total. No caso dessa amostra, o valor é de $3,2 \%$, o que representa um nível bastante alto de elementos pesados.
+
+Os gráficos comparativos das análises através de medidas elétricas das amostras provenientes do LCL encontram-se nas figuras \ref{fig:AmostrasLCL_Imp} e \ref{fig:AmostrasLCL_Trans}.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[height=9.5cm,width=13cm]{figuras/AmostrasLCL_Imp.eps.gz}
+\caption{Permissividade das amostras do LCL}
+\label{fig:AmostrasLCL_Imp}
+\end{figure}
+
+\begin{figure}[htp]
+\centering
+\includegraphics[height=9.5cm,width=13cm]{figuras/AmostrasLCL_Trans.eps.gz}
+\caption{Transmissão nas amostras do LCL}
+\label{fig:AmostrasLCL_Trans}
+\end{figure}
+
+A figura \ref{fig:AmostrasLCL_Imp} representa os valores de permissividade para as várias amostras na faixa de 0 a 100 MHz. Pode-se perceber que as amostras aprovadas -- 4646, 4773 e 4791 -- têm valores muito próximos. Em 10 MHz, a amostra 4646 apresenta $\kappa' = 5,44$; a amostra 4773 $\kappa' = 5,41$; e a amostra 4791  $\kappa' = 5,44$. Percebe-se que a diferença máxima entre elas é da ordem de 3 centésimos, o que equivale a aproximadamente $0,5\%$ -- valor inferior ao erro considerado para o método. As amostras reprovadas apresentam valores bastante diferentes das outras. A amostra 4644 apresenta um valor bem inferior de permissividade quando comparado ao esperado. Em 10 MHz, $\kappa' = 5,25$, que está abaixo do valor mínimo -- $\kappa ' = 5,37$. Deve-se salientar que nesta amostra foi constatado um ponto de ebulição final superior ao prescrito pela legislação, indicando a presença de componentes pesados na gasolina. Esses componentes, como os solventes, apresentam, geralmente, valores baixos de constante dielétrica, o que reduziria a permissividade da mistura. A amostra 4665 apresenta valores de permissividade em 10 MHz ($\kappa' = 5,58$)  bastante acima do valor máximo da faixa permitida ($\kappa' = 5,49$). O último componente da gasolina existente nessa amostra sofreu ebulição a 216 ºC. Entretanto, os resíduos de destilação representam $3,2 \%$ do volume total. Deduz-se, portanto, que dentro do resíduo de destilação existe um componente com alto valor de constante dielétrica e alto ponto de ebulição.
+
+A figura \ref{fig:AmostrasLCL_Trans} mostra a variação do parâmetro de transmissão para as mesmas amostras. Pode-se perceber que a amostra 4665, tendo maiores valores de permissividade, apresenta um parâmetro de transmissão menor, e uma conseqüente atenuação maior, que o das outras amostras. Esperava-se que ocorresse também uma separação dos valores da amostra 4644 com relação àquelas aprovadas pelo LCL. Pode-se observar que o parâmetro de transmissão da amostra 4644 em comparação ao das amostras aprovadas é visivelmente inferior nas freqüências mais baixas do gráfico. Entretanto, na parte final do espectro, a diferença deixa de ser considerável. Ainda assim, é possível perceber que o comportamento dessa amostra não é similar ao das demais.
+
+
+
+\section{Outras Substâncias}
+
+Passaremos agora à análise da constante dielétrica de diversas substâncias estudadas. A figura \ref{fig:GasA_Arras_QuerA_QuerB_SolvCom_Dies_Imp} apresenta valores de permissividade para as seguintes substâncias: Gasolina A proveniente da Copene -- Certificado de Qualidade de número 29281, cujo laudo encontra-se em anexo; Querosene obtido no comércio local, chamado de agora em diante de Querosene A; Querosene obtido no comércio local (de outro fabricante), denominado agora de Querosene B; Aguarrás Comercial; Solvente Comercial; Óleo Diesel de posto localizado em Fortaleza.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[height=9.5cm,width=13cm]{figuras/GasA_Arras_QuerA_QuerB_SolvCom_Diesel_Imp.eps.gz}
+\caption{Permissividade: Gasolina A, Aguarrás, Querosene A, Querosene B, Solvente Comercial e Óleo Diesel}
+\label{fig:GasA_Arras_QuerA_QuerB_SolvCom_Dies_Imp}
+\end{figure}
+
+Pode-se observar pela análise da figura \ref{fig:GasA_Arras_QuerA_QuerB_SolvCom_Dies_Imp} que o óleo diesel apresenta um valor maior de permissividade que as demais substâncias. O menor valor de constante dielétrica apresentado é o do solvente comercial. Os dois querosenes, produzidos por diferentes fabricantes, apresentam um comportamento similar, principalmente nas freqüências mais baixas. A gasolina tipo A e o aguarrás também possuem valores muito próximos, sendo impraticável realizar a distinção entre os dois através dessa metologia de ensaio.
+
+É importante salientar que quaisquer dessas substâncias que fossem adicionadas à gasolina C provocaria uma sensível redução de sua constante dielétrica, pois a gasolina comercializada apresentou uma permissividade da ordem de $5,4$, enquanto que essas substâncias têm valores na faixa entre $2,1$ e $2,3$, na freqüência de 10 MHz.
+
+A tabela \ref{tab:GasA_Arras_QuerA_QuerB_SolvCom_Dies_Imp} apresenta os valores da permissividade dessas substâncias em 10 MHz.
+
+\begin{table}[htp]
+	\begin{center}
+		\begin{tabular}{|c|c|} \hline
+Substância					& Permissividade [10 MHz]	\\	\hline
+Gasolina A					&			2,16		\\	\hline
+Querosene A					&			2,21		\\	\hline
+Querosene B 				&			2,21		\\	\hline
+Aguarrás						&			2,15		\\	\hline
+Solvente Comercial	&			2,12		\\	\hline
+Óleo Diesel					&			2,29		\\	\hline
+		\end{tabular}
+	\end{center}
+	\caption{Permissividade: Gasolina A, Aguarrás, Querosene A, Querosene B, Solvente Comercial e Óleo Diesel}
+	\label{tab:GasA_Arras_QuerA_QuerB_SolvCom_Dies_Imp}
+\end{table}
+
+As figuras \ref{fig:Acet_Et_Met_Agua_Cp} e \ref{fig:Acet_Et_Met_Agua_Perm} apresentam valores medidos de capacitância e permissividade para amostras de água destilada, álcoois metílico e etílico para análise e acetona para análise.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[height=9.5cm,width=13cm]{figuras/Acet_Et_Met_Agua_Cp.eps.gz}
+\caption{Capacitância Medida em 1 MHz x Permissividade da Literatura}
+\label{fig:Acet_Et_Met_Agua_Cp}
+\end{figure}
+
+A figura \ref{fig:Acet_Et_Met_Agua_Cp} apresenta a relação entre a capacitância das amostras medidas na freqüên-\\cia de 1 MHz e o valor obtido da literatura para a constante dielétrica nessa mesma freqüência. Pode-se perceber um alinhamento quase perfeito entre a capacitância medida e os valores da literatura, indicando que a precisão da análise se mantém para diversos valores de constante dielétrica. A linha tracejada mostra os dados depois de um tratamento com o software \textit{Microcal Origin}, não diferindo muito da reta original. Esse tipo de análise é útil, pois, definida a equação de uma reta como essa, bastaria ler a capacitância de uma amostra qualquer para calcular, através da função da reta, o valor da permissividade.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[height=9.5cm,width=13cm]{figuras/Acet_Et_Met_Agua_Perm.eps.gz}
+\caption{Permissividade: Água Destilada, Álcool Etílico, Álcool Metílico e Acetona}
+\label{fig:Acet_Et_Met_Agua_Perm}
+\end{figure}
+
+A figura \ref{fig:Acet_Et_Met_Agua_Perm} mostra os valores de permissividade na faixa de 1 a 100 MHz para as quatro substâncias. Pode-se perceber que cada uma das amostras apresenta ressonância -- característica da célula de combustível -- dentro do espectro analisado e que quanto maior a constante dielétrica, menor é esta freqüência. Para a água, esta é aproximadamente $53$ MHz, para o metanol em torno de $76$ MHz, para o etanol é cerca de $85$ MHz e para a acetona temos o valor mais elevado de $97$ MHz. Este comportamento fornece uma explicação para o fato da permissividade da gasolina aumentar com a freqüência na faixa entre 1 e 100 MHz. Como a gasolina tem um valor menor de permissividade que o das substâncias mostradas na figura \ref{fig:Acet_Et_Met_Agua_Perm}, a ressonância -- para a célula utilizada neste trabalho -- ocorrerá após a freqüência de 100 MHz. Assim, a permissividade aumenta devido à aproximação da freqüência de ressonância da célula -- para a gasolina C, algo próximo a $195$ MHz.
+
+A tabela \ref{tab:Acet_Agua_Etan_Teor_Exp} mostra os valores da capacitância e da permissividade medidas e da constante dielétrica da literatura \cite{ASI_Instr} para a freqüência de 1 MHz.
+
+\begin{table}[htp]
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|} \hline
+Substância	& Cp Medida	[pF] 	&	K' Experimental	& 		K' (ASI Instr.)	\\	\hline
+Água				&			262,3    		&			81,4				&			80,4						\\	\hline
+Metanol			&			114,9				&			34,3				&			32,6						\\	\hline
+Etanol	  	&			89,1   			&			26,1				&			24,3				 		\\	\hline
+Acetona			&			75,0				&			21,6				&			20,7						\\	\hline
+		\end{tabular}
+	\end{center}
+	\caption{Água, Acetona e Etanol: Valores Experimentais e Valores Obtidos da Literatura}
+	\label{tab:Acet_Agua_Etan_Teor_Exp}
+\end{table}
+
+Foram realizadas medidas do parâmetro de transmissão com outras substâncias além da gasolina tipo C. A figura \ref{fig:Alc_GasC_GasA_Trans} nos mostra as diferentes curvas obtidas com a gasolina A, a gasolina C e o álcool etílico -- obtido junto a uma distribuidora de combustíveis. Observa-se que o parâmetro de transmissão para o álcool é muito menor que o das demais substâncias, indicando uma atenuação do sinal muito maior devido à polarização de suas moléculas. Na freqüência de 3 GHz, o parâmetro de transmissão do álcool etílico tem valor de $-99,6$ dB, enquanto o da gasolina C analisada é de $-18,4$ dB e o da gasolina A é de $- 2,6$ dB. Pode-se perceber que a atenuação do sinal na gasolina A é muito pequena. Isso se justifica pelo fato da gasolina A ser composta praticamente apenas de hidrocarbonetos, moléculas em geral muito pouco polares.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[height=9.5cm,width=13cm]{figuras/Alc_GasC_GasA_Trans.eps.gz}
+\caption{Transmissão: Álcool Etílico, Gasolina C e Gasolina A}
+\label{fig:Alc_GasC_GasA_Trans}
+\end{figure}
+
+A figura \ref{fig:GasA_GasC_Alc_Ganho} mostra os valores da atenuação -- em dB -- medidos através da técnica de impedância -- ganho e fase -- para quatro amostras: gasolina tipo A, gasolina tipo C, uma mistura com 50\% de gasolina A e 50\% de álcool etílico hidratado e uma amostra pura desse mesmo álcool.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[height=9.5cm,width=13cm]{figuras/GasA_GasC_Alc_Ganho.eps.gz}
+\caption{Atenuação: Gasolina A, Gasolina C, Mistura Gasolina A x Álcool 50\%, Álcool Etílico Hidratado}
+\label{fig:GasA_GasC_Alc_Ganho}
+\end{figure}
+
+Pode-se perceber que para as amostras de gasolina tipos A e C os valores em decibéis são muito semelhantes, como os mostrados na tabela \ref{tab:GasA_GasC_Alc_Ganho_Tab}. Para a amostra com 50\% de álcool etílico misturado à gasolina A, percebe-se um aumento na atenuação, que é ainda mais acentuado quando analisamos a amostra de álcool hidratado.
+
+\begin{table}[htp]
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|} \hline
+Substância					 &      20 MHz    	&	    50 MHz      &     80 MHz				 	\\	\hline
+Gasolina A 	 				 &			0,47     		&			0,76				&			0,90						\\	\hline
+Gasolina C	 				 &			0,47 				&			0,69				&			0,92						\\	\hline
+Gas A x Etanol	50\% &			0,60   			&			1,87				&			3,95					 	\\	\hline
+Etanol  		 				 &			2,22				&			10,27 			&			18,28 					\\	\hline
+		\end{tabular}
+	\end{center}
+	\caption{Atenuação [dB]: Gasolina A, Gasolina C, Mistura Gasolina A x Álcool Etílico Hidratado 50\%, Álcool Etílico Hidratado}
+	\label{tab:GasA_GasC_Alc_Ganho_Tab}
+\end{table}
+
+Nos casos das gasolinas A e C, existem freqüências onde a atenuação obervada na gasolina A é superior àquela medida na C. Nos casos onde existe grande quantidade de álcool envolvida fica fácil distinguir os valores das diferentes amostras. Assim, pelos resultados de atenuação observados para as amostras de gasolina A e C na faixa de freqüência analisada pelo impedancímetro, ficou claro que a análise de ganho e fase não apresenta uma definição comparável com aquela observada pela análise da permissividade. %Portanto, esta última tentativa de utilizar a atenuação na análise da qualidade da gasolina também não apresentou resultados promissores.
+
+
+
+%\section{Células Diferentes}
+
+%Além das medidas já citadas, a figura \ref{fig:Cel_Dif_Trans} apresenta os valores do parâmetro de transmissão para duas células diferentes -- as amostras de gasolina C também não são as mesmas nos dois casos.
+
+%\begin{figure}[htp]
+%\centering
+%\includegraphics[height=9.5cm,width=13cm]{figuras/Celulas_Diferentes.eps.gz}
+%\caption{Transmissão: Células Diferentes}
+%\label{fig:Cel_Dif_Trans}
+%\end{figure}
+
+%A célula menor, utilizada para a maioria das medidas deste trabalho, pertencente ao Departamento de Física da UFC, tem um comprimento de $0,122 m$, enquanto a maior, utilizada na UFPe, apresenta um comprimento de $0,249 m$.
+
+%A atenuação -- em dB -- sofrida pelo sinal, detectada pelo analisador de redes, é função do comprimento da amostra de material. Com uma célula de maiores dimensões, a ``resolução´´ da medida é maior, pois as diferenças no final do espectro -- próximo a $3 GHz$ -- serão mais perceptíveis. Outra vantagem de uma célula com maiores dimensões diz respeito ao volume de material em análise. Uma célula de dimensões mais elevadas apresenta um volume total de líquido maior, o que torna a medida menos susceptível a problemas relacionados com pequenas impurezas.
+
+%Na freqüência de $3 GHz$, a célula maior apresenta um valor para o módulo do parâme-\\tro de transmissão de aproximadamente $-30,9$, enquanto a célula menor apresenta um valor de aproximadamente $-17,9$.
+
+%O valor atenuação -- em dB/m -- é independente do comprimento da célula. Assim sendo, é interessante comparar o formato das curvas obtidas pela equipe do Laboratório de Dispositivos e Nanoestruturas da UFPe e os coletados pare este trabalho.
+
+%A figura \ref{fig:Cel_Dif_Aten} apresenta o valor de atenuação para as duas amostras da figura \ref{fig:Cel_Dif_Trans}. Pode-se perceber que o formato da curva obtida pela equipe de Recife está mais semelhante àquele encontrado nas análises por impedância. Existe um crescimento mais uniforme dos valores de atenuação com o aumento da freqüência. A amostra coletada para este trabalho apresenta uma queda no valor da atenuação nas freqüências intermediárias do espectro em questão -- entre 15 e 105 MHz. Apenas os últimos três pontos têm um comportamento mais uniforme de evolução da atenuação com a freqüência. Essa diferença no formato das curvas, que se repete para todas as amostras analisadas para este trabalho, provavelmente se deu devido a uma calibração inadequada do analisador de redes.
+
+%Deve-se salientar que esse comportamento é verificado apenas na parte inicial do espectro varrido pelo analisador de redes -- de 300 KHz a 3 GHz. Infelizmente, as freqüências em comum entre as técnicas de espectroscopia de impedância e de microondas utilizadas neste trabalho são justamente essas localizadas aproximadamente entre 1 e 100 MHz.
+
+%\begin{figure}[t]
+%\centering
+%\includegraphics[height=9.5cm,width=13cm]{figuras/Celulas_Diferentes_Atenua.eps.gz}
+%\caption{Transmissão: Atenuação em Células Diferentes}
+%\label{fig:Cel_Dif_Aten}
+%\end{figure}
+

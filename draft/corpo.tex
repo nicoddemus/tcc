@@ -1,0 +1,79 @@
+\chapter{Introdução}
+
+As linguagens de programação C e C++ têm como vantagem serem linguagens de auto-nível e de 
+gerarem código nativo de execução muito eficiente, sendo ideal
+para sistemas que possuem porções custosas em termos de recursos computacionais. 
+Mas este poder possui um custo: a \textit{compilação do código fonte}. 
+
+A compilação do código fonte é o trabalho realizado por um programa 
+(chamado de \textit{Compilador}) de transformar o texto da linguagem de programação em uma 
+representação binária que pode ser então executada pelo computador; este processo
+normalmente é bastante custoso, tanto em tempo de processamento quanto em memória,
+dificultando bastante o trabalho do desenvolvedor de software. 
+
+
+\chapter{Tema}
+O tema deste trabalho é o desenvolvimento de uma ferramenta que distribua o
+processo de compilação de arquivos fonte nas linguagens de programação C e C++
+entre vários computadores conectados em uma rede local, com o objetivo de
+reduzir sensivelmente o tempo necessário. 
+
+\section{Delimitação do Tema}
+Apesar de na teoria o modelo da ferramenta suportar a compilação distribuída de
+outras linguagens de programação, o escopo deste trabalho se limita somente às
+linguagens C/C++. Suporte para outras linguagens envolve diferenças sutis,
+princialmente em como lidar com as dependências entre os vários arquivos de um
+projeto, e pode ser material para um estudo futuro.
+
+\chapter{Justificativa}
+A indústria de desenvolvimento de software vêm evoluindo cada vez mais. O
+mercado é ágil, sendo necessário buscar técnicas que agilizem o desenvolvimento,
+reduzindo o custo e principalmente o tempo para a conclusão de um projeto.
+
+Boa parte do tempo de um desenvolvedor que utiliza as linguagens C ou C++ é
+gasto no processo de compilação. Em grandes projetos, é comum a compilação completa
+do sistema levar horas, podendo chegar a até dias em sistemas muito grandes.
+
+A redução deste tempo pode ser então uma solução simples e barata para reduzir o
+tempo total do software, já que o preço do tempo do desenvolvedor é muito maior
+que o custo com o equipamento disponível.
+
+\chapter{Objetivo}
+O objetivo deste trabalho é implementar uma ferramenta que distribua o processo
+de compilação entre várias máquinas conectadas em uma rede local, reduzindo
+substancialmente o tempo total necessário. Essa ferramenta foi batizada de
+\emph{Hydra}, em referência à besta mitológica de várias cabeças.  Além de
+reduzir o tempo de compilação, a ferramenta deve possuir as seguintes
+características:
+\begin{enumerate}
+\item
+    \emph{Multiplataforma} - Trabalhar no maior número de sistemas operacionais
+    possível.
+\item
+    \emph{Independência de Compilador} - trabalhar com qualquer compilador
+    C/C++, atendendo apenas alguns pré-requisitos, como conhecimento dos parâmetros
+    compreendidos pelo compilador.
+\item 
+    \emph{Não Obtrusivo} - O Hydra deve alterar o mínimo possível a maneira como o
+    programador trabalha, adaptando-se ao seu ambiente.
+\end{enumerate}
+
+
+\chapter{Metodologia} 
+O Hydra deverá ser implementado na linguagem de programação
+interpretada \emph{Python} \cite{Python}, que é uma linguagem de auto-nível, interpretada,
+orientada a objetos e de código aberto. Ela atende o requisito de ser
+multi-plataforma e possuir ferramentas para comunicação em rede. 
+
+A comunicação de rede deverá ser implementada usando o pacote \textit{Pyro} 
+(Python Remote Objects) \cite{Pyro}, que é um avançado e poderoso sistema de Objetos
+Distribuídos, facilitando em muito os detalhes de comunicação em rede. Utilizando Pyro,
+o usuário somente codifica como se estivesse trabalhando com objetos locais, enquanto
+o pacote cuida de todo o trabalho de comunicação em rede.
+
+
+\chapter{Resultados Esperados}
+Supõe-se que a compilação paralela em múltiplas máquinas deve reduzir
+consideravelmente o tempo de compilação, com cada máquina extra diminuindo o
+tempo de forma proporcional. No entanto um aproveitamento de 100\% é considerado 
+impossível (\cite{distcc}), por isso ganhos de 70\% a 90\% são esperados.

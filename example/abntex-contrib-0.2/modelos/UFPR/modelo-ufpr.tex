@@ -1,0 +1,466 @@
+% $Id: modelo-ufpr.tex,v 1.1 2003/06/30 15:05:18 gweber Exp $
+%   Licence: LPPL (LaTeX Project Public License)
+%     You can change this file in the terms of LPPL
+%     (http://www.latex-project.org/lppl.html)
+% copyright Rogério C. <rogerioc@cesec.ufpr.br>
+%
+% ****** DEFINIÇÕES INICIAIS ******
+
+\documentclass[pnumromarab,normaltoc]{abnt}			%Numeração de acordo com UFPR
+
+% Utilize a opção normalfigtabnum para numerar as figuras e tabelas por capítulo
+
+\usepackage[brazil]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{abnt-alf}
+\usepackage{graphicx}														%Package para figuras
+
+%%
+%%	Ainda em teste
+%%
+%\usepackage[bookmarks=false]{hyperref}					%Package para hyper-referências
+%\hypersetup{colorlinks,
+%							citecolor = black,
+%							filecolor = black,
+%							linkcolor = black,
+%							urlcolor  = blue,
+%						pdfnewwindow}
+%
+% O problema ocorre quando há referências do tipo \cite{} e \citeonline{}
+% Há ainda outros problemas -> o figura, antes do número, não altera de cor na lista de figuras.
+% O mesmo ocorre na lista de tabelas.
+% O sumário aponta para a capa, não para o resumo, lista, apêndices ou anexos correspondentes.
+% -> Funciona para capítulos.
+%
+
+
+\makeatletter	%Para que ele entenda o @
+
+% ** Altera definições da ABNT para adaptar à UFPR
+
+% ************* CAPA **************
+\renewcommand{\capa}{
+\begin{titlepage}
+\espaco{1.1}
+
+\begin{center}
+	\large\ABNTchapterfont\ABNTautordata
+\end{center}
+
+\vspace{7.5cm}
+
+\begin{center}
+	\large\ABNTchapterfont\ABNTtitulodata\par
+\end{center}
+
+\vfill
+
+\begin{center}
+	\textbf{\ABNTlocaldata}\par
+	\textbf{\ABNTdatadata}
+\end{center}
+\end{titlepage}
+}% end of \capa
+
+% ******** FOLHA DE ROSTO *********
+\newcommand{\esporient}[2]{
+	\leftskip 0em
+	\@tempdima 5.5em
+	\advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
+	{#1#2\hfil}}
+
+\newcommand{\espcoorient}[2]{
+	\leftskip 0em
+	\@tempdima 7em
+	\advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
+	{#1#2\hfil}}
+
+\renewcommand{\folhaderosto}{
+\begin{titlepage}
+\espaco{1.1}
+
+\begin{center}
+	\large\ABNTchapterfont\ABNTautordata
+\end{center}
+
+\vspace{7.5cm}
+
+\begin{center}
+	\large\ABNTchapterfont\ABNTtitulodata\par
+\end{center}
+
+\vspace{2cm}
+
+\hspace{.35\textwidth}
+\begin{minipage}{.5\textwidth}
+	\begin{espacosimples}
+		\ABNTcomentariodata\par
+	\end{espacosimples}
+\end{minipage}
+
+\hspace{.35\textwidth}
+\begin{minipage}{.5\textwidth}
+	\begin{espacosimples}
+		\esporient{\numberline {Orientador:}}{\ignorespaces\ABNTorientadordata}
+	\end{espacosimples}
+\end{minipage}
+
+\ABNTifnotempty{\ABNTcoorientadordata}{
+	\hspace{.35\textwidth}
+	\begin{minipage}{.5\textwidth}
+		\begin{espacosimples}
+			\espcoorient{\numberline {Co-Orientador:}}{\ignorespaces\ABNTcoorientadordata}
+		\end{espacosimples}
+	\end{minipage}}
+
+\vfill
+
+\begin{center}
+	\textbf{\ABNTlocaldata}\par
+	\textbf{\ABNTdatadata}
+\end{center}
+
+\end{titlepage}
+}% end of \folhaderosto
+
+% Altera o tamanho das fontes dos capítulos e dos apêndices
+\renewcommand{\ABNTchapterfont}{\bfseries}
+\renewcommand{\ABNTchaptersize}{\Large}
+\renewcommand{\ABNTanapsize}{\Large}
+
+%Altera o espaçamento entre dots
+\renewcommand\@dotsep{2}
+
+%Altera forma de montagem do table of contents
+\renewcommand\l@chapter[2]{
+  \ifnum \c@tocdepth >\m@ne
+    \addpenalty{-\@highpenalty}%
+    \vskip 1.0em \@plus\p@
+    \setlength\@tempdima{1.5em}%
+    \begingroup
+      \ifthenelse{\boolean{ABNTpagenumstyle}}
+        {\renewcommand{\@pnumwidth}{3.5em}}
+        {}
+      \parindent \z@ \rightskip \@pnumwidth
+      \parfillskip -\@pnumwidth
+      \leavevmode \normalsize\ABNTtocchapterfont
+      \advance\leftskip\@tempdima
+      \hskip -\leftskip
+      #1\nobreak\dotfill \nobreak%
+      \ifthenelse{\boolean{ABNTpagenumstyle}}
+         {%
+          \hb@xt@\@pnumwidth{\hss 
+            \ifthenelse{\not\equal{#2}{}}{{\normalfont p.\thinspace#2}}{}}\par
+         }
+         {%
+          \hb@xt@\@pnumwidth{\hss #2}\par
+         }
+      \penalty\@highpenalty
+    \endgroup
+  \fi}
+
+\renewcommand*\l@section{\@dottedtocline{1}{0em}{2.3em}}
+\renewcommand*\l@subsection{\@dottedtocline{2}{0em}{3.2em}}
+\renewcommand*\l@subsubsection{\@dottedtocline{3}{0em}{4.1em}}
+
+% Cria um comando auxiliar para montagem da lista de figuras
+\newcommand{\figfillnum}[1]{%
+  {\hspace{1em}\normalfont\dotfill}\nobreak
+  \hb@xt@\@pnumwidth{\hfil\normalfont #1}{}\par}
+
+% Cria um comando auxiliar para montagem da lista de tabelas
+\newcommand{\tabfillnum}[1]{%
+	{\hspace{1em}\normalfont\dotfill}\nobreak
+	\hb@xt@\@pnumwidth{\hfil\normalfont #1}{}\par}
+
+% Altera a forma de montagem da lista de figuras
+\renewcommand*{\l@figure}[2]{
+	\leftskip 3.1em
+	\rightskip 1.6em
+	\parfillskip -\rightskip
+	\parindent 0em
+	\@tempdima 2.0em
+	\advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
+	{Figura \normalfont #1}\nobreak \figfillnum{#2}}
+
+% Altera a forma de montagem de lista de tabelas
+\renewcommand*{\l@table}[2]{
+	\leftskip 3.4em
+	\rightskip 1.6em
+	\parfillskip -\rightskip
+	\parindent 0em
+	\@tempdima 2.0em
+	\advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
+	{Tabela \normalfont #1}\nobreak \tabfillnum{#2}}
+
+% Define os comandos que montam a lista de símbolos
+\newcommand{\listadesimbolos}{\pretextualchapter{Lista de Símbolos}\@starttoc{lsb}}
+\newcommand{\simbolo}[2]{{\addcontentsline{lsb}{simbolo}{\numberline{#1}{#2}}}#1}
+\newcommand{\l@simbolo}[2]{
+	\vspace{-0.75cm}
+	\leftskip 0em
+	\parindent 0em
+	\@tempdima 5em
+	\advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
+	{\normalfont #1}\hfil\nobreak\par}
+
+% Define o comando que monta a lista de siglas
+\newcommand{\listadesiglas}{\pretextualchapter{Lista de Siglas}\@starttoc{lsg}}
+\newcommand{\sigla}[2]{{\addcontentsline{lsg}{sigla}{\numberline{#1}{#2}}}#1}
+\newcommand{\l@sigla}[2]{
+	\vspace{-0.75cm}
+	\leftskip 0em
+	\parindent 0em
+	\@tempdima 5em
+	\advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
+	{\normalfont #1}\hfil\nobreak\par}
+
+% Define o tipo de numeração das páginas
+\renewcommand{\chaptertitlepagestyle}{plain}
+
+% Altera a posição da numeração de páginas dos elementos pré-textuais
+\renewcommand\pretextualchapter{
+	\if@openright\cleardoublepage\else\clearpage\fi
+	\pagestyle{\chaptertitlepagestyle}
+	\global\@topnum\z@
+	\@afterindentfalse
+	\@schapter}
+
+% Altera a posição da numeração de páginas dos elementos textuais
+\renewcommand{\ABNTchaptermark}[1]{
+	\ifthenelse{\boolean{ABNTNextOutOfTOC}}
+		{\markboth{\ABNTnextmark}{\ABNTnextmark}}
+		{\chaptermark{#1}
+		\pagestyle{\chaptertitlepagestyle}}}
+
+% Redefine o tipo de numeração das páginas
+\renewcommand{\ABNTBeginOfTextualPart}{
+	\renewcommand{\chaptertitlepagestyle}{plainheader}
+	\renewcommand{\thepage}{\arabic{page}}
+	\setcounter{page}{1}}
+
+\makeatother
+
+%Altera o tamanho do parágrafo
+\setlength{\parindent}{1.5cm}
+
+% ********************************
+% ***** Início do Documento ******
+% ********************************
+\begin{document}
+% DADOS PARA CAPA E FOLHA DE ROSTO
+% Obs.: autor, título, local e data devem ser maiúsculas
+
+\autor{DIGITE SEU NOME}
+
+\titulo{DIGITE O TÍTULO}
+
+\orientador{Nome do Orientador}
+
+\coorientador{Co-orientador 1\protect\\Co-orientador 2}
+
+\comentario{Dissertação/Tese apresentada como requisito parcial à obtenção do grau de Mestre/Doutor em Minha Área, pelo Programa de Pós-Graduação, Setor, Universidade Federal do Paraná.}
+
+\local{CURITIBA}
+
+\data{MÊS 20??}
+
+% ************* CAPA **************
+% ********* SEM NUMERAÇÃO *********
+\capa
+
+% ******** FOLHA DE ROSTO *********
+\folhaderosto
+
+% ******* TERMO DE APROVAÇÃO ******
+\begin{titlepage}
+\espaco{1.1}
+
+\begin{center}
+	\Large\textbf{{Termo de Aprovação}}
+\end{center}
+
+\vspace{0.75cm}
+
+\begin{center}
+	\large\ABNTautordata
+\end{center}
+
+\vspace{1cm}
+
+\begin{center}
+	\large\ABNTtitulodata
+\end{center}
+
+\vspace{1cm}
+
+\noindent Dissertação aprovada como requisito parcial para obtenção do grau de Mestre/Doutor em Minha Área, pelo Programa de Pós-Graduação, Setor, Universidade Federal do Paraná, pela seguinte banca examinadora:
+
+\setlength{\ABNTsignthickness}{0.4pt}
+\setlength{\ABNTsignskip}{2cm}
+
+\vspace{-0.5cm}
+\assinatura{Prof. Dr. Meu Orientador\\Universidade Federal do Paraná}
+
+\vspace{-0.5cm}
+\assinatura{Prof. Dr. Meu Co-orientador\\Universidade Federal do Paraná}
+
+\vspace{-0.5cm}
+\assinatura{Prof. Dr. Convidado\\Universidade} 
+
+\vspace{-0.5cm}
+\assinatura{Prof. Dr. Convidado \\Universidade}
+
+\vfill
+
+\begin{center}
+	Curitiba, xx de mês de 20??
+\end{center}
+
+\end{titlepage}
+
+% Deve ser adicionado ao contador de páginas um, referente a folha de rosto.
+% Obs.: A folha de aprovação não recebe número, nem é contada.
+\addtocounter{page}{1}
+
+% ********** DEDICATÓRIA **********
+% *********** OPCIONAL ************
+\pretextualchapter{Dedicatória}
+
+\vspace{12cm}
+\hspace{.3\textwidth}
+\begin{minipage}{.6\textwidth}
+	\par A quem eu dedico,
+	\par $\phantom{linha em branco}$
+	\par Por muito que fizeram, eu fiz tudo, só agradeço por educação...
+\end{minipage}
+
+\newpage
+
+% ******** AGRADECIMENTOS *********
+% *********** OPCIONAL ************
+\pretextualchapter{Agradecimentos}
+
+\vspace{12cm}
+\hspace{.3\textwidth}
+\begin{minipage}{.6\textwidth}
+	\par A todos que, direta ou indiretamente, contribuíram para a realização e divulgação deste trabalho.
+\end{minipage}
+
+% *********** EPÍGRAFE ************
+% *********** OPCIONAL ************
+\pretextualchapter{Epígrafe}
+
+\vspace*{12cm}
+\hspace{.3\textwidth}
+\begin{minipage}{.6\textwidth}
+	\par Uma pequena prosa que esteja relacionada com o trabalho.
+	\par Obs.: A forma como uma prosa é escrita é importante.
+\end{minipage}
+
+% ************ SUMÁRIO ************
+\sumario
+
+% ************ LISTAS *************
+% ** Condicionadas à necessidade **
+
+% 1 - Lista de Figuras
+\listadefiguras
+
+% 2 - Lista de Tabelas
+\listadetabelas
+
+% 3 - Lista de Siglas
+% Forma de uso: \sigla{sigla}{Descrição}
+\listadesiglas
+
+% 4 - Lista de Símbolos
+% Forma de uso: \simbolo{símbolo}{Descrição}
+\listadesimbolos
+
+% ************ RESUMO *************
+% Obs.: A norma da UFPR não permite afastamento de parágrafo no resumo
+\begin{resumo}
+$\phantom{linha em branco}$\\
+Escreva aqui o texto de seu resumo...\\
+$\phantom{linha em branco}$\\
+Palavras-chave: Escreva; Aqui; Suas; Palavras-chave.
+\end{resumo}
+
+% *********** ABSTRACT ************
+\begin{abstract}
+$\phantom{linha em branco}$\\
+Write here the English version of your `Resumo'...\\
+$\phantom{linha em branco}$\\
+Key-words: Write; Here; Your; Key-words.
+\end{abstract}
+
+% ************* TEXTO *************
+% A parte textual deve conter:
+% 1 - Introdução
+% 2 - Revisão de Literatura
+% 3 - Material e Métodos
+% 4 - Análise dos Resultados
+% 5 - Discussão
+% 6 - Conclusão
+
+\chapter{Figuras}
+\par Ei-lo um exemplo de como citar a figura \ref{fig:f01}, na página \pageref{fig:f01}, mostrada esta abaixo.
+
+\begin{figure}[htb]
+	\begin{center}
+		\caption{Minha figura}
+		\vspace{0.2cm}
+		\includegraphics[angle=0,scale=0.5]{Fig001}\\
+		\label{fig:f01}
+		{\scriptsize Fonte: Indicar procedência.}\\
+		{\scriptsize Nota: Alguma especificação geral.}
+	\end{center}
+\end{figure}
+
+\chapter{Tabelas}
+\par Para termos um exemplo de tabela, veja a tabela \ref{tab:t01} na página \pageref{tab:t01}, logo abaixo.
+
+\begin{table}[htb]
+	\begin{center}
+		\caption{Minha Tabela}
+		\label{tab:t01}
+		\vspace{0.2cm}
+		\begin{tabular}{|c|c|c|}
+			\hline
+			Linha 1 Coluna 1 & Coluna 2 & Coluna 3\\
+			\hline
+			Linha 2 Coluna 1 & Coluna 2 & Coluna 3\\
+			\hline
+			\multicolumn{3}{l}{\scriptsize Fonte: Indicar procedência.}\\
+			\multicolumn{3}{l}{\scriptsize Notas: Alguma especificação geral.}\\
+			\multicolumn{3}{l}{\scriptsize (1) Alguma nota específica}
+		\end{tabular}
+	\end{center}
+\end{table}
+
+\chapter{Entrada de Símbolos e Siglas}
+\par Para fazer a entrada de um símbolo, $\backslash$símbolo\{\simbolo{$\sigma$}{Descrição}\} \{Descriçao\} é a forma correta. E, para definir uma sigla, $\backslash$sigla\{\sigla{ABNT}{Associação Brasileira de Normas Técnicas}\} \{Descrição\} deve ser utilizado.
+\par Obs.: Quando a sigla ou o símbolo aparecerem novamente no texto, não repita o comando, para que a sigla ou símbolo não se repita na lista correspondente.
+
+% ********** REFERÊNCIAS **********
+\bibliographystyle{abnt-alf}	% Este é um estilo que determina como a bibliografia vai aparecer
+															% Existem ainda: abbrv, acm, alpha, amsalpha, amsplain
+
+\bibliography{refer}					% o nome do arquivo .bib com as referências
+
+% *********** APÊNDICES ***********
+% ** Condicionados à necessidade **
+\apendice
+\chapter{Primeiro apêndice}
+\par Apêndices são textos elaborados pelo autor a fim de complementar sua argumentação.
+
+% ************ ANEXOS *************
+% ** Condicionados à necessidade **
+\anexo
+\chapter{Primeiro anexo}
+\par Anexos são documentos não elaborados pelo autor, que servem de fundamentação, comprovação ou ilustração.
+
+\end{document}
+
+% Quando o número de apêndices ou anexos vier a ser suficiente, é recomendado fazer um sumário separado para os apêndices, localizados imediatamente antes dos apêndices ou anexos. Nesse caso, no sumário principal, apenas é feito referência a este sumário específico.

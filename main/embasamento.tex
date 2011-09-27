@@ -1,0 +1,100 @@
+\chapter{Embasamento Teórico} 
+
+\section{Problema}
+
+Durante o processo de desenvolvimento na linguagem de programação C++, o desenvolvedor
+passa boa parte do tempo na fase de compilação-linkagem do código; este é o processo onde o código
+fonte é convertido para a linguagem de máquina do usuário, para que possa ser executado.
+
+Em sistemas de grande porte, ou que fazem bastante uso de técnicas de 
+\emph{template metaprogramming}, o ciclo de compilar-linkar acaba tendo um peso grande
+na produtividade do desenvolvedor \footnote{tem que provar isso com algum artigo?}.
+
+Uma solução para este problema seria eliminar completamente a fase de compilação-linkagem
+do fluxo de desenvolvimento. Existe atualmente um ambiente interpretado para C e C++ desenvolvido pela empresa 
+\emph{Soft Integration}, denominado de \emph{Ch} \cite{Ch}. 
+Esse sistema permite que se execute imediatamente o código escrito em C ou C++ sem a necessidade de um passo de compilação-linkagem intermediário. Uma desvantagem do sistema é que ele não suporta todos as capacidades da linguagem C++, incluindo o uso de templates.
+
+\section{Solução Proposta}
+
+Este trabalho visa desenvolver uma ferramenta para auxiliar equipes que fazem uso da linguagem
+C e C++, diminuindo consideravelmente o tempo de compilação necessário, reduzindo assim custos
+e aumentando a produtividade.
+
+O sistema, batizado de \emph{Hydra}, busca dividir a compilação dos vários arquivos que compõem um projeto
+C/C++ entre as várias máquinas do ambiente de trabalho, através da rede local. 
+A figura a seguir demonstra uma visão geral do sistema:
+
+\begin{figure}[ht]
+	\centering
+		\includegraphics{data/overview.png}
+	\caption{Visão Geral do Sistema}
+	\label{fig:overview}
+\end{figure}
+
+O sistema consiste da máquina do usuário, do \emph{Hydra Controller}, e dos \emph{Hydra Compilers}, um em cada
+computador auxiliar da rede.
+
+O usuário executa o seu sistema de compilação normalmente (este precisa estar adequadamente configurado:
+detalhes adiante). Cada arquivo que compõem o projeto passam então por um processo de \textit{pré-processamento}, 
+que gera um arquivo independente de suas dependências iniciais (como arquivos header, arquivos de sistema, etc), 
+pronto para ser compilado pelo compilador nativo. 
+
+O sistema então consulta o \emph{Hydra Controller}, que indica um \emph{Hydra Compiler} disponível para fazer o real trabalho de compilação. O arquivo pré-processado é então enviado ao Compiler, e após completada a compilação, é devolvido à máquina original do usuário.
+ 
+Para que o sistema funcione, o usuário deve primeiro adequar seu ambiente de desenvolvimento, da seguinte forma:
+\begin{enumerate}
+	\item Executar o hydra ao invés do compilador nativo.
+	O usuário deve executar o hydra com os mesmos parâmetros que passaria ao compilador nativo.
+	\item Configurar o sistema de compilação para executar mais de um \textit{job} ao mesmo tempo.
+	A maioria dos ambientes de compilação possui uma opção de executar mais de um trabalho de compilação simultaneamente.
+	Isso permite que máquinas com mais de um processador façam uso total dos mesmos, diminuindo o tempo de compilação      
+	consideravelmente. Com isto, o sistema do Hydra pode espalhar os trabalhos de compilação pelos outros computadores, 
+	através da rede local.
+\end{enumerate}
+
+\subsection{Objetivos Secundários}
+
+O sistema deve ainda atender aos seguintes objetivos:
+
+\begin{itemize}
+	\item Multiplataforma: o sistema deverá rodar em diversos sistemas operacionais, incluindo principalmente 
+	Windows e Linux.
+	\item Independência de Compilador: deverá funcionar com qualquer compilador, desde que suporte a execução do 
+	passo de pré-processamento independente da compilação completa.
+	\item Independência de Sistema de Build: deverá funcionar com qualquer sistema de build, desde que este suporte
+	execução simultânea de múltiplos \emph{jobs}.
+\end{itemize}
+
+\section{Resultados Esperados}
+
+Com a utilização do sistema, espera-se uma diminuição significativa no tempo de compilação, sendo proporcional ao número de máquinas que estejam executando o \emph{Hydra Compiler}. Acredita-se que a eficiência do sistema fique próxima de 80\% a 90\%, pois existem vários pontos no sistema que causam um custo extra quando comparado à compilação tradicional na máquina local (como processamento extra envolvido, tráfego através da rede local, entre outros).
+
+\section{Ferramentas de Desenvolvimento}
+
+\subsection{Linguagem de Programação}
+
+O sistema será implementado na linguagem de programação \emph{Python} \cite{Python}; ela é uma linguagem de alto-nível, 
+interpretada, interactiva e orientada a objetos. Ela é comumente comparada a \emph{Tcl}, \emph{Perl}, \emph{Scheme} e
+\emph{Java}. 
+
+Esta linguagem foi escolhida pelos seguintes motivos:
+
+\begin{itemize}
+	\item A implementação do interpretador é extremamente portável, rodando em diversos tipos de UNIX, Windows, OS/2, Amiga,
+	entre outras.
+	\item Conta com diversos pacotes de comunicação de rede, simplificando a implementação do sistema.
+	\item Permite um desenvolvimento ágil e produtivo.
+	\item O autor está bastante familizarizado com a mesma.
+\end{itemize}
+
+
+\subsection{Hardware}
+
+Como laboratório de desenvolvimento, deverá ser utilizada a sede da ESSS 
+(\emph{Engineering Simulation and Scientific Software}), onde o autor trabalha atualmente. O ambiente conta com 8 computadores conectados em uma rede local Ethernet de 100 MBps, sendo eles equipados com processadores AMD Athlon de 1400 MHz a 2000 MHz e entre 512MB e 2GB de memória RAM. 
+
+\subsection{Sistemas Operacionais}
+
+O sistema deverá ser desenvolvido e testado no sistema operacional Windows XP, utilizando o compilador C++ do \emph{Microsoft Visual C++ .NET 2003}.
+Para testar o requisito de multiplataforma, o sistema deverá ser testado no sistema Linux RedHat 9.0, utilizando o compilador C++ \emph{GNU gcc}.

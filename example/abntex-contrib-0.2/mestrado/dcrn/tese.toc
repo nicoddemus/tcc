@@ -1,0 +1,65 @@
+\select@language {brazil}
+\contentsline {chapter}{Lista de Figuras}{}
+\contentsline {chapter}{Lista de Tabelas}{}
+\contentsline {chapter}{Introdu\c c\~ao}{15}
+\contentsline {chapter}{\numberline {1}Revis\~ao da Literatura}{18}
+\contentsline {section}{\numberline {1.1}Diel\'etricos}{18}
+\contentsline {subsection}{\numberline {1.1.1}Constante Diel\'etrica e Perda}{18}
+\contentsline {subsection}{\numberline {1.1.2}Polariza\c c\~ao}{21}
+\contentsline {subsubsection}{\numberline {1.1.2.1}Defini\c c\~ao}{21}
+\contentsline {subsubsection}{\numberline {1.1.2.2}Vis\~ao Macrosc\'opica}{22}
+\contentsline {subsubsection}{\numberline {1.1.2.3}Vis\~ao Microsc\'opica}{25}
+\contentsline {subsection}{\numberline {1.1.3}Equa\c c\~oes de Campo de Maxwell}{28}
+\contentsline {subsection}{\numberline {1.1.4}Ondas Eletromagn\'eticas no Espa\c co Ilimitado}{30}
+\contentsline {subsection}{\numberline {1.1.5}Atenua\c c\~ao}{33}
+\contentsline {subsection}{\numberline {1.1.6}Modelo de Relaxa\c c\~ao de Debye}{34}
+\contentsline {subsection}{\numberline {1.1.7}Misturas de Diel\'etricos}{37}
+\contentsline {section}{\numberline {1.2}Medidas em Microondas}{40}
+\contentsline {subsection}{\numberline {1.2.1}An\'alise por Microondas}{40}
+\contentsline {subsection}{\numberline {1.2.2}Magnitude e Fase}{41}
+\contentsline {subsection}{\numberline {1.2.3}Analogia entre o Espectro Vis\IeC {\'\i }vel e RF}{41}
+\contentsline {subsection}{\numberline {1.2.4}Linhas de Transmiss\~ao}{41}
+\contentsline {subsection}{\numberline {1.2.5}Efici\^encia na Transfer\^encia de Pot\^encia}{42}
+\contentsline {subsection}{\numberline {1.2.6}Linhas de Transmiss\~ao Terminadas com $Z_0$}{42}
+\contentsline {subsection}{\numberline {1.2.7}Linhas de Transmiss\~ao em Curto ou em Aberto}{43}
+\contentsline {subsection}{\numberline {1.2.8}Par\^ametros de Reflex\~ao}{43}
+\contentsline {subsection}{\numberline {1.2.9}Par\^ametros de Transmiss\~ao}{44}
+\contentsline {subsection}{\numberline {1.2.10}Par\^ametros S}{44}
+\contentsline {section}{\numberline {1.3}Gasolina}{47}
+\contentsline {subsection}{\numberline {1.3.1}Hist\'orico}{47}
+\contentsline {subsection}{\numberline {1.3.2}Petr\'oleo}{48}
+\contentsline {subsection}{\numberline {1.3.3}Os Hidrocarbonetos da Gasolina}{48}
+\contentsline {subsubsection}{\numberline {1.3.3.1}Hidrocarbonetos Saturados}{49}
+\contentsline {subsubsection}{\numberline {1.3.3.2}Hidrocarbonetos Insaturados}{50}
+\contentsline {subsection}{\numberline {1.3.4}Os n\~ao-hidrocarbonetos}{53}
+\contentsline {subsubsection}{\numberline {1.3.4.1}Sulfurados}{53}
+\contentsline {subsubsection}{\numberline {1.3.4.2}Nitrogenados}{54}
+\contentsline {subsubsection}{\numberline {1.3.4.3}Oxigenados}{54}
+\contentsline {subsection}{\numberline {1.3.5}Processos de Refino}{54}
+\contentsline {subsection}{\numberline {1.3.6}Ensaios Normatizados}{55}
+\contentsline {subsection}{\numberline {1.3.7}Aspectos de sa\'ude e meio-ambiente na utiliza\c c\~ao da gasolina}{58}
+\contentsline {chapter}{\numberline {2}Metodologia}{60}
+\contentsline {section}{\numberline {2.1}Espectro Eletromagn\'etico}{60}
+\contentsline {section}{\numberline {2.2}Espectrocospia Diel\'etrica}{61}
+\contentsline {section}{\numberline {2.3}Materiais e M\'etodos}{62}
+\contentsline {chapter}{\numberline {3}Resultados e Discuss\~oes}{69}
+\contentsline {section}{\numberline {3.1}Introdu\c c\~ao}{69}
+\contentsline {section}{\numberline {3.2}Gasolinas A e C}{70}
+\contentsline {section}{\numberline {3.3}Misturas}{72}
+\contentsline {subsection}{\numberline {3.3.1}Gasolina C x \'Alcool Et\IeC {\'\i }lico}{72}
+\contentsline {subsection}{\numberline {3.3.2}Gasolina C x Aguarr\'as}{75}
+\contentsline {subsection}{\numberline {3.3.3}\'Alcool Et\IeC {\'\i }lico x \'Agua}{77}
+\contentsline {section}{\numberline {3.4}Medidas de Atenua\c c\~ao}{77}
+\contentsline {section}{\numberline {3.5}Posto 1}{82}
+\contentsline {section}{\numberline {3.6}Posto 3}{85}
+\contentsline {section}{\numberline {3.7}Posto 5}{87}
+\contentsline {section}{\numberline {3.8}Posto 6}{87}
+\contentsline {section}{\numberline {3.9}Posto 10}{89}
+\contentsline {section}{\numberline {3.10}Amostras do LCL-UFC}{90}
+\contentsline {section}{\numberline {3.11}Outras Subst\^ancias}{95}
+\contentsline {chapter}{Conclus\~oes}{101}
+\contentsline {section}{Perspectiva de Trabalhos Futuros}{103}
+\contentsline {chapter}{Refer\^encias}{105}
+\contentsline {chapter}{Anexo}{108}
+\contentsline {section}{Anexo A - Portaria N\IeC {\textordmasculine } 309 / ANP}{108}
+\contentsline {section}{Anexo B - Certificado de Qualidade 29281 - COPENE}{113}

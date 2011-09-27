@@ -1,0 +1,660 @@
+This is pdfeTeXk, Version 3.141592-1.11b-2.1 (Web2c 7.5.2) (format=pdflatex 2004.1.28)  15 FEB 2004 12:22
+entering extended mode
+ %&-line parsing enabled.
+ (c:/Program Files/TeXLive/texmf/web2c/cp8bit.tcx)
+**tese
+(./tese.tex{c:/Program Files/TeXLive/texmf-var/pdftex/config/pdftex.cfg}
+LaTeX2e <2001/06/01>
+Babel <v3.7o> and hyphenation patterns for english, dumylang, nohyphenation, ba
+sque, czech, slovak, german, ngerman, spanish, catalan, french, ukenglish, ital
+ian, dutch, polish, portuguese, loaded.
+(c:/Program Files/TeXLive/texmf/tex/latex/abntex/abnt.cls
+Document Class: abnt 2002/11/27 versao 1.1 patch 1 da Classe LaTeX2e ABNT
+(c:/Program Files/TeXLive/texmf/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(c:/Program Files/TeXLive/texmf/tex/latex/tools/calc.sty
+Package: calc 1998/07/07 v4.1b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count79
+\calc@Bcount=\count80
+\calc@Adimen=\dimen102
+\calc@Bdimen=\dimen103
+\calc@Askip=\skip41
+\calc@Bskip=\skip42
+LaTeX Info: Redefining \setlength on input line 59.
+LaTeX Info: Redefining \addtolength on input line 60.
+\calc@denominator=\count81
+)
+(c:/Program Files/TeXLive/texmf/tex/latex/tools/multicol.sty
+Package: multicol 2000/07/10 v1.5z multicolumn formatting (FMi)
+\c@tracingmulticols=\count82
+\mult@box=\box26
+\multicol@leftmargin=\dimen104
+\c@unbalance=\count83
+\c@collectmore=\count84
+\doublecol@number=\count85
+\multicoltolerance=\count86
+\multicolpretolerance=\count87
+\full@width=\dimen105
+\page@free=\dimen106
+\premulticols=\dimen107
+\postmulticols=\dimen108
+\multicolsep=\skip43
+\multicolbaselineskip=\skip44
+\partial@page=\box27
+\last@line=\box28
+\mult@rightbox=\box29
+\mult@grightbox=\box30
+\mult@gfirstbox=\box31
+\mult@firstbox=\box32
+\@tempa=\box33
+\@tempa=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\c@columnbadness=\count88
+\c@finalcolumnbadness=\count89
+\last@try=\dimen109
+\multicolovershoot=\dimen110
+\multicolundershoot=\dimen111
+\mult@nat@firstbox=\box50
+\colbreak@box=\box51
+)
+(c:/Program Files/TeXLive/texmf/tex/latex/base/report.cls
+Document Class: report 2001/04/21 v1.4e Standard LaTeX document class
+(c:/Program Files/TeXLive/texmf/tex/latex/base/size12.clo
+File: size12.clo 2001/04/21 v1.4e Standard LaTeX file (size option)
+)
+\c@part=\count90
+\c@chapter=\count91
+\c@section=\count92
+\c@subsection=\count93
+\c@subsubsection=\count94
+\c@paragraph=\count95
+\c@subparagraph=\count96
+\c@figure=\count97
+\c@table=\count98
+\abovecaptionskip=\skip45
+\belowcaptionskip=\skip46
+\bibindent=\dimen112
+)
+(c:/Program Files/TeXLive/texmf/tex/latex/abntex/setspace.sty
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+
+Package: `setspace' 6.7 <2000/12/01>
+)
+\ABNTanapindent=\skip47
+\ABNTsignwidth=\skip48
+\ABNTsignthickness=\skip49
+\ABNTsignskip=\skip50
+ (c:/Program Files/TeXLive/texmf/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+))
+(c:/Program Files/TeXLive/texmf/tex/generic/babel/babel.sty
+Package: babel 2003/11/26 v3.7o The Babel package
+
+(c:/Program Files/TeXLive/texmf/tex/generic/babel/portuges.ldf
+Language: portuges 2003/05/23 v1.2p Portuguese support from the babel system
+
+(c:/Program Files/TeXLive/texmf/tex/generic/babel/babel.def
+File: babel.def 2003/11/26 v3.7o Babel common definitions
+\babel@savecnt=\count99
+\U@D=\dimen113
+)
+\l@brazil = a dialect from \language\l@portuges 
+Package babel Info: Making " an active character on input line 126.
+))
+(c:/Program Files/TeXLive/texmf/tex/latex/base/inputenc.sty
+Package: inputenc 2001/07/10 v0.99a Input encoding file 
+
+(c:/Program Files/TeXLive/texmf/tex/latex/base/latin1.def
+File: latin1.def 2001/07/10 v0.99a Input encoding file 
+))
+(c:/Program Files/TeXLive/texmf/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/Program Files/TeXLive/texmf/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(c:/Program Files/TeXLive/texmf/tex/latex/graphics/graphics.sty
+Package: graphics 2001/07/07 v1.0n Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/Program Files/TeXLive/texmf/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(c:/Program Files/TeXLive/texmf/tex/latex/texlive/graphics.cfg
+File: graphics.cfg 2001/08/31 v1.1 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: dvips.def on input line 80.
+
+(c:/Program Files/TeXLive/texmf/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen114
+\Gin@req@width=\dimen115
+)
+(c:/Program Files/TeXLive/texmf/tex/latex/abntex/abnt-alf.sty
+Package: abnt-alf 2002/06/24
+
+(c:/Program Files/TeXLive/texmf/tex/latex/abntex/abntcite.sty
+Package: abntcite 2002/11/28
+\minimumbiblabelwidth=\skip51
+\ABCIauxlen=\skip52
+\c@ABCIaux=\count100
+\c@ABCImax=\count101
+
+(c:/Program Files/TeXLive/texmf/tex/latex/ltxmisc/relsize.sty
+Package: relsize 1999/11/01 ver 2.0b
+)
+\biblabelsep=\skip53
+LaTeX Info: Redefining \newblock on input line 455.
+LaTeX Info: Redefining \cite on input line 485.
+\ABCItoken=\toks15
+))
+(c:/Program Files/TeXLive/texmf/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 42.
+)
+(c:/Program Files/TeXLive/texmf/tex/latex/psfrag/psfrag.sty
+Package: psfrag 1998/04/11 v3.04 PSfrag (MCG)
+\pfg@pcount=\count102
+\pfg@scount=\count103
+\pfg@temp=\write3
+)
+(c:/Program Files/TeXLive/texmf/tex/latex/caption/caption2.sty
+Package: caption2 2003/11/12 v2.1a Customising captions (AS)
+\captionmargin=\dimen116
+\captionwidth=\dimen117
+\captionindent=\dimen118
+Package caption2 Info: Running in caption2 v2.0 compatibility mode on input lin
+e 188.
+\captionlinewidth=\dimen119
+\realcaptionwidth=\dimen120
+) (./tese.aux
+(./capa.aux) (./folharosto.aux) (./folhaaprovacao.aux) (./dedicatoria.aux)
+(./agradecimentos.aux) (./epigrafe.aux) (./resumo.aux) (./abstract.aux)
+(./introducao.aux) (./cap1.aux) (./cap2.aux) (./cap3.aux) (./conclusao.aux)
+(./bibliografia.aux) (./anexo.aux))
+\openout1 = `tese.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+\openout2 = `capa.aux'.
+
+ (./capa.tex
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 34.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 34.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 34.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 34.
+
+(c:/Program Files/TeXLive/texmf/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+! I can't write on file `tese.pdf'.
+Please type another file name for output: tese.pdf
+[0
+Non-PDF special ignored!
+
+
+{c:/Program Files/TeXLive/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
+\openout2 = `folharosto.aux'.
+
+ (./folharosto.tex [1
+
+
+] [1])
+\openout2 = `folhaaprovacao.aux'.
+
+ (./folhaaprovacao.tex [2
+
+
+
+])
+\openout2 = `dedicatoria.aux'.
+
+
+(./dedicatoria.tex [3
+
+
+
+])
+\openout2 = `agradecimentos.aux'.
+
+ (./agradecimentos.tex) [4
+
+
+
+
+]
+\openout2 = `epigrafe.aux'.
+
+ (./epigrafe.tex) [5
+
+
+
+]
+\openout2 = `resumo.aux'.
+
+
+(./resumo.tex [6
+
+
+
+
+])
+\openout2 = `abstract.aux'.
+
+ (./abstract.tex [7
+
+
+
+
+]) (./tese.toc [8
+
+
+] [9])
+\tf@toc=\write4
+\openout4 = `tese.toc'.
+
+ [10] (./tese.lof
+[11
+
+
+] [12])
+\tf@lof=\write5
+\openout5 = `tese.lof'.
+
+ [13] (./tese.lot)
+\tf@lot=\write6
+\openout6 = `tese.lot'.
+
+ [14
+
+]
+\openout2 = `introducao.aux'.
+
+ (./introducao.tex [15
+
+
+] [16]) [17]
+\openout2 = `cap1.aux'.
+
+ (./cap1.tex
+Cap\'{\i }tulo 1.
+[18
+
+
+
+]
+File: `gunzip -c figuras/vHFig1-1_1.eps.gz Graphic file (type eps)
+ <`gunzip -c figuras/vHFig1-1_1.eps.gz>
+File: `gunzip -c figuras/vHFig1-1_2.eps.gz Graphic file (type eps)
+
+<`gunzip -c figuras/vHFig1-1_2.eps.gz> [19
+Non-PDF special ignored!] [20
+Non-PDF special ignored!] [21]
+File: `gunzip -c figuras/vHFig1-2_1.eps.gz Graphic file (type eps)
+ <`gunzip -c figuras/vHFig1-2_1.eps.gz> [22]
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 165.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 165.
+
+[23
+Non-PDF special ignored!] [24]
+File: `gunzip -c figuras/vHFig1-2_3.eps.gz Graphic file (type eps)
+ <`gunzip -c figuras/vHFig1-2_3.eps.gz> [25
+Non-PDF special ignored!] [26]
+File: `gunzip -c figuras/vHFig2-1_1.eps.gz Graphic file (type eps)
+ <`gunzip -c figuras/vHFig2-1_1.eps.gz> [27
+Non-PDF special ignored!] [28] [29] [30] [31] [32] [33] [34]
+File: `gunzip -c figuras/relaxation.eps.gz Graphic file (type eps)
+
+<`gunzip -c figuras/relaxation.eps.gz>
+File: `gunzip -c figuras/Cole-Cole2.eps.gz Graphic file (type eps)
+ <`gunzip -c figuras/Cole-Cole2.eps.gz>
+[35
+Non-PDF special ignored!] [36
+Non-PDF special ignored!] [37]
+File: `gunzip -c figuras/Mistura_Serie_Paralelo.eps.gz Graphic file (type eps)
+
+<`gunzip -c figuras/Mistura_Serie_Paralelo.eps.gz>
+Overfull \hbox (13.70967pt too wide) in paragraph at lines 690--692
+ [][] 
+ []
+
+
+Overfull \hbox (23.90459pt too wide) in paragraph at lines 692--692
+ []|/cmr12/Figura 8: 
+ []
+
+
+Overfull \hbox (3.50757pt too wide) in paragraph at lines 692--692
+ /cmr12/equi- 
+ []
+
+
+Overfull \hbox (1.22287pt too wide) in paragraph at lines 692--692
+ /cmr12/para 
+ []
+
+
+Overfull \hbox (30.01007pt too wide) in paragraph at lines 692--692
+ /cmr12/diel^^Setricos 
+ []
+
+
+LaTeX Warning: Float too large for page by 126.46516pt on input line 694.
+
+File: `gunzip -c figuras/Mistura_Grafico_Fracao_Geral.eps.gz Graphic file (type
+ eps)
+<`gunzip -c figuras/Mistura_Grafico_Fracao_Geral.eps.gz> [38] [39
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [40
+Non-PDF special ignored!] [41]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 774.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 774.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 774.
+ [42] [43]
+File: `gunzip -c figuras/reflection_one_port.eps.gz Graphic file (type eps)
+
+<`gunzip -c figuras/reflection_one_port.eps.gz> [44] [45
+Non-PDF special ignored!]
+File: `gunzip -c figuras/scattering_two_ports.eps.gz Graphic file (type eps)
+ <`gunzip -c figuras/scattering_two_ports.eps.gz>
+[46
+Non-PDF special ignored!] [47] [48]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 917.
+
+
+(c:/Program Files/TeXLive/texmf/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 917.
+File: `gunzip -c figuras/isooctano.eps.gz Graphic file (type eps)
+
+<`gunzip -c figuras/isooctano.eps.gz>
+File: `gunzip -c figuras/hexano.eps.gz Graphic file (type eps)
+ <`gunzip -c figuras/hexano.eps.gz>
+[49
+Non-PDF special ignored!]
+File: `gunzip -c figuras/metilbuteno.eps.gz Graphic file (type eps)
+ <`gunzip -c figuras/metilbuteno.eps.gz> [50
+Non-PDF special ignored!
+Non-PDF special ignored!] [51]
+File: `gunzip -c figuras/benzeno.eps.gz Graphic file (type eps)
+ <`gunzip -c figuras/benzeno.eps.gz>
+File: `gunzip -c figuras/tolueno.eps.gz Graphic file (type eps)
+
+<`gunzip -c figuras/tolueno.eps.gz>
+File: `gunzip -c figuras/naftaleno.eps.gz Graphic file (type eps)
+ <`gunzip -c figuras/naftaleno.eps.gz>
+[52
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [53
+Non-PDF special ignored!] [54] [55] [56] [57] [58]) [59]
+\openout2 = `cap2.aux'.
+
+ (./cap2.tex
+Cap\'{\i }tulo 2.
+File: `gunzip -c figuras/Espectro_Eletromag.eps.gz Graphic file (type eps)
+<`gunzip -c figuras/Espectro_Eletromag.eps.gz> [60
+
+
+
+
+Non-PDF special ignored!] [61] [62]
+File: `gunzip -c figuras/celula.eps.gz Graphic file (type eps)
+ <`gunzip -c figuras/celula.eps.gz> [63
+Non-PDF special ignored!]
+File: `gunzip -c figuras/HP4194A.eps.gz Graphic file (type eps)
+ <`gunzip -c figuras/HP4194A.eps.gz> [64
+Non-PDF special ignored!] [65]
+File: `gunzip -c figuras/Agilent8714ET.eps.gz Graphic file (type eps)
+ <`gunzip -c figuras/Agilent8714ET.eps.gz>
+[66] [67
+Non-PDF special ignored!]) [68]
+\openout2 = `cap3.aux'.
+
+ (./cap3.tex
+Cap\'{\i }tulo 3.
+File: `gunzip -c figuras/GasA_GasC_Imp.eps.gz Graphic file (type eps)
+<`gunzip -c figuras/GasA_GasC_Imp.eps.gz> [69
+
+
+
+]
+File: `gunzip -c figuras/GasA_GasC_Trans.eps.gz Graphic file (type eps)
+
+<`gunzip -c figuras/GasA_GasC_Trans.eps.gz> [70
+Non-PDF special ignored!] [71
+Non-PDF special ignored!]
+File: `gunzip -c figuras/GasC_Alc_Mistura_Imp.eps.gz Graphic file (type eps)
+ <`gunzip -c figuras/GasC_Alc_Mistura_Imp.eps.gz>
+File: `gunzip -c figuras/GasC_Alc_Mistura_Trans.eps.gz Graphic file (type eps)
+
+<`gunzip -c figuras/GasC_Alc_Mistura_Trans.eps.gz> [72
+Non-PDF special ignored!] [73
+Non-PDF special ignored!]
+File: `gunzip -c figuras/GasC_Alc_Mistura_Imp_Modelos.eps.gz Graphic file (type
+ eps)
+
+<`gunzip -c figuras/GasC_Alc_Mistura_Imp_Modelos.eps.gz> [74
+Non-PDF special ignored!]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 127.
+File: `gunzip -c figuras/GasC_Aguarras_Mistura_Imp.eps.gz Graphic file (type ep
+s)
+
+<`gunzip -c figuras/GasC_Aguarras_Mistura_Imp.eps.gz>
+File: `gunzip -c figuras/GasC_Aguarras_Mistura_Trans.eps.gz Graphic file (type 
+eps)
+
+<`gunzip -c figuras/GasC_Aguarras_Mistura_Trans.eps.gz> [75
+Non-PDF special ignored!] [76
+Non-PDF special ignored!]
+File: `gunzip -c figuras/Agua_Alc_Mistura_Imp.eps.gz Graphic file (type eps)
+ <`gunzip -c figuras/Agua_Alc_Mistura_Imp.eps.gz>
+[77]
+File: `gunzip -c figuras/Am4773_Aten.eps.gz Graphic file (type eps)
+ <`gunzip -c figuras/Am4773_Aten.eps.gz> [78
+Non-PDF special ignored!] [79
+Non-PDF special ignored!]
+File: `gunzip -c figuras/P3C1_Aten.eps.gz Graphic file (type eps)
+ <`gunzip -c figuras/P3C1_Aten.eps.gz>
+File: `gunzip -c figuras/P3C2_Aten.eps.gz Graphic file (type eps)
+
+<`gunzip -c figuras/P3C2_Aten.eps.gz>
+File: `gunzip -c figuras/P3C3_Aten.eps.gz Graphic file (type eps)
+ <`gunzip -c figuras/P3C3_Aten.eps.gz>
+[80
+Non-PDF special ignored!] [81
+Non-PDF special ignored!]
+File: `gunzip -c figuras/Posto1_Imp.eps.gz Graphic file (type eps)
+ <`gunzip -c figuras/Posto1_Imp.eps.gz> [82
+Non-PDF special ignored!]
+File: `gunzip -c figuras/Posto1_Trans.eps.gz Graphic file (type eps)
+ <`gunzip -c figuras/Posto1_Trans.eps.gz>
+File: `gunzip -c figuras/Posto1C1_Perm.eps.gz Graphic file (type eps)
+
+<`gunzip -c figuras/Posto1C1_Perm.eps.gz> [83
+Non-PDF special ignored!] [84
+Non-PDF special ignored!
+Non-PDF special ignored!]
+File: `gunzip -c figuras/Posto3_Imp.eps.gz Graphic file (type eps)
+ <`gunzip -c figuras/Posto3_Imp.eps.gz> [85
+Non-PDF special ignored!]
+File: `gunzip -c figuras/Posto3_Trans.eps.gz Graphic file (type eps)
+ <`gunzip -c figuras/Posto3_Trans.eps.gz> [86
+Non-PDF special ignored!]
+File: `gunzip -c figuras/Posto5_Imp.eps.gz Graphic file (type eps)
+ <`gunzip -c figuras/Posto5_Imp.eps.gz>
+File: `gunzip -c figuras/Posto5_Trans.eps.gz Graphic file (type eps)
+
+<`gunzip -c figuras/Posto5_Trans.eps.gz> [87]
+File: `gunzip -c figuras/Posto6_Imp.eps.gz Graphic file (type eps)
+
+<`gunzip -c figuras/Posto6_Imp.eps.gz>
+File: `gunzip -c figuras/Posto6_Trans.eps.gz Graphic file (type eps)
+
+<`gunzip -c figuras/Posto6_Trans.eps.gz> [88
+Non-PDF special ignored!]
+File: `gunzip -c figuras/Posto10_Imp.eps.gz Graphic file (type eps)
+ <`gunzip -c figuras/Posto10_Imp.eps.gz>
+File: `gunzip -c figuras/Posto10_Trans.eps.gz Graphic file (type eps)
+
+<`gunzip -c figuras/Posto10_Trans.eps.gz> [89
+Non-PDF special ignored!] [90
+Non-PDF special ignored!] [91]
+File: `gunzip -c figuras/AmostrasLCL_Imp.eps.gz Graphic file (type eps)
+ <`gunzip -c figuras/AmostrasLCL_Imp.eps.gz>
+File: `gunzip -c figuras/AmostrasLCL_Trans.eps.gz Graphic file (type eps)
+
+<`gunzip -c figuras/AmostrasLCL_Trans.eps.gz> [92
+Non-PDF special ignored!] [93
+Non-PDF special ignored!
+Non-PDF special ignored!] [94
+Non-PDF special ignored!
+Non-PDF special ignored!]
+File: `gunzip -c figuras/GasA_Arras_QuerA_QuerB_SolvCom_Diesel_Imp.eps.gz Graph
+ic file (type eps)
+
+<`gunzip -c figuras/GasA_Arras_QuerA_QuerB_SolvCom_Diesel_Imp.eps.gz> [95]
+File: `gunzip -c figuras/Acet_Et_Met_Agua_Cp.eps.gz Graphic file (type eps)
+
+<`gunzip -c figuras/Acet_Et_Met_Agua_Cp.eps.gz> [96
+Non-PDF special ignored!] [97
+Non-PDF special ignored!]
+File: `gunzip -c figuras/Acet_Et_Met_Agua_Perm.eps.gz Graphic file (type eps)
+ <`gunzip -c figuras/Acet_Et_Met_Agua_Perm.eps.gz>
+[98
+Non-PDF special ignored!]
+File: `gunzip -c figuras/Alc_GasC_GasA_Trans.eps.gz Graphic file (type eps)
+ <`gunzip -c figuras/Alc_GasC_GasA_Trans.eps.gz>
+File: `gunzip -c figuras/GasA_GasC_Alc_Ganho.eps.gz Graphic file (type eps)
+
+<`gunzip -c figuras/GasA_GasC_Alc_Ganho.eps.gz> [99
+Non-PDF special ignored!]) [100
+Non-PDF special ignored!]
+\openout2 = `conclusao.aux'.
+
+ (./conclusao.tex [101
+
+
+
+] [102] [103]) [104]
+\openout2 = `bibliografia.aux'.
+
+
+(./bibliografia.tex (./tese.bbl [105
+
+
+
+]
+Underfull \hbox (badness 1142) in paragraph at lines 187--189
+[]/cmr12/PETROGATE TRADE CEN-TER S/C LTDA. /cmti12/Pe-tro-por-tal/cmr12/. 
+ []
+
+[106])) [107]
+\openout2 = `anexo.aux'.
+
+ (./anexo.tex
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <17.28> on input line 11.
+ [108
+
+
+
+] [109] [110]
+File: `gunzip -c figuras/Tabela_Especific_GasC.eps.gz Graphic file (type eps)
+
+<`gunzip -c figuras/Tabela_Especific_GasC.eps.gz> [111] [112
+Non-PDF special ignored!]
+File: `gunzip -c figuras/Certificado_Copene_29281.eps.gz Graphic file (type eps
+)
+ <`gunzip -c figuras/Certificado_Copene_29281.eps.gz>) [113] [114
+Non-PDF special ignored!]
++-------------------------------------------------------------------+
+| Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
+|                  http://abntex.codigolivre.org.br                 |
++-------------------------------------------------------------------+
+(./tese.aux (./capa.aux) (./folharosto.aux) (./folhaaprovacao.aux)
+(./dedicatoria.aux) (./agradecimentos.aux) (./epigrafe.aux) (./resumo.aux)
+(./abstract.aux) (./introducao.aux) (./cap1.aux) (./cap2.aux) (./cap3.aux)
+(./conclusao.aux) (./bibliografia.aux) (./anexo.aux)) ) 
+Here is how much of TeX's memory you used:
+ 2365 strings out of 95122
+ 34844 string characters out of 1184429
+ 93215 words of memory out of 1537174
+ 5284 multiletter control sequences out of 10000+50000
+ 18629 words of font info for 68 fonts, out of 1000000 for 2000
+ 117 hyphenation exceptions out of 1000
+ 29i,13n,26p,1858b,389s stack positions out of 5000i,500n,6000p,200000b,40000s
+ 431 PDF objects out of 300000
+ 0 named destinations out of 131072
+ 1 words of extra memory for PDF output out of 65536
+{c:/Program Files/TeXLiv
+e/texmf/dvips/tetex/74afc74c.enc}<c:/Program Files/TeXLive/texmf/fonts/type1/bl
+uesky/cm/cmti8.pfb>{c:/Program Files/TeXLive/texmf/dvips/tetex/f7b6d320.enc}<c:
+/Program Files/TeXLive/texmf/fonts/type1/bluesky/cm/cmbx10.pfb><c:/Program File
+s/TeXLive/texmf/fonts/type1/bluesky/cmextra/cmbsy7.pfb>{c:/Program Files/TeXLiv
+e/texmf/dvips/tetex/10037936.enc}<c:/Program Files/TeXLive/texmf/fonts/type1/bl
+uesky/cm/cmbsy10.pfb>{c:/Program Files/TeXLive/texmf/dvips/tetex/aae443f0.enc}<
+c:/Program Files/TeXLive/texmf/fonts/type1/bluesky/cm/cmmib10.pfb><c:/Program F
+iles/TeXLive/texmf/fonts/type1/bluesky/cm/cmex10.pfb>{c:/Program Files/TeXLive/
+texmf/dvips/tetex/bbad153f.enc}<c:/Program Files/TeXLive/texmf/fonts/type1/blue
+sky/cm/cmsy6.pfb><c:/Program Files/TeXLive/texmf/fonts/type1/bluesky/cm/cmsy10.
+pfb><c:/Program Files/TeXLive/texmf/fonts/type1/bluesky/cm/cmr6.pfb><c:/Program
+ Files/TeXLive/texmf/fonts/type1/bluesky/cm/cmmi6.pfb><c:/Program Files/TeXLive
+/texmf/fonts/type1/bluesky/cm/cmti10.pfb><c:/Program Files/TeXLive/texmf/fonts/
+type1/bluesky/cm/cmr10.pfb><c:/Program Files/TeXLive/texmf/fonts/type1/bluesky/
+cm/cmmi8.pfb><c:/Program Files/TeXLive/texmf/fonts/type1/bluesky/cm/cmsy8.pfb><
+c:/Program Files/TeXLive/texmf/fonts/type1/bluesky/cm/cmr8.pfb><c:/Program File
+s/TeXLive/texmf/fonts/type1/bluesky/cm/cmmi12.pfb><c:/Program Files/TeXLive/tex
+mf/fonts/type1/bluesky/cm/cmti12.pfb>{c:/Program Files/TeXLive/texmf/dvips/tete
+x/0ef0afca.enc}<c:/Program Files/TeXLive/texmf/fonts/type1/bluesky/cm/cmcsc10.p
+fb><c:/Program Files/TeXLive/texmf/fonts/type1/bluesky/cm/cmr12.pfb><c:/Program
+ Files/TeXLive/texmf/fonts/type1/bluesky/cm/cmbxti10.pfb><c:/Program Files/TeXL
+ive/texmf/fonts/type1/bluesky/cm/cmbx12.pfb>
+Output written on tese.pdf (116 pages, 432267 bytes).

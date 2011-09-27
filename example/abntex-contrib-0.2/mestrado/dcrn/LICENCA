@@ -1,0 +1,38 @@
+Licença de Uso 
+
+Objeto: arquivos LaTeX e seus derivados da dissertação
+"Avaliação da qualidade da gasolina através de medidas elétricas"
+
+Autor: Dehon Charles Regis Nogueira (dehon@ibeuce.com.br)
+
+Copyright 2003 Dehon Charles Regis Nogueira
+
+O autor permite por meio desta usar os arquivos
+originais de sua dissertação para fins de estudo. 
+Permite ainda gerar arquivos derivados destes 
+(tais como formato dvi, ps, pdf) igualmente para 
+fins de estudo. Ficam autorizadas ainda impressões 
+para uso estritamente pessoal. Para impressões 
+com outras finalidades (como bibliotecas) pede-se
+obter permissão prévia do autor. Permite-se ainda
+a manutenção de cópias locais dos arquivos fontes.
+
+Nenhuma modificação poderá ser feita nesses arquivos 
+salvo para adequá-los a futuras versões dos estilos 
+abnTeX que utiliza e desde que realizada diretamente 
+através do servidor cvs. O seu conteúdo intelectual
+não poderá ser alterado em nenhuma hipótese.
+
+Para a reprodução de partes dos textos apresentados,
+o interessado deverá requerer autorização prévia do autor.
+
+localização do servidor cvs: http://codigolivre.org.br
+
+Arquivos: 
+abstract.tex        cap1.tex  conclusao.tex    folhaaprovacao.tex  tese.tex
+agradecimentos.tex  cap2.tex  dedicatoria.tex  folharosto.tex
+anexo.tex           cap3.tex  epigrafe.tex     introducao.tex
+bibliografia.tex    capa.tex  ferramentas.tex  resumo.tex
+biblio.bib
+
+

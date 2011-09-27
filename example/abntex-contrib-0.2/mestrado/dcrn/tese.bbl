@@ -1,0 +1,227 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{1.40 }
+
+\bibitem[Agilent Technologies 2000]{HP8714ET}
+\abntrefinfo{Agilent Technologies}{AGILENT TECHNOLOGIES}{2000}
+{AGILENT TECHNOLOGIES. \emph{Agilent Technologies 8712ET and 8714ET RF Network
+  Analyzers User's Guide}.
+USA, June 2000.}
+
+\bibitem[Anderson 1964]{Anderson}
+\abntrefinfo{Anderson}{ANDERSON}{1964}
+{ANDERSON, J.~C. \emph{Dielectrics}. New York: Reinhold Publishing Corporation,
+  1964.}
+
+\bibitem[ANP 2001]{Portaria309_ANP}
+\abntrefinfo{ANP}{ANP}{2001}
+{ANP. \emph{Portaria Nº 309}.
+[S.l.], 27 de dezembro de 2001.}
+
+\bibitem[ASI Instruments Inc. 2002]{ASI_Instr}
+\abntrefinfo{ASI Instruments Inc.}{ASI INSTRUMENTS INC.}{2002}
+{ASI INSTRUMENTS INC. \emph{Dielectric Constant Reference Guide}.
+http://www.asiinstr.com/dc1.html, 2002.}
+
+\bibitem[Bailey 1989]{Bailey}
+\abntrefinfo{Bailey}{BAILEY}{1989}
+{BAILEY, A.~E. (Ed.). \emph{Microwave Measurements}. 2nd.. ed. London, United
+  Kingdom: Peter Peregrinus Ltd., 1989.}
+
+\bibitem[Baker-Jarvis e Janezic 1996]{Baker-Jarvis_1996}
+\abntrefinfo{Baker-Jarvis e Janezic}{BAKER-JARVIS; JANEZIC}{1996}
+{BAKER-JARVIS, J.; JANEZIC, M.~D. Analysis of a two-port flanged coaxial holder
+  for shielding effectiveness and dielectric measurements of thin films and
+  thin materials.
+\emph{IEEE Transactions on Electromagnetic Compatibility}, v.~38, n.~1, p.
+  67--70, February 1996.}
+
+\bibitem[Baker-Jarvis et al. 1994]{Baker-Jarvis_1994}
+\abntrefinfo{Baker-Jarvis et al.}{BAKER-JARVIS et al.}{1994}
+{BAKER-JARVIS, J. et al. Analysis of an open-ended coaxial probe with lift-off
+  for nondestructive testing.
+\emph{IEEE Transactions on Instrumentation and Measurement}, v.~43, n.~5, p.
+  711--718, October 1994.}
+
+\bibitem[Baker-Jarvis, Janezic e Jones 1998]{Baker-Jarvis}
+\abntrefinfo{Baker-Jarvis, Janezic e Jones}{BAKER-JARVIS; JANEZIC; JONES}{1998}
+{BAKER-JARVIS, J.; JANEZIC, M.~D.; JONES, C.~A. Shielded open-circuited sample
+  holder for dielectric measurements of solids and liquids.
+\emph{IEEE Transactions on Instrumentation and Measurement}, v.~47, n.~2, p.
+  338--344, April 1998.}
+
+\bibitem[Baker-Jarvis, Vanzura e Kissick 1990]{Baker-Jarvis_1990}
+\abntrefinfo{Baker-Jarvis, Vanzura e Kissick}{BAKER-JARVIS; VANZURA;
+  KISSICK}{1990}
+{BAKER-JARVIS, J.; VANZURA, E.~J.; KISSICK, W.~A. Improved technique for
+  determining complex permittivity with the transmission/reflectin method.
+\emph{IEEE Transactions on Microwave Theory and Techniques}, v.~38, n.~8, p.
+  1096--1103, August 1990.}
+
+\bibitem[Bao, Swicord e Davis 1996]{Bao}
+\abntrefinfo{Bao, Swicord e Davis}{BAO; SWICORD; DAVIS}{1996}
+{BAO, J.-Z.; SWICORD, M.~L.; DAVIS, C.~C. Microwave dielectric characterization
+  of binary mixtures of water, methanol, and ethanol.
+\emph{J. Chem. Phys.}, v.~104, n.~12, p. 4441--4450, 22 March 1996.}
+
+\bibitem[Callister Jr 1997]{Callister}
+\abntrefinfo{Callister Jr}{CALLISTER JR}{1997}
+{CALLISTER JR, W.~D. \emph{Materials science and engineering: an introduction}.
+  4th.. ed. USA: John Wiley \& Sons, 1997.}
+
+\bibitem[Chew, Olp e Otto 1991]{Chew}
+\abntrefinfo{Chew, Olp e Otto}{CHEW; OLP; OTTO}{1991}
+{CHEW, W.~C.; OLP, K.~J.; OTTO, G.~P. Design and calibration of a large
+  broadband dielectric mesurement cell.
+\emph{IEEE Transactions on Geoscience and Remote Sensing}, v.~29, n.~1, p.
+  42--47, January 1991.}
+
+\bibitem[Cole e Cole 1941]{Cole_1941}
+\abntrefinfo{Cole e Cole}{COLE; COLE}{1941}
+{COLE, K.~S.; COLE, R.~H. Dispersion and absortion in dielectrics.
+\emph{Journal of Chemical Physics}, v.~9, p. 341--351, April 1941.}
+
+\bibitem[Cole et al. 1989]{Cole_1989}
+\abntrefinfo{Cole et al.}{COLE et al.}{1989}
+{COLE, R.~H. et al. Time domain reflection methods for dielectric measurements
+  to 10 $ghz$.
+\emph{J. Appl. Phys.}, v.~66, n.~2, p. 793--802, July 1989.}
+
+\bibitem[Collin 2001]{Collin}
+\abntrefinfo{Collin}{COLLIN}{2001}
+{COLLIN, R.~E. \emph{Foundations for Microwave Engineering}. Second. New York:
+  IEEE Press, 2001.}
+
+\bibitem[Folgero 1996]{Folgero_1996}
+\abntrefinfo{Folgero}{FOLGERO}{1996}
+{FOLGERO, K. Bilinear calibration of coaxial transmission/reflection cells for
+  permittivity measurement of low-loss liquids.
+\emph{Meas. Sci. Technol.}, n.~7, p. 1260--1269, 1996.}
+
+\bibitem[Folgero 1998]{Folgero}
+\abntrefinfo{Folgero}{FOLGERO}{1998}
+{FOLGERO, K. Broad-band dielectric spectroscopy of low-permittivity fluids
+  using one measurement cell.
+\emph{IEEE Transactions on Instrumentation and Measurement}, v.~47, n.~4, p.
+  881--885, August 1998.}
+
+\bibitem[Folgero et al. 1998]{Folgero_1995}
+\abntrefinfo{Folgero et al.}{FOLGERO et al.}{1998}
+{FOLGERO, K. et al. A broad-band and high sensitivity dielectric spectroscopy
+  measurement system for quality determination of low-permittivity fluids.
+\emph{Meas. Sci. Technol.}, n.~6, p. 995--1008, 1998.}
+
+\bibitem[Frasson 2002]{AbnTeX}
+\abntrefinfo{Frasson}{FRASSON}{2002}
+{FRASSON, M. V.~S. \emph{Classe ABNT: confecção de trabalhos acadêmicos em
+  \LaTeX segundo as normas ABNT}.
+http://abntex.codigolivre.org.br, 2002. Versão 1.}
+
+\bibitem[Hamilton 1996]{GasFAQ}
+\abntrefinfo{Hamilton}{HAMILTON}{1996}
+{HAMILTON, B. \emph{FAQ: Automotive Gasoline}.
+[S.l.], 1996. Usenet Newsgroup: rec.autos.tech; Company URL: www.irl.cri.nz.}
+
+\bibitem[Hewlett-Packard Company 1998]{Network_Analyzer_Basics}
+\abntrefinfo{Hewlett-Packard Company}{HEWLETT-PACKARD COMPANY}{1998}
+{HEWLETT-PACKARD COMPANY. \emph{Network Analyzer Basics}.
+BALLO, D. Santa Rosa, California - USA, 1998.}
+
+\bibitem[Hippel 1954]{von_Hippel}
+\abntrefinfo{Hippel}{HIPPEL}{1954}
+{HIPPEL, A. von. \emph{Dielectrics and Waves}. 2nd.. ed. Boston - London,
+  1954.}
+
+\bibitem[Jenkins et al. 1990]{Jenkins}
+\abntrefinfo{Jenkins et al.}{JENKINS et al.}{1990}
+{JENKINS, S. et al. Comparison of three numerical treatments for the open-ended
+  coaxial line sensor.
+\emph{Electronic Letters}, v.~26, n.~4, p. 234--236, 15th February 1990.}
+
+\bibitem[Jessen 2001]{Latex_Demo}
+\abntrefinfo{Jessen}{JESSEN}{2001}
+{JESSEN, K.~S. \emph{\LaTeX demo: Exemplos com \LaTeXe}.
+jessen@acm.org, 2001. Versão: 1.13.}
+
+\bibitem[Mahan 1972]{Mahan}
+\abntrefinfo{Mahan}{MAHAN}{1972}
+{MAHAN, B.~H. \emph{Química: um curso universitário}. 2ª. ed. São Paulo:
+  Editora Edgard Blücher Ltda., 1972.}
+
+\bibitem[Martins e Zilberknop 2001]{Portugues_Instrumental}
+\abntrefinfo{Martins e Zilberknop}{MARTINS; ZILBERKNOP}{2001}
+{MARTINS, D.~S.; ZILBERKNOP, L.~S. \emph{Português Instrumental}. 22ª. ed.
+  Porto Alegre: Editora Sagra Luzzatto, 2001.}
+
+\bibitem[Meyers 1997]{Handbook_Refining_Processes}
+\abntrefinfo{Meyers}{MEYERS}{1997}
+{MEYERS, R.~A. (Ed.). \emph{Handbook of petroleum refining processes}. 2nd..
+  ed. USA: McGraw-Hill, 1997.}
+
+\bibitem[Moulson e Herbert 1990]{Electroceramics}
+\abntrefinfo{Moulson e Herbert}{MOULSON; HERBERT}{1990}
+{MOULSON, A.~J.; HERBERT, J.~M. \emph{Electroceramics: Materials - Properties -
+  Applications}. London: Chapman \& Hall, 1990.}
+
+\bibitem[Nelson 1958]{Petroleum_Refinery}
+\abntrefinfo{Nelson}{NELSON}{1958}
+{NELSON, W.~L. \emph{Petroleum Refinery Engineering}. Tokyo: McGraw-Hill
+  Kogakusha, 1958.  (McGraw-Hill series in chemical engineering).}
+
+\bibitem[Orear 1971]{Orear}
+\abntrefinfo{Orear}{OREAR}{1971}
+{OREAR, J. \emph{Física}. 1ª. ed. Rio de Janeiro: Livros Técnicos e Científicos
+  Editora S.A., 1971.}
+
+\bibitem[Petrobrás Distribuidora S.A. 2002]{PortalBr}
+\abntrefinfo{Petrobrás Distribuidora S.A.}{PETROBRáS DISTRIBUIDORA S.A.}{2002}
+{PETROBRáS DISTRIBUIDORA S.A. \emph{Portal Br}.
+http://www.br.com.br, 2002.}
+
+\bibitem[Petrogate Trade Center S/C Ltda. 2002]{Petroportal}
+\abntrefinfo{Petrogate Trade Center S/C Ltda.}{PETROGATE TRADE CENTER S/C
+  LTDA.}{2002}
+{PETROGATE TRADE CENTER S/C LTDA. \emph{Petroportal}.
+http://www.petroportal.com.br, 2002.}
+
+\bibitem[Sant'Ana 2001]{Sant'Ana}
+\abntrefinfo{Sant'Ana}{SANT'ANA}{2001}
+{SANT'ANA, H.~B. de. Engenharia de refino de petróleo. Notas de aula da
+  disciplina de Pós-Graduação em Engenharia e Ciência de Materiais da
+  Universidade Federal do Ceará: Engenharia de Refino de Petróleo. 2001.}
+
+\bibitem[Schmidt 1979]{Schmidt}
+\abntrefinfo{Schmidt}{SCHMIDT}{1979}
+{SCHMIDT, W. \emph{Materiais Elétricos}. São Paulo - SP: Editora Edgard Blücher
+  Ltda., 1979.}
+
+\bibitem[Shell 1983]{Petroleum_Handbook_Shell}
+\abntrefinfo{Shell}{SHELL}{1983}
+{SHELL (Ed.). \emph{The Petroleum Handbook}. Sixth. Amsterdam: Elsevier, 1983.
+  Compiled by staff of the Royal Dutch/Shell Group of Companies.}
+
+\bibitem[Smyth 1955]{Smyth}
+\abntrefinfo{Smyth}{SMYTH}{1955}
+{SMYTH, C.~P. \emph{Dilectric Behavior and Structure}. New York: McGraw-Hill
+  Book Company Inc., 1955.  (International Chemical Series).}
+
+\bibitem[Solymar e Walsh 1998]{Solymar}
+\abntrefinfo{Solymar e Walsh}{SOLYMAR; WALSH}{1998}
+{SOLYMAR, L.; WALSH, D. \emph{Electrical Properties of Materials}. Sixth.
+  Oxford: Oxford Science Publications, 1998.}
+
+\bibitem[Tjomsland et al. 1996]{Tjomsland}
+\abntrefinfo{Tjomsland et al.}{TJOMSLAND et al.}{1996}
+{TJOMSLAND, T. et al. Comparison of infrared and impedance spectra of petroleum
+  fractions.
+\emph{Fuel}, v.~75, n.~3, p. 322--332, 1996.}
+
+\bibitem[Warbrick et al. 1994]{Essential_LaTeX}
+\abntrefinfo{Warbrick et al.}{WARBRICK et al.}{1994}
+{WARBRICK, J. et al. \emph{Essential \LaTeX ++}.
+[S.l.], 1994.}
+
+\end{thebibliography}

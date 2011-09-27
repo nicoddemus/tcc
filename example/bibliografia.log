@@ -1,0 +1,32 @@
+This is pdfeTeXk, Version 3.141592-1.11b-2.1 (Web2c 7.5.2) (format=pdflatex 2004.1.28)  10 JUN 2004 18:43
+entering extended mode
+ %&-line parsing enabled.
+ (c:/Program Files/TeXLive/texmf/web2c/cp8bit.tcx)
+**D:/Documents/UFSC/TCC/latex/bibliografia.tex
+(d:/Documents/UFSC/TCC/latex/bibliografia.tex{c:/Program Files/TeXLive/texmf-va
+r/pdftex/config/pdftex.cfg}
+LaTeX2e <2001/06/01>
+Babel <v3.7o> and hyphenation patterns for english, dumylang, nohyphenation, ba
+sque, czech, slovak, german, ngerman, spanish, catalan, french, ukenglish, ital
+ian, dutch, polish, portuguese, loaded.
+\bibdata{biblio}
+No file bibliografia.bbl.
+)
+! Emergency stop.
+<*> D:/Documents/UFSC/TCC/latex/bibliografia.tex
+                                                
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 8 strings out of 95122
+ 186 string characters out of 1184429
+ 45042 words of memory out of 1500001
+ 3217 multiletter control sequences out of 10000+50000
+ 3640 words of font info for 14 fonts, out of 1000000 for 2000
+ 117 hyphenation exceptions out of 1000
+ 5i,0n,3p,76b,8s stack positions out of 5000i,500n,6000p,200000b,40000s
+ 0 PDF objects out of 300000
+ 0 named destinations out of 131072
+ 1 words of extra memory for PDF output out of 65536
+No pages of output.

@@ -1,0 +1,1174 @@
+% $Id: cap1.tex,v 1.1 2003/04/10 23:12:59 gweber Exp $
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Primeiro capitulo:
+%% Revisão de Literatura
+%% Copyright 2003 Dehon Charles Regis Nogueira.
+%% Este documento é distribuído nos termos da licença
+%% descrita no arquivo LICENCA que o acompanha.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Revisão da Literatura}
+
+\section{Dielétricos}
+
+Dielétricos, ou isolantes, caracterizam-se por opor considerável resistência à passagem de corrente elétrica se comparados aos chamados materiais condutores. Esse comportamento tem seus fundamentos em propriedades físicas dessa família de materiais.
+
+\begin{citacao}
+Um material dielétrico é um isolante elétrico (não-metálico) e exibe ou pode exibir uma estrutura de dipolo elétrico; ou seja, há uma separação de entidades eletricamente carregadas positiva e negativamente em um nível atômico ou molecular. Como resultado da interação entre os dipolos com campos elétricos, materiais dielétricos são utilizados em capa-\\citores \cite{Callister}.
+\end{citacao}
+
+\subsection{Constante Dielétrica e Perda}
+
+Um capacitor conectado a uma fonte de tensão senoidal
+\begin{equation}
+V = V_0e^{jwt}
+\end{equation}
+de freqüência angular 
+\begin{equation}
+\omega = 2\pi\nu
+\end{equation}
+armazena, tendo o vácuo como dielétrico, uma carga 
+\begin{equation}
+Q = C_0V
+\end{equation}
+e apresenta uma corrente de carga 
+\begin{equation}
+I_c = \frac{dQ}{dt} = jwC_0V = I_0e^{j(wt+\frac{\pi}{2})}
+\end{equation}
+divergindo em $90$º em relação à tensão (Figura 1). $C_0$ é a capacitância geométrica (no vácuo) do capacitor.
+
+Um capacitor preenchido com um dielétrico tem sua capacitância aumentada para
+\begin{equation}
+C = C_0 \frac{\epsilon'}{\epsilon_0} = C_0 \kappa'
+\end{equation}
+onde $\epsilon'$ e $\epsilon_0$ designam a \textit{permissividade real} ou \textit{constante dielétrica} do dielétrico e do vácuo, respectivamente, e $\kappa'$ é a \textit{constante dielétrica relativa} do material.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.8]{figuras/vHFig1-1_1.eps.gz}
+\caption{Relação Tensão-Corrente num Capacitor Ideal}
+\label{fig:vHFig1-1_1}
+\end{figure}
+
+Simultaneamente, aparecerá, em adição à corrente de carga $I_c$, uma corrente de perda 
+\begin{equation}
+I_l = GV
+\end{equation}
+em fase com a tensão. $G$ representa a condutância do dielétrico. A corrente total através do capacitor é 
+\begin{equation}
+I = I_c + I_l = (j\omega C + G)V,
+\end{equation}
+inclinada de uma ângulo denominado \textit{fator de potência} $\theta < 90$º em relação à tensão ou de um \textit{ângulo de perda} $\delta$ em relação ao eixo $+j$.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=1]{figuras/vHFig1-1_2.eps.gz}
+\caption{Capacitor Contendo Dielétrico com Perda}
+\label{fig:vHFig1-1_2}
+\end{figure}
+
+%Pode ser prematuro concluir que o material dielétrico corresponde, em seu comportamento elétrico, a um capacitor em paralelo com um resistor (circuito RC). 
+A resposta em freqüência para este circuito, a qual pode ser expressa pela relação entre a corrente de perda e a de carga, ou seja, o \textit{fator de dissipação} $D$ ou \textit{tangente de perda} $tan \delta$, que obedece a seguinte relação (para materiais não magnéticos)
+\begin{equation}
+D \equiv tan \delta = \frac{I_l}{I_c} = \frac{1}{\omega RC}
+\end{equation}
+pode não concordar completamente com o que se observa realmente porque o termo de condutância não se atém à migração de portadores de carga, mas pode representar qualquer outro processo de consumo de energia. Costuma-se fazer referência à  permissividade complexa como sendo:
+
+\begin{equation}
+\epsilon^* = \epsilon' - j\epsilon''
+\end{equation}
+
+A corrente total $I$ pode ser reescrita como:
+\begin{equation}
+I = (j\omega\epsilon' + \omega\epsilon'' + \sigma_0)\frac{C_0}{\epsilon_0}V = j\omega C_0\kappa^*V + \sigma_0 V \frac{C_0}{\epsilon_0}
+\end{equation}
+onde,
+\begin{equation}
+\kappa^* \equiv \frac{\epsilon^*}{\epsilon_0} = \kappa' - j\kappa''
+\end{equation}
+é a \textit{permissividade complexa} do material; $\epsilon''$ e $\kappa''$ são, respectivamente, o \textit{fator de perda} e o \textit{fator de perda relativo}; e $\sigma_0$ é a \textit{condutividade} em corrente contínua.
+
+A tangente de perda (para materiais não magnéticos) torna-se
+
+\begin{equation}
+tan \delta = \frac{\omega\epsilon'' + \sigma_0}{\omega\epsilon'}
+\end{equation}
+
+No caso de $\sigma_0$ ser desprezível
+
+\begin{equation}
+tan \delta = \frac{\epsilon''}{\epsilon'} = \frac{\kappa''}{\kappa'}
+\end{equation}
+
+Um capacitor de placas paralelas de área $A$ com separação $d$ tem a seguinte capacitância
+
+\begin{equation}
+C_0 = \frac{A}{d}\epsilon_0
+\end{equation}
+
+A densidade de corrente $J$ atravessando o condensador sob um campo elétrico $E = \frac{V}{d}$ torna-se:
+
+\begin{equation}
+J = (j\omega\epsilon' + \omega\epsilon'' + \sigma_0)E = \epsilon^*\frac{dE}{dt} + \sigma_0E
+\end{equation}
+
+O produto da freqüência angular e do fator de perda, somado à condutividade em corrente contínua, é equivalente à \textit{condutividade elétrica}
+
+\begin{equation}
+\sigma = \omega\epsilon'' + \sigma_0
+\end{equation}
+
+Esta condutividade elétrica representa a soma de todos os efeitos dissipativos e pode representar tanto a condutividade ôhmica real causada pela migração de transportadores de carga, quanto a perda de energia associada com a dispersão (em freqüência) de $\epsilon'$, por exemplo, do atrito derivado da orientação dos dipolos \cite{von_Hippel}. 
+
+\subsection{Polarização}
+
+\subsubsection{Definição}
+
+Uma propriedade fundamental de todos os dielétricos é a ocorrência de polarização quando o material está sujeito à ação de um campo elétrico. Define-se por \textit{polarização} um deslocamento dos centros das cargas positivas e negativas na direção do campo elétrico externo aplicado. Essa direção acompanha, ou pelo menos tende a acompanhar, a própria orientação do campo aplicado.
+
+Baseado na grandeza da \textit{constante dielétrica}, pode-se antever o comportamento de um material quanto a sua polarização. O mesmo é válido quanto ao fator de perdas dielétricas, ou simplesmente, \textit{fator de perdas}, no caso em que a polarização existente em um isolante traz consigo uma elevação de temperatura do mesmo, resultante de um consumo de energia.
+
+Sabendo-se que todos os dielétricos apresentam certo volume reduzido de cargas livres, temos de contar sempre com o aparecimento de uma corrente de dada intensidade, através da seção transversal do isolante, quando ao dielétrico aplicamos uma determinada tensão. O mesmo fenômeno pode ser notado sobre a superfície externa do isolante, o que define duas grandezas isolantes das mais importantes que são, respectivamente, a rigidez dielétrica e a resistência superficial de descarga.
+
+Existem quatro tipos de polarização em dielétricos, as quais agrupam-se nas duas categorias a seguir \cite{von_Hippel}:
+
+a) Se o isolante é constituído de átomos que não apresentam momento dipolar, então o deslocamento dos núcleos das cargas positivas e negativas sob a ação de campos externos é tanto maior quanto mais elevada a intensidade do campo que é aplicado. Uma vez eliminado o campo externo, os átomos voltam a sua posição inicial e a polarização desaparece.
+
+b) Se, numa segunda hipótese, o dielétrico já possuir dipolos em sua constituição (por exemplo, moléculas), a ação do campo elétrico externo tenderá a orientar as partículas de acordo com a própria orientação desse campo. Quanto mais intenso é o campo, tanto mais elevado é o trabalho de orientação das partículas elementares, observando-se de modo mais acentuado a elevação de temperatura, devido à transformação do trabalho de orientação em calor. Dependendo da estrutura do dielétrico, uma polarização pode acontecer perante total ausência de energia externa.
+
+\subsubsection{Visão Macroscópica}
+
+Um material dielétrico aumenta a capacidade de armazenamento de um condensador neutralizando cargas nas superfícies que, de outra maneira, poderiam contribuir para o campo externo. Faraday foi o primeiro a reconhecer o fenômeno da \textit{polarização dielétrica}. Pode-se entender este fenômeno como a ação de cadeias de dipolos as quais se formam sob a influência de um campo aplicado e ligam-se com cargas existentes na superfície do material através de cargas livres em suas extremidades.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=1.2]{figuras/vHFig1-2_1.eps.gz}
+\caption{Representação Esquemática da Polarização Dielétrica}
+\label{fig:vHFig1-2_1}
+\end{figure}
+
+Pode-se representar a tensão do capacitor de acordo com a expressão
+
+\begin{equation}
+V = \frac{Q}{\kappa'}.\frac{1}{C_0}
+\end{equation}
+
+A equação acima indica que somente uma fração da \textit{carga total Q}, a \textit{carga livre $Q/\kappa'$}, contribui para a tensão, enquanto que o restante, a \textit{carga ligada $Q(1 - \frac{1}{\kappa'})$}, é neutralizado pela polarização do dielétrico.
+
+Para obter uma idéia clara da distribuição de carga e seu efeito no espaço, podemos representar densidades de carga por vetores de campo. A \textit{carga total (ou verdadeira) $Q$} concentrada no capacitor é distribuída pela superfície de área $A$ dos eletrodos metálicos com a densidade $s$ da seguinte maneira
+
+\begin{equation}
+Q = \int_A s \; dA
+\end{equation}
+
+Representaremos esta densidade verdadeira de carga $s$ pelo vetor \textbf{$D$}, \textit{a densidade do fluxo elétrico (ou deslocamento dielétrico)}, tal que a densidade de carga superficial será igual à componente normal de \textbf{$D$}, ou
+
+\begin{equation}
+s \; dA \equiv  D \;  cos\alpha \; dA \equiv \textbf{D $\cdot$ n} \; \; dA = D_n \; dA
+\end{equation}
+
+Um valor positivo do \textit{produto escalar} do vetor \textbf{$D$} e do vetor unitário normal \textbf{$n$} indica uma carga positiva.
+
+Similarmente, podemos alocar para a \textit{densidade de carga livre} $s/\kappa'$ um vetor \textbf{$E$} (\textit{densidade ou intensidade do campo elétrico}), definindo
+
+\begin{equation}
+\frac{s}{\kappa'} \; dA \equiv \epsilon_0 \textbf{E $\cdot$ n} \; dA = \epsilon_0 E_n \, dA
+\end{equation} 
+
+Para a \textit{densidade de carga ligada} temos um vetor \textbf{$P$}, chamado de \textit{polarização}
+
+\begin{equation}
+s(1 - \frac{1}{\kappa'}) \; dA \equiv \textbf{P $\cdot$ n} \; dA = P_n \; dA
+\end{equation}
+
+Das equações acima obtemos a relação entre densidade de fluxo dielétrico e campo elétrico
+
+\begin{equation}
+\textbf{D} = \epsilon' \textbf{E}
+\end{equation}
+
+%\begin{figure}[ht]
+%\label{fig:vHFig1-2_2}
+%\centering
+%\includegraphics[scale=0.3]{figuras/vHParte1Fig2-2.eps.gz}
+%\caption{}
+%\end{figure}
+
+
+Obtemos também a correlação entre os três vetores de campo
+
+\begin{equation}
+\textbf{P} = \textbf{D} - \epsilon_0 \textbf{E} = (\epsilon' - \epsilon_0) \textbf{E}  \equiv \chi \epsilon_0 \textbf{E}
+\end{equation}
+
+O fator
+\begin{equation}
+\chi = \frac{\textbf{P}}{\epsilon_0 \textbf{E}} = \kappa' - 1 = \frac{densidade \; de  \; carga \; ligada}{densidade \;de \; carga \; livre}
+\end{equation}
+é conhecido como \textit{susceptibilidade elétrica} do material dielétrico.
+
+A densidade do fluxo elétrico \textbf{D} e a polarização \textbf{P} têm, de acordo com as equações que as definem, a dimensão de ``carga por unidade de área'', enquanto que a intensidade do campo elétrico \textbf{E} pode ter um significado físico diferente porque as dimensões da constante dielétrica podem ser escolhidas. Pode-se tirar partido dessa possibilidade e estender o conceito de campo elétrico no espaço postulando que uma carga elétrica de prova $Q'$, colocada em um campo eletrostático de intensidade \textbf{E}, está sujeita a uma força
+
+\begin{equation}
+\textbf{F} \equiv Q' \textbf{E}
+\end{equation}
+
+Assim, a intensidade do campo elétrico torna-se equivalente em magnitude e direção à força por unidade de volume atuando em uma carga detectora, e a constante dielétrica obtém as dimensões
+
+\begin{equation}
+[\epsilon] = \left[ \frac{carga \; por \; unidade \; de \; area}{forca \; por \; unidade \; de \; carga} \right]
+\end{equation}
+
+Duas cargas elétricas de polaridade oposta, $\pm Q$, separadas por uma distância $d$, representam um \textit{dipolo} de momento
+
+\begin{equation}
+\mu = Q \textbf{d}
+\end{equation}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.3]{figuras/vHFig1-2_3.eps.gz}
+\caption{Momento de Dipolo Elétrico $\mu = Q \textbf{d}$}
+\label{fig:vHFig1-2_3}
+\end{figure}
+
+Este momento de dipolo elétrico é simbolizado por um vetor de magnitude $|\mu|$ apontando do pólo negativo para o positivo. O vetor polarização \textbf{P} corresponde em magnitude à densidade superficial de cargas ligadas nos eletrodos pelo dielétrico polarizado, e aponta na direção do campo aplicado. A polarização \textbf{P} é, portanto, idêntica ao \textit{momento de dipolo elétrico por unidade de volume} do material dielétrico.
+
+
+\subsubsection{Visão Microscópica}
+
+Um material dielétrico pode reagir a um campo elétrico porque contém portadores de cargas, que podem ser deslocados de um ponto para outro. O fenômeno da polarização foi descrito anteriormente como a formação de cadeias de dipolos, que se alinham paralelamente ao campo e ligam-se a outras cargas nos eletrodos. A densidade das cargas neutralizadas na superfície é representada pelo vetor polarização
+
+\begin{equation}
+\textbf{P} = (\epsilon' - \epsilon_0) \textbf{E} = (\kappa' - 1) \epsilon_0 \textbf{E} \;\;\;  \left[ \frac{coul}{m^2} \right]
+\end{equation}
+
+Alternativamente, a polarização \textbf{P} é equivalente ao momento de dipolo por unidade de volume do material. Esta última interpretação de \textbf{P} permite uma ligação entre o mundo macroscópico e o microscópico. O momento de dipolo por unidade de volume pode ser entendido como resultado da adição de \textit{N} momentos de dipolo elementares $\bar{\mu}$,
+
+\begin{equation}
+\textbf{P} = \textit{N}\bar{\mu}
+\end{equation}
+
+O momento de dipolo médio $\bar{\mu}$ das partículas elementares é, também, proporcional à \textit{intensidade do campo elétrico local} \textbf{E'} que age na partícula
+
+\begin{equation}
+\bar{\mu} = \alpha \textbf{E'}
+\end{equation}
+
+O fator de proporcionalidade $\alpha$, chamado \textit{polarizabilidade}, mede a ``flexibilidade elétri\-ca'' da partícula, isto é, o momento de dipolo médio por unidade de intensidade de campo.
+
+As equações acima nos dão duas expressões alternativas para a polarização
+
+\begin{equation}
+\label{eq:polarizacaoreal}
+\textbf{P} = (\kappa' - 1) \epsilon_0 \textbf{E} = N \alpha \textbf{E'}
+\end{equation}
+
+Assim, é feita a ligação da permissividade medida macroscopicamente com três parâ\-metros moleculares: o número $N$ de partículas elementares contribuintes por unidade de volume; sua polarizabilidade $\alpha$; e o campo elétrico local \textbf{$E'$}. Este campo irá normalmente diferir do campo aplicado \textbf{$E$} devido à polarização do meio.
+
+Serão discutidos, agora, os diversos mecanismos de polarização. A matéria, eletricamente falando, consiste de núcleos atômicos positivos circundados por nuvens negativas de elétrons. Quando da aplicação de um campo elétrico, os elétrons são deslocados em relação ao núcleo; momentos de dipolo \textit{induzidos} causam a chamada \textit{polarização eletrônica} dos materiais. Quando átomos de diferentes tipos formam moléculas, estes não irão normalmente compartilhar seus elétrons simetricamente, então as nuvens de elétrons irão ser deslocadas excentricamente na direção dos átomos com maior força de ligação. Assim, átomos adquirem cargas de polaridade opostas e um campo externo atuando nessas cargas tende a alterar as posições de equilíbrio dos próprios átomos. Devido a esse deslocamento de átomos carregados ou grupos de átomos em relação uns aos outros, um segundo tipo de momento de dipolo \textit{induzido} é criado. Este fenômeno é chamado de \textit{polarização atômica} dos dielétricos. A distribuição assimétrica de cargas entre as diversas partes de uma molécula é responsável por momentos de dipolo \textit{permanentes}, os quais existem também na ausência de um campo externo. Esses momentos sofrem um torque quando um campo aplicado tende a orientá-los em sua direção. Consequentemente, uma \textit{polarização de orientação} irá surgir.
+
+Esses três mecanismos de polarização, caracterizados pela \textit{polarizabilidade eletrônica $\alpha_e$}, pela \textit{polarizabilidade atômica $\alpha_a$} e pela \textit{polarizabilidade de orientação (ou de dipolo) $\alpha_d$}, devem-se a cargas que estão ligadas localmente em átomos, em moléculas ou em estruturas de sólidos e líquidos. Em adição, portadores de carga podem migrar dentro do dielétrico. Quando esses portadores são impedidos em seu movimento, porque são pegos em ``armadilhas'' no material ou nas interfaces; ou porque eles não podem ser descarregados ou substituídos livremente nos eletrodos, temos como resultado a criação de ``cargas espaciais'' e de distorção macroscópica no campo. Esta distorção aparece para um observador externo como um aumento na capacitância da amostra e pode ser indistingüível de um aumento real da permissividade do dielétrico. Assim, devemos adicionar mais um mecanismo de polarização: a \textit{polarização de carga espacial (ou interfacial)}, caracterizada por uma \textit{polarizabilidade de carga espacial (ou interfacial) $\alpha_s$} (\textit{s} da sigla em inglês).
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.8]{figuras/vHFig2-1_1.eps.gz}
+\caption{Mecanismos de Polarização}
+\label{fig:vHFig2-1_1}
+\end{figure}
+
+Assumindo que os quatro mecanismos de polarização são independentes uns dos outros, podemos escrever a polarizabiliade total $\alpha$ do material dielétrico como a soma dos termos
+\begin{equation}
+\alpha = \alpha_e + \alpha_a + \alpha_d + \alpha_s
+\end{equation}
+onde cada termo pode representar a soma de várias contribuições.
+
+Na equação \ref{eq:polarizacaoreal} a polarizabilidade $\alpha$ é uma grandeza real. Contudo, em campos alternados, uma mudança de fase temporal pode ocorrer entre o campo atuante e a polarização resultante, e uma componente de corrente de perda aparece. Assim, $\alpha$ torna-se complexa, sendo que teremos de adotar uma representação mais geral
+
+\begin{equation}
+\textbf{P} = (\kappa^* - 1) \textbf{E} = N \alpha \textbf{E'}
+\end{equation}
+
+\subsection{Equações de Campo de Maxwell}
+
+Maxwell postulou que as leis de Ampère e Faraday são válidas no espaço e chegou às equações do campo eletromagnético. Analisando o caso de um capacitor podemos dizer que a densidade de corrente $J$ fluindo no sistema de eletrodos é igual à variação da carga total armazenada no condensador, ou seja,
+
+\begin{equation}
+\int_A \textbf{J $\cdot$ n} \; dA = \int_A \frac{ds}{dt} \; dA
+\end{equation}
+
+A densidade de carga superficial \textit{s} origina a densidade de fluxo elétrico \textbf{D}. Por esta razão
+
+\begin{equation}
+\frac{ds}{dt} \; dA = \frac{d\textbf{D}}{dt} \cdot \textbf{n} \, dA
+\end{equation}
+
+A densidade de corrente pode ser medida como a derivada temporal da densidade do fluxo elétrico na superfície do eletrodo
+
+\begin{equation}
+\textbf{J} = \frac{d\textbf{D}}{dt}
+\end{equation}
+
+Pela postulação de que esta equivalência entre a variação temporal da densidade do fluxo dielétrico e uma corrente elétrica é válida também para o interior de um dielétrico, ou seja, que esta alteração no fluxo produz um campo magnético exatamente como uma corrente de condução, Maxwell chegou ao conceito de que a corrente de condução, carregando um capacitor, encontra sua continuação em uma corrente de campo atravessando o dielétrico,
+
+\begin{equation}
+\int_A \textbf{J $\cdot$ n} \; dA = \int_{A'} \frac{d\textbf{D}}{dt} \cdot \textbf{n} \; dA
+\end{equation}
+
+Esta corrente de campo %, a qual extende-se através da seção transversal $A'$ do dielétrico até onde o campo elétrico do capacitor alcançar,
+ foi chamada por Maxwell de \textit{corrente de deslocamento}. Incluindo essa corrente de deslocamento na lei de Ampère, tem-se como resultado a primeira equação de campo de Maxwell
+
+\begin{equation}
+\oint \textbf{H} \cdot dl = \int_A \textbf{J $\cdot$ n} \; dA + \int_{A'} \frac{\partial \textbf{D}}{\partial t} \cdot \textbf{n} \; dA
+\end{equation}
+
+Com o auxílio do teorema de Stokes, a integral de linha existente no lado esquerdo da equação acima pode ser transformada em uma integral de superfície, obtendo-se a formulação diferencial
+
+\begin{equation}
+\nabla \times \textbf{H} = \textbf{J} + \frac{\partial \textbf{D}}{\partial t}
+\end{equation}
+
+A densidade de corrente \textbf{J} pode ser uma corrente de condução verdadeira obedecendo à lei de Ohm ($\textbf{J} = \sigma \textbf{E}$). Entretanto, numa visão mais genérica, a condutividade $\sigma$ pode ser interpretada como a condutividade dielétrica, representando qualquer processo consumidor de energia. Assim, pela introdução da permissividade complexa, a primeira equação de campo pode ser reescrita para campos senoidais e materiais dielétricos lineares e isotrópicos como
+
+\begin{equation}
+\nabla \times \textbf{H} = \epsilon^* \; \frac{\partial \textbf{E}}{\partial t}
+\end{equation}
+
+A \textit{segunda equação de campo} é uma generalização da lei da Indução de Faraday e afirma que a variação da densidade de fluxo magnético gera uma força eletromotriz
+
+\begin{equation}
+\oint \textbf{E} \cdot d\textbf{l} = - \int_A \frac{\partial \textbf{B}}{\partial t} \cdot \textbf{n} \; dA
+\end{equation}
+
+Na forma diferencial, temos
+
+\begin{equation}
+\nabla \times \textbf{E} = - \frac{\partial \textbf{B}}{\partial t}
+\end{equation}
+
+Se considerarmos que a magnetização leva a uma dissipação de energia e introduzirmos o conceito de permeabilidade complexa, chegaremos a uma formulação simétrica àquela da primeira equação de campo, exceto pelo sinal negativo
+
+\begin{equation}
+\nabla \times \textbf{E} = - \mu^* \; \frac{\partial \textbf{H}}{\partial t}
+\end{equation}
+
+As equações de campo de Maxwell descrevem a relação entre os vetores de campo elétrico e magnético e sua interação com a matéria no espaço e no tempo.
+
+
+\subsection{Ondas Eletromagnéticas no Espaço Ilimitado}
+
+Para campos senoidais utilizaremos as equações de campo de Maxwell na seguinte forma
+
+\begin{equation}
+\nabla \times \textbf{H} = \epsilon^* \; \frac{\partial \textbf{E}}{\partial t}
+\end{equation}
+
+\begin{equation}
+\nabla \times \textbf{E} = - \mu^* \; \frac{\partial \textbf{H}}{\partial t}
+\end{equation}
+
+Assumindo que o campo não contém cargas nem pólos magnéticos livres, pode-se dizer que
+
+\begin{equation}
+\label{eq:dExdx0}
+\nabla \cdot \textbf{E} = 0
+\end{equation}
+
+\begin{equation}
+\label{eq:dHxdx0}
+\nabla \cdot \textbf{H} = 0
+\end{equation}
+
+Uma interpretação das equações de campo requer, como primeiro passo, a separação dos vetores de campo \textbf{E} e \textbf{H}. Isto pode ser feito diferenciando as equações em relação ao tempo e substituindo uma equação na outra. Assim
+
+\begin{equation}
+\frac{\partial}{\partial t}(\nabla \times \textbf{H}) = \nabla \times \frac{\partial \textbf{H}}{\partial t} = - \frac{1}{\mu^*} \nabla \times (\nabla \times \textbf{E}) = \epsilon^* \frac{\partial^2 \textbf{E}}{\partial t^2}
+\end{equation}
+
+Temos, assim, que
+
+\begin{equation}
+\nabla^2\textbf{E} = \epsilon^*\mu^* \; \frac{\partial^2\textbf{E}}{\partial t^2}
+\end{equation}
+
+Do mesmo modo, podemos chegar a uma relação simétrica para o campo magnético
+
+\begin{equation}
+\nabla^2\textbf{H} = \epsilon^*\mu^* \; \frac{\partial^2\textbf{H}}{\partial t^2}
+\end{equation}
+
+As equações acima são conhecidas como \textit{equações de onda do campo eletromagnético}.
+
+Pode-se simplificar ainda mais essas equações, assumindo que os vetores de campo \textbf{E} e \textbf{H} dependem somente de \textit{x} e \textit{t}, ou seja
+
+\begin{equation}
+\label{eq:x,t}
+\frac{\partial \textbf{E}}{\partial y} = \frac{\partial \textbf{E}}{\partial z} = \frac{\partial \textbf{H}}{\partial y} = \frac{\partial \textbf{H}}{\partial z} = 0
+\end{equation}
+
+As equações de onda tornam-se, então
+
+\begin{equation}
+\frac{\partial^2 \textbf{E}}{\partial x^2} = \epsilon^*\mu^* \; \frac{\partial^2 \textbf{E}}{\partial t^2}
+\end{equation}
+
+\begin{equation}
+\frac{\partial^2 \textbf{H}}{\partial x^2} = \epsilon^*\mu^* \; \frac{\partial^2 \textbf{H}}{\partial t^2}
+\end{equation}
+
+A solução dessas equações diferenciais conduz a uma onda plana caracterizada por
+
+\begin{equation}
+\textbf{E} = E_0e^{j\omega t - \gamma x}
+\end{equation}
+
+\begin{equation}
+\textbf{H} = H_0e^{j\omega t - \gamma x}
+\end{equation}
+
+Essa onda varia periodicamente com o tempo na freqüência
+\begin{equation}
+\nu = \frac{\omega}{2\pi}
+\end{equation}
+e avança na direção \textit{+x} no espaço com um \textit{fator de propagação complexo}
+\begin{equation}
+\label{eq:gama}
+\gamma = j\omega\sqrt{\epsilon^*\mu^*} = \alpha + j\beta
+\end{equation}
+
+Na equação acima, $\alpha$ é o \textit{fator de atenuação} e $\beta$ é o \textit{fator de fase} da onda. Introduzindo esses fatores, podemos reescrever as equações da onda plana como
+
+\begin{equation}
+\textbf{E} = E_0e^{-\alpha x}e^{j2\pi(\nu t - \frac{\beta x}{2\pi})}
+\end{equation}
+
+\begin{equation}
+\textbf{H} = H_0e^{-\alpha x}e^{j2\pi(\nu t - \frac{\beta x}{2\pi})}
+\end{equation}
+
+O período temporal é
+\begin{equation}
+T = \frac{1}{\nu}
+\end{equation}
+e o período espacial é
+\begin{equation}
+\lambda = \frac{2\pi}{\beta}
+\end{equation}
+
+Superfícies de fase constante são dadas por
+
+\begin{equation}
+\nu t - \frac{x}{\lambda} = constante
+\end{equation}
+
+Assim, a onda se propaga com uma \textit{velocidade de fase}
+
+\begin{equation}
+\frac{dx}{dt} = \upsilon = \nu\lambda = \frac{\omega}{\beta}
+\end{equation}
+
+Para um dielétrico sem perda $(\epsilon^* = \epsilon', \; \mu^* = \mu')$, pode-se dizer que o fator de fase é
+
+\begin{equation}
+\beta = \omega\sqrt{\epsilon'\mu'}
+\end{equation}
+
+Assim, a \textit{velocidade de fase} em um \textit{meio sem perda e ilimitado} é
+
+\begin{equation}
+\upsilon = \frac{1}{\sqrt{\epsilon'\mu'}}
+\end{equation}
+
+Para compreender o acoplamento entre os vetores \textbf{E} e \textbf{H}, retornemos às equações de campo. Devido à condição da equação \ref{eq:x,t}, somente as derivadas em relação a $x$ têm relevância. As restrições impostas pelas equação \ref{eq:dExdx0} e \ref{eq:dHxdx0} implicam que 
+\begin{equation}
+\frac{\partial E_x}{\partial x} = 0
+\end{equation}
+e 
+\begin{equation}
+\frac{\partial H_x}{\partial x} = 0
+\end{equation}
+
+Assim
+
+%\begin{equation}
+%0 = \epsilon^* \; \frac{\partial E_x}{\partial t}
+%\end{equation}
+
+%\begin{equation}
+%- \frac{\partial H_z}{\partial x} = \epsilon^* \; \frac{\partial E_y}{\partial t}
+%\end{equation}
+
+%\begin{equation}
+%\frac{\partial H_y}{\partial x} = \epsilon^* \; \frac{\partial E_z}{\partial t}
+%\end{equation}
+
+%\begin{equation}
+%0 = - \mu^* \; \frac{\partial H_x}{\partial t}
+%\end{equation}
+
+%\begin{equation}
+%- \frac{\partial E_z}{\partial x} = - \mu^* \; \frac{\partial H_y}{\partial t}
+%\end{equation}
+
+%\begin{equation}
+%\frac{\partial E_y}{\partial x} = - \mu^* \; \frac{\partial H_z}{\partial t}
+%\end{equation}
+
+%\large{
+\begin{equation}
+\begin{array}{ccc}
+{0 = \epsilon^* \; \frac{\partial E_x}{\partial t}} & & {0 = - \mu^* \; \frac{\partial H_x}{\partial t}} \\ \\
+{- \frac{\partial H_z}{\partial x} = \epsilon^* \; \frac{\partial E_y}{\partial t}} & & {- \frac{\partial E_z}{\partial x} = - \mu^* \; \frac{\partial H_y}{\partial t}} \\ \\
+{\frac{\partial H_y}{\partial x} = \epsilon^* \; \frac{\partial E_z}{\partial t}} & & {\frac{\partial E_y}{\partial x} = - \mu^* \; \frac{\partial H_z}{\partial t}}
+\end{array}
+\end{equation}
+%}
+
+%\normalsize
+
+Das equações acima podemos retirar algumas informações:
+
+\begin{enumerate}
+\item Os componentes em $x$ (longitudinais) dos vetores de campo são independentes do espaço e do tempo, portanto podem ser considerados zero. A onda plana é chamada de \textit{onda eletromagnética transversal} ou TEM (da sigla em inglês) \cite{von_Hippel}.
+\item Os componentes \textbf{E} e \textbf{H} são perpendiculares um ao outro e formam, com a direção de propagação, um sistema de coordenadas tipo mão-direita de seqüência $+x \rightarrow E_y \rightarrow H_z$. 
+\item A relação entre os vetores de campo elétrico e magnético é
+\begin{equation}
+\frac{|\textbf{E}|}{|\textbf{H}|} = \frac{\gamma}{j\omega\epsilon^*} \equiv Z
+\end{equation}
+\end{enumerate}
+
+Esta razão $Z$, chamada de \textit{impedância intrínseca do dielétrico}, pode ser reescrita dos seguintes modos
+
+\begin{equation}
+Z = \frac{\gamma}{j\omega\epsilon^*} = \sqrt{\frac{\mu^*}{\epsilon^*}} = \frac{j\omega\mu^*}{\gamma}
+\end{equation}
+
+
+\subsection{Atenuação}
+
+Como a atenuação é um parâmetro importante a ser considerado neste trabalho de caracterização de combustíveis, é conveniente desenvolver a equação \ref{eq:gama} em função de suas partes real e imaginária. Assim, temos que o fator de atenuação de uma onda eletromagnética transversal (TEM) é \cite{von_Hippel}
+\begin{equation}
+\alpha = \frac{\lambda \omega^2}{4 \pi} \; (\epsilon'\mu'' + \epsilon''\mu')
+\end{equation}
+e o fator de fase
+\begin{equation}
+\beta = \frac{2 \pi}{\lambda} = \omega \left\{ \frac{(\epsilon'\mu' - \epsilon''\mu'')}{2} \times \left[ 1 + \sqrt{1 + \left( \frac{\epsilon'\mu'' + \epsilon''\mu'}{\epsilon'\mu' + \epsilon''\mu''} \right)^2} \right] \right\}^{1/2}
+\end{equation}
+
+Para materiais cuja perda magnética pode ser desprezada ($\mu'' = 0$) podemos obter uma expressão simplificada para o comprimento de onda
+
+\begin{equation}
+\lambda = \frac{1}{\nu} \frac{1}{\left\{ \frac{1}{2} \epsilon'\mu' \left[ 1 + \sqrt{1 + tan^2 \delta} \right] \right\}^{1/2}}
+\end{equation}
+
+Se considerarmos, ainda, que a permeabilidade do dielétrico é praticamente igual à do vácuo ($\mu' = \mu_0$), a atenuação torna-se
+
+\begin{equation}
+\alpha = \frac{2\pi}{\lambda_0} \left\{ \frac{1}{2} \; \kappa' \left[ \sqrt{1 + \tan^2 \delta} - 1 \right] \right\}^{1/2}
+\end{equation}
+
+A atenuação produzida por um dielétrico é frequentemente expressa como a \textit{distância de atenuação} $1/\alpha$ na qual o campo decai para $1/e = 0,368$ do seu valor original, ou seja
+
+\begin{equation}
+\frac{1}{\alpha} = \frac{\lambda_0}{2\pi} \left[ \frac{2}{\kappa' \left( \sqrt{1 + \tan^2\delta} - 1 \right)} \right]^{1/2} \;\;\; [m]
+\end{equation}
+
+Pode-se representar a atenuação  produzida pelo material em \textit{decibéis por metro}. Se o campo decai de $E(0)$ para $E(x)$, ou se a potência vai de $P(0)$ para $P(x)$, em uma distância $x$ no dielétrico, a perda em decibéis é
+
+\begin{equation}
+20 \log\frac{E(0)}{E(x)} = 10 \log\frac{P(0)}{P(x)} = 8,686\alpha x \;\;\; [dB]
+\end{equation}
+
+Assim, a perda em decibéis por metro será
+
+\begin{equation}
+\label{eq:AlfaImp}
+8,686 \alpha = 8,686 \frac{2\pi}{\lambda_0} \left\{ \frac{1}{2} \; \kappa' \left[ \sqrt{1 + \tan^2\delta} - 1 \right] \right\}^{1/2} \;\;\; \left[ \frac{dB}{m} \right]
+\end{equation}
+
+\subsection{Modelo de Relaxação de Debye}
+
+A abordagem clássica para o tratamento de moléculas dipolares na matéria condensada é a de considerar essas moléculas em rotação em um meio no qual existe grande atrito. Neste caso extremo de fracas colisões, pode-se considerar o espectro de relaxação como tendo o seguinte formato \cite{von_Hippel}
+\begin{equation}
+	\kappa^* = \kappa_{\infty}' + \frac{\kappa_s' - \kappa_{\infty}'}{1 + j\omega\tau_e}
+	\label{eq:Debye}
+\end{equation}
+onde $\kappa_{s}'$ e $\kappa_{\infty}'$ são, respectivamente, a permissividade estática e a permissividade óptica, e $\tau_e$ é o tempo de relaxação.
+
+A expressão acima é conhecida como \textit{equação de Debye} e pode ser escrita de várias formas. Separando-a em suas partes real e imaginária, tem-se
+
+\begin{equation}
+	\kappa' - \kappa_{\infty}' = \frac{\kappa_s' - \kappa_{\infty}'}{1 + \omega^2\tau_e^2}
+\end{equation}
+
+\begin{equation}
+	\kappa'' = \frac{(\kappa_s' - \kappa_{\infty}')\omega\tau_e}{1 + \omega^2\tau_e^2}
+\end{equation}
+
+\begin{equation}
+	\tan\delta = \frac{\kappa''}{\kappa'} = \frac{(\kappa_s' - \kappa_{\infty}')\omega\tau_e}{\kappa_s' + \kappa_{\infty}'\omega^2\tau_e^2}
+\end{equation}
+
+Introduzindo uma nova variável $z = \ln \omega\tau_e$, pode-se reescrever as equações na forma normalizada
+\begin{equation}
+	\frac{\kappa' - \kappa_{\infty}'}{\kappa_s' - \kappa_{\infty}'} = \frac{1}{1 + e^{2z}} = \frac{e^{-z}}{e^{z} + e^{-z}}
+\end{equation}
+\begin{equation}
+	\frac{\kappa''}{\kappa_s' - \kappa_{\infty}'} = \frac{1}{e^{z} + e^{-z}}
+\end{equation}
+\begin{equation}
+	\frac{\tan\delta}{\kappa_s' - \kappa_{\infty}'} = \frac{1}{\kappa_{\infty}'e^{z} + \kappa_s'e^{-z}}
+\end{equation}
+que estão plotadas na figura \ref{fig:relaxation}.
+
+\begin{figure}[htp]
+\captionstyle{center}
+\centering
+\includegraphics[scale=0.15]{figuras/relaxation.eps.gz}
+\caption{Constante dielétrica, fator de perda, e condutividade de um espectro de relaxação simples na forma normalizada}
+\label{fig:relaxation}
+\end{figure}
+
+Uma possível representação gráfica da equação de Debye (figura \ref{fig:Cole_Cole}) consiste em plotar $\kappa''$ contra $\kappa'$, resultando em um semicírculo com centro em $\frac{\kappa_s' + \kappa_{\infty}'}{2}$ \cite{Cole_1941}. A equação \ref{eq:Debye}, reescrita nesse formato, torna-se
+
+\begin{equation}
+	(\kappa^* - \kappa_{\infty}') + j(\kappa^* - \kappa_{\infty}')\omega\tau_e = \kappa_s' - \kappa_{\infty}'
+\end{equation}
+
+\begin{figure}[htp]
+\captionstyle{center}
+\centering
+\includegraphics[scale=1.2]{figuras/Cole-Cole2.eps.gz}
+\caption{Diagrama Cole-Cole de $\kappa^*$}
+\label{fig:Cole_Cole}
+\end{figure}
+
+O primeiro membro do lado esquerdo corresponde a um vetor \textbf{u}; o segundo membro, representa um vetor \textbf{v}; a soma é a diagonal do círculo.
+
+O fator de perda $\kappa''$ atinge seu máximo na freqüência crítica
+\begin{equation}
+	\omega_m = \frac{1}{\tau_e}
+\end{equation}
+na qual a polarização dipolar cai pela metade.
+
+
+\subsection{Misturas de Dielétricos}
+
+As propriedades das misturas de fases dependem da distribuição dos componentes. O conceito de ``conectividade'' é útil na classificação de diferentes tipos de mistura. A base desse conceito é que qualquer fase em uma mistura pode estar auto-conectada em nenhuma, uma, duas ou três dimensões. Assim partículas dispersas e separadas têm uma conectividade igual a zero enquanto que o meio que as envolve tem uma conectivade igual a três. Um disco contendo uma fase em forma de bastão que se estende entre suas superfícies principais tem uma conectividade igual a um com respeito aos ``bastões'' e uma igual a três em relação à fase principal. Uma mistura consistindo de uma pilha de placas de duas fases diferentes extendendo-se umas sobre as outras em toda a sua área tem uma conectividade 2-2. Ao todo, são possíveis dez diferentes conectividades para misturas de duas fases(0-0, 1-0, 2-0, 3-0, 1-1, 2-1, 3-1, 2-2, 3-2, 3-3). Há 20 possibilidades de misturas de 3 fases e 35 para misturas de 4 fases \cite{Electroceramics}.
+
+O caso mais comum a ser analisado é o de sistemas 3-0. Maxwell deduziu que a permissividade $\epsilon_m$ de uma dispersão aleatória de esferas de permissividade $\epsilon_1$ em uma matriz de permissividade relativa $\epsilon_2$ é dada por 
+\begin{equation}
+\epsilon_m = \epsilon_2\left\{1 + \frac{3V_f(\epsilon_1 - \epsilon_2)}{\epsilon_1 + 2\epsilon_2 - V_f(\epsilon_1 - \epsilon_2)}\right\}
+\label{eq:Mistura_Maxwell}
+\end{equation}
+onde $V_f$ é a fração de volume ocupada pelas partículas dispersas. O resultado é independente do tamanho das partículas dispersas. Para $\epsilon_2 >> \epsilon_1$ e $V_f \leq 0,1$ a equação \ref{eq:Mistura_Maxwell} reduz-se a
+
+\begin{equation}
+\epsilon_m \approx \epsilon_2\left(\frac{1 - 3V_f}{2}\right)
+\end{equation}
+
+Esta fórmula pode ser utilizada para converter os valores de permissividade encontrados em corpos porosos para o valor esperado para corpos sem poros.
+
+A equação \ref{eq:Mistura_Maxwell} dá bons resultados em medidas onde $V_f$ é menor que aproximadamente $0,1V$. Uma razão para essa limitação reside na conectividade da fase dispersa. Em concentrações volumétricas maiores a fase dispersa forma estruturas contínuas que têm uma conectividade maior do que 0. 
+
+Um capacitor contendo um dielétrico bifásico com conectividade 1-3 constituído de barras de permissividade $\epsilon_1$ extendendo-se de um eletrodo a outro em um meio de permissividade $\epsilon_2$ é equivalente em comportamento ao conjunto mostrado na figura \ref{fig:Mist_Serie_Paralelo}(a). A estrutura da figura \ref{fig:Mist_Serie_Paralelo}(a) consiste de dois capacitores em paralelo tal que
+\begin{equation}
+	\frac{\epsilon_mA}{h} = \frac{\epsilon_1A_1}{h} + \frac{\epsilon_2A_2}{h}
+\end{equation}
+ou seja,
+\begin{equation}
+	\epsilon_m = (1 - V_f)\epsilon_2 + V_f\epsilon_1
+	\label{eq:Mist_Cap_Paralelo}
+\end{equation}
+
+\begin{figure}[htp]
+\captionstyle{center}
+\centering
+\psfrag{E}{$\epsilon$}
+\psfrag{E}{$\epsilon$}
+\includegraphics[scale=1.6]{figuras/Mistura_Serie_Paralelo.eps.gz}
+\setcaptionmargin{3in}
+\caption{Estruturas equivalentes para dielétricos com conectividades (a) 1-3 e (b) 2-2}
+\label{fig:Mist_Serie_Paralelo}
+\end{figure}
+
+Um dielétrico com conectividade 2-2 com os planos principais e as fases paralelas aos eletrodos é equivalente à estrutura mostrada na figura \ref{fig:Mist_Serie_Paralelo}(b). Neste caso há efetivamente dois capacitores em série tal que
+\begin{equation}
+	\frac{h}{A\epsilon_m} = \frac{h_1}{A\epsilon_1} + \frac{h_2}{A\epsilon_2}
+\end{equation}
+e
+\begin{equation}
+	{\epsilon_m}^{-1} = (1 - V_f){\epsilon_2}^{-1} + V_f{\epsilon_1}^{-1}
+	\label{eq:Mist_Cap_Serie}
+\end{equation}
+
+As equações \ref{eq:Mist_Cap_Paralelo} e \ref{eq:Mist_Cap_Serie} representam duas estruturas com diferenças extremas para dielétricos. Ambas podem ser representadas pela equação
+\begin{equation}
+	{\epsilon_m}^n = (1 - V_f){\epsilon_2}^n + V_f{\epsilon_1}^n
+	\label{eq:Mist_Cap_Geral}
+\end{equation}
+onde $n = \pm1$, ou para uma multiplicidade de fases ou volumes parciais $V_{f1}, V_{f2},\ldots, \\ V_{fi}$,
+\begin{equation}
+	{\epsilon_m}^n = \sum_i\;V_{fi}{\epsilon_i}^n
+\end{equation}
+
+A aproximação $x^n = 1 + n\;ln\;x$ é válida somente para pequenos valores de \textit{x} e \textit{n}, mas, mesmo assim, aplicando a equação \ref{eq:Mist_Cap_Geral} temos
+
+\begin{equation}
+	ln\;{\epsilon_m} = \sum_i\;V_{fi}\;ln{\epsilon_i}
+	\label{eq:Mistura_Lichtenecker}
+\end{equation}
+
+Embora a base teórica da equação \ref{eq:Mistura_Lichtenecker} possa ser considerada pobre, ela serve como uma regra de uso geral. Esta relação foi proposta originalmente por K. Lichtenecker em 1926 e pode ser aplicada tanto para condutividade elétrica e térmica quanto para permeabilidade magnética das fases misturadas. As equações \ref{eq:Mistura_Maxwell}, \ref{eq:Mist_Cap_Serie}, \ref{eq:Mist_Cap_Paralelo} e \ref{eq:Mistura_Lichtenecker} estão plotadas na figura \ref{fig:Mist_Graf_Frac_Ger}. Pode-se perceber que as curvas de Lichtenecker e Maxwell representam valores intermediários entre aqueles obtidos com as fórmulas de capacitores em série e paralelo.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.4]{figuras/Mistura_Grafico_Fracao_Geral.eps.gz}
+\caption{Curvas de ($\epsilon_m/\epsilon_2$) versus $V_f$ -- Relações de mistura para $\epsilon_2/\epsilon_1 = 10$: curva A, equação \ref{eq:Mist_Cap_Serie} (fases em série); curva B, equação \ref{eq:Mistura_Maxwell} (Maxwell); curva C, equação \ref{eq:Mistura_Lichtenecker} (Lichtenecker); curva D, equação \ref{eq:Mist_Cap_Paralelo} (fases em paralelo)}
+\label{fig:Mist_Graf_Frac_Ger}
+\end{figure}
+
+
+
+\section{Medidas em Microondas}
+
+\subsection{Análise por Microondas}
+
+Analisemos um problema através da teoria em baixa freqüência e o comparemos a uma situação análoga na faixa de microondas. Suponha um gerador de voltagem $E = E_0e^{jwt}$ e impedância interna $Z_G$ conectado através de uma rede de quatro terminais a uma carga de impedância $Z_L$. A rede consiste de um arranjo de impedâncias interconectadas. Poder-se-ia querer calcular a potência entregue à carga usando propriedades da rede, as quais podem ser estabelecidas através de medidas ou por cálculos quando conhecemos sua estrutura interna. Há várias maneiras pelas quais as propriedades de uma rede linear passiva podem ser expressas  em termos de quatro quantidades complexas. Pode-se utilizar os \textit{parâmetros Z}, que relacionam tensões e correntes de entrada e saída segundo a expressão \cite{Network_Analyzer_Basics}
+
+\begin{equation}
+	[V] = [Z] \ [I]
+\end{equation}
+
+% que lembra a lei de Ohm.
+
+A grande diferença entre as medidas a baixas freqüências e em microondas provém do tamanho dos circuitos em relação ao comprimento de onda. Por exemplo, uma onda eletromagnética a 50 Hz tem um comprimento no espaço de 6000 Km. A baixas freqüências, mudanças de fase ao longo do comprimento de um condutor podem ser negligenciadas e a análise pode ser realizada em termos de tensões entre os condutores e correntes ao longo deles. Já na faixa de microondas, onde o comprimento de onda é de poucos centímetros -- ou menos --, a situação é diferente e temos que analisar os circuitos em termos de ondas viajando, que podem ser parcialmente refletidas a cada descontinuidade.
+
+\subsection{Magnitude e Fase}
+
+	Em muitas situações, medidas somente de magnitude são suficientes. Por exemplo, o simples ganho de um amplificador pode fornecer todas as informações necessárias. Contudo, existem certas situações nas quais a fase é um elemento crítico de análise. A completa caracterização de dispositivos e redes envolve a medição tanto da fase quanto da magnitude.
+
+\subsection{Analogia entre o Espectro Visível e RF}
+
+	O conceito mais fundamental da análise de redes em alta freqüência envolve a incidência, a reflexão e a transmissão de ondas viajando através de linhas de transmissão. É útil pensar em ondas propagando-se através de linhas de transmissão em termos de uma analogia com a luz visível. Podemos imaginar a luz incidente colidindo com algum componente óptico, como lentes transparentes. Uma parte da luz é refletida pela superfície da lente, mas a maior parte dela continua atravessando-a. Se a lente tem superfícies espelhadas, então a maior parte da luz será refletida e uma pequena parte será transmitida. Este conceito também é válido para sinais na faixa de rádio freqüência.
+
+	A análise de redes preocupa-se com a medição acurada da relação entre o sinal incidente e o refletido (ou transmitido). Deve ser salientado que as medições se dão na faixa de rádio freqüência e que os dispostivos em teste são componentes elétricos.
+
+\subsection{Linhas de Transmissão}
+
+	A necessidade de transferência eficiente de potência em rádio freqüência é uma das principais razões do uso de linhas de transmissão. A baixas freqüências, onde o comprimento de onda dos sinais é muito maior que o comprimento dos condutores do circuito, um simples fio é suficiente para a transferência de potência. A corrente atravessa o fio facilmente, e tensão e corrente são as mesmas não importando onde seja feita a medida ao longo do fio.
+
+	Em altas freqüências, entretanto, os comprimentos de onda dos sinais são comparáveis ou muito menores que o comprimento dos condutores. Neste caso, a transmissão de potência é feita mais adequadamente em termos de propagação de ondas, ou seja, através de \textit{linhas de transmissão}.	Uma linha de transmissão é, portanto, um dispostivo para guiar ondas eletromagnéticas e essas linhas podem ter diversas geometrias.
+
+	De crítica importância é o fato de que linhas de transmissão sem perdas têm uma impedância característica; ou seja, uma linha infinita aparece como uma carga resistiva. A geometria da linha determina sua impedância. Para situações de baixa potência (TV a cabo, por exemplo), linhas de transmissão coaxiais são projetadas para ter uma impedância característica de $75  \ \Omega$ para obter baixas perdas. Para aplicações de rádio freqüência e microondas, onde trabalha-se com altas potências, linhas de transmissão coaxiais são projetadas para ter impedância característica de $50 \ \Omega$, um compromisso entre transmissão de potência e mínima perda.
+
+\subsection{Eficiência na Transferência de Potência}
+
+	Vamos analisar a máxima transferência de potência em uma carga, dada uma fonte de impedância $Z_s$. Quando $Z_l$ -- a impedância da carga -- é igual a $Z_s$, tem-se a máxima potência dissipada na carga. Esta condição é verdadeira tanto se o estímulo for uma tensão contínua quanto uma onda na faixa de rádio freqüência.
+
+	Para uma máxima transferência de energia de uma fonte para uma carga em uma linha de transmissão, as impedâncias da fonte e da carga devem coincidir com a impedância característica da linha ($Z_0$). Em geral, os dispositivos envolvidos nessa rede devem possuir essa mesma impedância.
+
+	Quando a impedância da fonte não é puramente resistiva, a máxima transferência de potência ocorre no momento em que a impedância da carga é igual ao conjugado complexo da impedância da fonte. Esta condição é encontrada invertendo o sinal da parte imaginária da impedância. Por exemplo, se $Z_s = 2.1 + j0.5$, então o seu conjugado ser $Z_s = 2.1 - j0.5$. Às vezes a impedância da fonte é ajustada para ser o conjugado complexo da impedância da carga. Por exemplo, no caso de antenas, a impedância da fonte é determinada pelas características da antena.
+
+\subsection{Linhas de Transmissão Terminadas com $Z_0$}
+
+	Quando uma linha de transmissão termina em sua impedância característica, temos uma máxima transferência de potência para a carga e nenhum sinal refletido. Este resultado é o mesmo encontrado se a linha de transmissão fosse infinitamente longa. 
+
+\subsection{Linhas de Transmissão em Curto ou em Aberto}
+
+	Vamos considerar uma linha terminada em curto. Desde que elementos puramente reativos não podem dissipar potência, e não há nenhum outro local por onde a energia pode fluir, uma onda refletida é lançada de volta pela linha em direção à fonte. Para que a lei de Ohm seja satisfeita (nenhuma voltagem através do curto), esta onda refletida deve ser igual em magnitude de voltagem em relação à onda incidente e com uma diferença de fase de 180°. Isto satisfaz a condição de que a tensão total deve ser igual a zero no plano do curto circuito. As ondas incidentes e refletidas devem ser idênticas em magnitude, porém viajando em direções opostas.
+
+	Consideremos uma linha terminando em aberto. Neste caso, a lei de Ohm diz que a terminação em aberto não suporta corrente. Portanto, a corrente refletida deve estar fora de fase em 180° em relação à onda incidente (a tensão deve estar em fase com a  onda incidente). Isto garante que a corrente será zero na terminação aberta. A onda refletida e a incidente serão idênticas em magnitude, mas viajando em sentidos opostos. Para ambos os casos (em aberto ou em curto), será formado um perfil de onda estacionária na linha de transmissão.
+
+\subsection{Parâmetros de Reflexão}
+
+Na análise de ondas refletidas, o primeiro aspecto a considerar é o coeficiente de reflexão gama ($\Gamma$), sendo sua magnitude chamada de $\rho$. O coeficiente de reflexão é a relação existente entre a tensão (sinal) refletida e a tensão (sinal) incidente. Por exemplo, uma linha de transmissão terminada em $Z_0$ terá toda a energia transmitida para a carga; portanto $V_{refl} = 0$ e $\rho = 0$. Quando a impedância da carga não é igual à $Z_0$, uma parte da energia é refletida e $\rho$ torna-se maior que zero. Quando tem-se um circuito aberto ou em curto, toda a energia é refletida e $\rho = 1$. Assim, $\rho$ deve variar sempre entre 0 e 1.
+
+Já que é bastante conveniente mostrar a reflexão em escala logarítmica, um outro modo de lidar com a reflexão é através da perda. A perda é uma grandeza escalar expressa em decibéis. Sua definição inclui um sinal negativo para que seu valor seja sempre positivo (quando mede-se reflexão em um analisador de rede, se ignorarmos o sinal de menos teremos a perda). Essa perda pode ser entendida como o número de dB em que o sinal refletido é inferior ao incidente. A perda varia entre infinito para uma impedância igual a $Z_0$ e 0 dB para um circuito aberto ou em curto.
+
+%Como foi visto anteriormente, duas ondas viajando em direção opostas no mesmo meio causa uma ``onda estacionária''.
+
+\subsection{Parâmetros de Transmissão}
+
+O coeficiente de transmissão T é definido como a tensão transmitida pela tensão incidente. Se $|V_{trans}| > |V_{inc}|$ haverá ganho, e se $|V_{trans}| < |V_{inc}|$ haverá atenuação, ou perda \cite{Network_Analyzer_Basics}. %Quando essa perda é expressa em decibéis, um sinal negativo é adicionado a sua definição para que o valor da perda resulte em um número positivo.
+
+\begin{equation}
+\textbf{T} = \frac{V_{trans}}{V_{inc}}
+\end{equation}
+
+\begin{equation}
+\textbf{T} \; (dB) = 20 \log \left| \frac{V_{trans}}{V_{inc}} \right|
+\end{equation}
+
+\subsection{Parâmetros S}
+
+A definição de parâmetros S pode ser introduzida com a idéia simples de um coeficiente de reflexão.
+
+Observando a figura \ref{fig:Reflection_one_port}, podemos considerar uma linha de transmissão, na qual somente um modo pode se propagar, terminada em dispositivo de uma porta, o qual assume-se que seja linear e passivo.
+
+\begin{figure}[htp]
+\captionstyle{center}
+\centering
+\includegraphics[scale=1.1]{figuras/reflection_one_port.eps.gz}
+\caption{Reflexão em um dispositivo de uma porta}
+\label{fig:Reflection_one_port}
+\end{figure}
+
+Pode-se selecionar um plano \textbf{T} na linha de transmissão e fazê-lo a origem de um sistema de coordenadas \textit{z}, medido ao longo do eixo que liga a linha ao dispositivo. A tensão em qualquer ponto da linha, suficientemente longe do dispositivo, é dada por
+
+\begin{equation}
+	V = a\;e^{-j \beta z} + b\;e^{+j \beta z}
+\end{equation}
+
+Escolhendo adequadamente a impedância característica da linha, tem-se
+
+\begin{equation}
+	I = a\;e^{-j \beta z} - b\;e^{+j \beta z}
+\end{equation}
+
+Assume-se um fator temporal $e^{j \omega t}$ que é suprimido em todas as expressões. O termo $ae^{-j \beta z}$ representa uma onda viajando na direção do dispositivo -- incidente --, enquanto que o termo $be^{+j \beta z}$ representa uma onda distanciando-se do dispositivo, ou seja, refletida. A relação entre a onda incidente e a refletida é chamada de \textit{coeficiente de reflexão}
+
+\begin{equation}
+	\Gamma = \frac{b}{a}
+\end{equation}
+
+O dispositivo de uma porta pode ser completamente caracterizado pelo coeficiente de reflexão $\Gamma$. A situação torna-se mais complexa para dispositivos com mais de uma porta (figura \ref{fig:scattering_two_ports}).
+
+\begin{figure}[htp]
+\captionstyle{center}
+\centering
+\includegraphics[scale=1]{figuras/scattering_two_ports.eps.gz}
+\caption{Dispositivo de duas portas}
+\label{fig:scattering_two_ports}
+\end{figure}
+
+Se a relação $b_1/a_1$ for medida, o resultado será dependente das condições da porta 2. Na verdade, as quatro grandezas $a_1$, $a_2$, $b_1$ e $b_2$ podem ser consideradas linearmente relacionadas. Pode-se expressar as ondas que saem do dispositivo em função daquelas que nele entram \cite{Bailey}
+
+\begin{equation}
+	b_1 = S_{11}a_1 + S_{12}a_2	
+\end{equation}
+
+\begin{equation}
+	b_2 = S_{21}a_1 + S_{22}a_2
+\end{equation}
+
+As grandezas $S_{11}$, $S_{12}$, $S_{21}$ e $S_{22}$ são chamadas de \textit{parâmetros S}, sendo que as equações acima podem ser escritas na forma matricial
+\begin{equation}
+	[b] = [S][a]
+\end{equation}
+ou
+\begin{equation}
+	\left[ \begin{array}{c}
+	b_1 \\
+	b_2 \\
+	\end{array} \right]
+	=
+	\left[ \begin{array}{cc}
+	S_{11} & S_{12} \\
+	S_{21} & S_{22}
+	\end{array} \right]
+	\left[ \begin{array}{c}
+	a_1 \\
+	a_2 \\
+	\end{array} \right]
+\end{equation}
+
+O dispositivo de duas portas é completamente caracterizado se os quatro parâmetros, que em geral são números complexos, são conhecidos na(s) freqüência(s) de interesse.
+
+Se não há sinal incidente na porta 2, $a_2 = 0$, $S_{11} = b_1/a_1$ e $S_{21} = b_2/a_1$. Nessa condição, $S_{11}$ e $S_{21}$ são, respectivamente, os coeficientes de reflexão e de transmissão.
+
+
+
+\section{Gasolina}
+
+A gasolina é um derivado do petróleo de grande valor comercial, sendo composta por hidrocarbonetos que possuem de 3 a 12 carbonos. Suas especificações são controladas por testes normatizados. A gasolina encontrada nos postos de combustível é do tipo C, que possui álcool etílico anidro em sua composição. A mistura é realizada nas distribuidoras a partir da gasolina tipo A, isenta de álcool.
+
+A importância da gasolina na indústria do petróleo pode ser resumida pela seguinte citação encontrada na literatura:
+
+``\textbf{Gasolina} -- Em uma indústria de muitos produtos, gasolina é o principal deles.'' \cite{Petroleum_Refinery}
+
+\subsection{Histórico}
+
+No final do século XIX, os mais adequados combustíveis para automóveis eram destilados de alcatrão de carvão e frações leves da destilação do óleo cru. No começo do século XX, as companhias de óleo produziam gasolina como um simples destilado do petróleo, mas os motores automotivos foram sendo melhorados rapidamente e passaram a requerer um combustível mais apropriado. Nos anos de 1910, devido a leis norte-americanas proibindo a estocagem de gasolina, foi testado um motor a querosene. Esse motor apresentou sintomas de detonação, o que motivou o estudo desse fenômeno. %Ficou demonstrado que a causa da ``batida de pino'' era a rápida elevação da pressão depois da ignição.
+Descobriu-se que alguns compostos de chumbo melhoravam as características anti-detonantes do combustível. Por volta de 1930, as indústrias já sabiam que as moléculas maiores de hidrocarbonetos traziam um resultado adverso na octanagem da gasolina. A partir de 1940, com o desenvolvimento da indústria petroquímica, a composição da gasolina tornou-se mais controlada, proporcionando um controle mais consistente de sua qualidade.
+
+Nos anos 50 do século XX, houve um aumento na taxa de compressão dos motores, requerendo octanagens maiores dos combustíveis. Isto ocasionou uma elevação da octanagem, dos níveis de chumbo e da pressão de vapor e diminuição da quantidade de enxofre e de olefinas nos combustíveis. Alguns novos processos de refino (como o hidrocraqueamento) foram criados para prover a gasolina com hidrocarbonetos com boa resposta ao chumbo e alta octanagem. Por razões ambientais, na década de 1970 foram introduzidos combustíveis sem chumbo (ou com níveis menores dessa substância tóxica). Entretanto, em diversos países, houve um aumento no teor de aromáticos da gasolina no intuito de manter elevada a octanagem. Esse aumento no uso de aromáticos pode resultar em danos a elastômeros, ao meio-ambiente e à saúde dos usuários de combustíveis -- principalmente daqueles que manipulam gasolina diariamente \cite{GasFAQ}.
+
+
+\subsection{Petróleo}
+
+O petróleo é uma mistura de muitas substâncias, freqüentemente difíceis de separar, as quais podem ser separadas em diversos produtos (gases liquefeitos, gasolina, querosene, gasóleo, oléo combustível, lubrificantes, betume, ...). 
+
+Essas substâncias são compostas principalmente de dois elementos, carbono (C) e hidrogênio (H), e são chamadas freqüentemente de hidrocarbonetos. Alguns elementos encontram-se em pequenas quantidades, podendo, contudo, ter efeitos indesejáveis nos produtos petrolíferos (é o caso do enxofre, S). Existem dois tipos de processos para a produção de derivados de petróleo: os baseados em métodos físicos e os baseados em métodos químicos. Nos processos físicos, os hidrocarbonetos são simplesmente separados em diversos grupos, não havendo quebra das moléculas. Nos métodos químicos, hidrocarbonetos mais complexos são quebrados em outros mais simples e rearranjados de diferentes modos, de acordo com sua utilização posterior.
+
+
+\subsection{Os Hidrocarbonetos da Gasolina}
+
+Hidrocarbonetos são quaisquer moléculas que contêm apenas hidrogênio e carbono, sendo que ambos são combustíveis, pois podem ser queimados, formando água ($H_2O$) e dióxido de carbono ($CO_2$). Se a combustão não for completa, haverá formação de monóxido de carbono ($CO$). Como o CO pode ser queimado, também é um combustível.
+
+O modo pelo qual o hidrogênio e o carbono se ligam determina a qual família de hidrocarbonetos eles irão pertencer. Se há somente ligações simples, teremos hidrocarbonetos saturados (porque não poderão ser absorvidos hidrogênios adicionais). Se existirem duplas-ligações entre os carbonos, haverá a formação de compostos insaturados, que podem ser convertidos em hidrocarbonetos saturados pela adição de hidrogênio à dupla-ligação. Deve ser lembrado que o carbono é tetravalente, o oxigênio é bivalente e o hidrogênio é monovalente.
+
+A gasolina contém aproximadamente 500 hidrocarbonetos que podem ter entre 3 e 12 carbonos, e uma faixa de ebulição que varia em torno de 30ºC a 220ºC na pressão atmosférica.
+
+\subsubsection{Hidrocarbonetos Saturados}
+
+\begin{itemize}
+\item estáveis, sendo os principais componentes das gasolinas com chumbo;
+\item tendem a queimar com uma chama clara;
+\item número de octanas depende da ramificação e do número de carbonos.
+\end{itemize}
+
+\begin{enumerate}
+
+\item Alcanos
+
+\begin{itemize}
+\item normal $\rightarrow$ cadeia contínua de carbonos ($C_nH_{2n+2}$), baixa octanagem, diminuindo com o aumento da cadeia de carbonos.
+\begin{center}
+\begin{tabbing}
+------------------------------ \= ------------------------------ \=  \kill
+normal heptano \> C-C-C-C-C-C-C	\> $C_7H_{16}$
+\end{tabbing}
+\end{center}
+
+\item iso $\rightarrow$ cadeia ramificada de carbonos ($C_nH_{2n+2}$).
+\begin{center}
+\begin{tabbing}
+------------------------------------------------------------------ \=   \kill
+isooctano (2,2,4-trimetilpentano) \> $C_8H_{18}$
+\end{tabbing}
+%\begin{tabular}{llclllcll}
+%  &   &      C        &   &   &   &      C        &   &          \\
+%  &   & $\arrowvert$  &   &   &   & $\arrowvert$  &   &          \\
+%C & | &      C        & | & C & | &      C        & | & C        \\
+%  &   & $\arrowvert$  &   &   &   &               &   &          \\
+%  &   &      C        &   &   &   &               &   &    
+%\end{tabular}
+\end{center}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.3]{figuras/isooctano.eps.gz}
+\caption{Isooctano}
+\label{fig:isooctano}
+\end{figure}
+
+\end{itemize}
+
+\item Cíclicos
+
+Possuem uma cadeia cíclica de carbonos ($C_nH_{2n}$) e altas taxas de octanagem. Como exemplo, pode-se citar o \textit{ciclohexano}:
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.8]{figuras/hexano.eps.gz}
+\caption{Ciclohexano}
+\label{fig:ciclohexano}
+\end{figure}
+
+\end{enumerate}
+
+%\begin{center}
+%\begin{tabular}{ccccc}
+%             &              &  C  &              &              \\
+%             &       /      &     & $\backslash$ &              \\
+%           C &              &     &              & C            \\
+%$\arrowvert$ &              &     &              & $\arrowvert$ \\
+%           C &              &     &              & C            \\
+%             & $\backslash$ &     &      /       &              \\
+%             &              &  C  &              &             
+%\end{tabular}
+%\end{center}
+
+\subsubsection{Hidrocarbonetos Insaturados}
+
+\begin{itemize}
+\item instáveis, são os componentes remanescentes da gasolina;
+\item tendem a queimar com uma chama ``suja''.
+\end{itemize}
+
+\begin{enumerate}
+
+\item Alcenos
+
+São as olefinas. Têm ligações duplas entre carbonos.
+
+\begin{itemize}
+\item são instáveis e limitam-se a apenas uma pequena porcentagem do volume total da gasolina;
+\item tendem a ser reativos e tóxicos, mas possuem altas taxas de octanagem.
+\end{itemize}
+
+Um exemplo desse tipo de hidrocarboneto é o 2-metil-2-buteno ($C_5H_{10}$):
+
+%\begin{center}
+%\begin{tabular}{ccccccc}
+%  &   &      C        &        &   &   &          \\
+%  &   & $\arrowvert$  &        &   &   &          \\
+%C & | &      C        &  $=$  & C & | &  C       
+%\end{tabular}
+%\end{center}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.3]{figuras/metilbuteno.eps.gz}
+\caption{2-Metil-Buteno}
+\label{fig:2-metil-buteno}
+\end{figure}
+
+\item Alcinos
+
+Possuem ligação tripla entre carbonos. São bastante instáveis, sendo encontrados \clearpage apenas traços de alcinos na gasolina (somente naquelas pobremente refinadas).
+
+\begin{center}
+\begin{tabbing}
+----------------------------------------- \= ----------------------------------------- \=  \kill
+Acetileno  \> C $\equiv$ C  \> $C_2H_2$
+\end{tabbing}
+\end{center}
+
+
+\item Aromáticos
+
+\begin{itemize}
+\item Podem chegar a mais de 40\% do volume da gasolina. Existe uma tendência (principalmente nos países desenvolvidos) de redução dos aromáticos na gasoli-\\na devido a restrições ambientais. Contudo, em diversos locais, o teor de aromáticos tem aumentado (chegando a mais de 50\% em alguns casos), em substituição aos compostos de chumbo.
+\item Geralmente são bastante tóxicos, apresentando, contudo, alto número de octanas.
+\end{itemize}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.3]{figuras/benzeno.eps.gz}
+\caption{Benzeno}
+\label{fig:benzeno}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.3]{figuras/tolueno.eps.gz}
+\caption{Tolueno}
+\label{fig:tolueno}
+\end{figure}
+
+\item Aromáticos Polinucleares
+
+Os aromáticos polinucleares geralmente apresentam um ponto de ebulição mais elevado e estão presentes em quantidades muito pequenas na gasolina. Possuem vários anéis de benzeno. O mais simples, e menos tóxico, é o naftaleno (existem apenas traços dele na gasolina). Os aromáticos polinucleares maiores são altamente tóxicos e não estão presentes na gasolina \cite{GasFAQ}.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.3]{figuras/naftaleno.eps.gz}
+\caption{Naftaleno}
+\label{fig:naftaleno}
+\end{figure}
+
+\end{enumerate}
+
+\subsection{Os não-hidrocarbonetos}
+
+Embora em pequena quantidade, alguns não-hidrocarbonetos têm uma considerável influência na qualidade dos produtos petrolíferos. Em muitos casos eles têm efeitos nocivos ou indesejáveis e devem ser removidos ou convertidos em compostos mais adequados. Em alguns casos especiais, sua presença é benéfica, devendo ser mantidos.
+
+Os elementos (excetuando o hidrogênio e o carbono) mais importantes que ocorrem no petróleo são o enxofre (S), o nitrogênio (N) e o oxigênio (O). Em alguns óleos crus há pequenas quantidades de metais, como o vanádio (V), o níquel (Ni), o sódio (Na) e o potássio (K).
+
+\subsubsection{Sulfurados}
+
+Muitos tipos de compostos sulfurados ocorrem em óleos crus, sendo que sua fração percentual varia de 0.2\% em alguns campos a 6\% em outros.
+
+Deve ser feita uma distinção entre os compostos sulfurados corrosivos e os não-corrosivos. Os corrosivos são: o enxofre livre, o sulfito de hidrogênio ($H_2S$) e as \textit{mercaptans} ($RSH$ -- similares ao sulfito de hidrogênio, mas com um radical carbônico no lugar de um hidrogênio). Possuem um odor muito desagradável. Dentre os compostos não-corrosivos temos os sulfitos -- que se diferenciam do $H_2S$ por possuírem grupos de hidrocarbonetos no lugar do hidrogênio --, os dissulfitos e os tiofenos.
+
+Os compostos sulfurados não-corrosivos, emboram não causem corrosão diretamente, podem sofrer decomposição a altas temperaturas e transformar-se em compostos corrosivos. Desse modo, os compostos sulfurados são indesejáveis na maioria dos produtos. Quando um combustível é queimado, o enxofre será transformado em óxidos, os quais, juntamente com a água proveniente da combustão, podem resultar em ácidos (sulfuroso e sulfúrico) que são muito corrosivos \cite{Petroleum_Handbook_Shell}.
+
+\subsubsection{Nitrogenados}
+
+Os compostos nitrogenados podem representar de 0.1 a 2\% em massa dos óleos crus. Esses compostos são complexos e, na maior parte, não identificados, mas na destilação eles dão origem a bases nitrogenadas. Essas bases freqüentemente causam descoloração em gasolinas pesadas e querosenes. Na gasolina, podem ocasionar a formação de uma crosta no motor \cite{Petroleum_Handbook_Shell}.
+
+\subsubsection{Oxigenados}
+
+O que diferencia os hidrocarbonetos dos oxigenados é que estes últimos contêm oxigê-\\nio, o qual não é capaz de liberar energia. A estrutura desses compostos proporciona uma certa capacidade anti-detonante ao combustível sendo, assim, bons substitutos para os aromáticos. Levando em consideração questões ambientais, tal substituição é bem-vinda. A maior parte dos oxigenados utilizados na gasolina são álcoois ($C_x-O-H$) ou éteres ($C_x-O-C_y$), e contém de 1 a 6 carbonos. Pode-se citar como exemplo de álcool adicionado ao combustível, o etanol ($C_2H_5OH$). Álcoois têm sido utilizados na gasolina desde 1930 em diversos países. Os oxigenados podem ser produzidos através de combustíveis fósseis ou de biomassa.
+
+Oxigenados são adicionados à gasolina para reduzir a reatividade das emissões, mas eles serão úteis somente se as frações de hidrocarbonetos forem cuidadosamente modificadas para utilizar as propriedades de octanagem e volatilidade dessas substâncias. Se as frações de hidrocarbonetos não forem corretamente modificadas, os oxigenados podem aumentar a formação de fumaça e a toxicidade das emissões. Oxigenados não reduzem necessariamente todas as toxinas da exaustão \cite{Petroleum_Handbook_Shell}.
+
+\subsection{Processos de Refino}
+
+O óleo cru contém uma larga faixa de hidrocarbonetos, organometálicos e outros compostos contendo enxofre, nitrogênio, etc. Os hidrocarbonetos possuem entre 1 e 60 átomos de carbono, sendo que a gasolina contém algo entre 3 e 12 desses átomos, arranjados de modo específico para obter as propriedades desejáveis.
+
+Uma refinaria irá destilar o óleo cru em diversas frações e, dependendo do produto final desejado, irá aplicar outros processos a essas frações. Entre os produtos obtidos nas refinarias temos: gases combustíveis (como o GNV), gases liquefeitos (GLP), butano, gasolinas automotiva e de aviação, óleos, lubrificantes e ceras. Boa parte dos processos utilizados na refinaria visam uma maior e melhor produção de gasolina. Alguns desses processos típicos são:
+
+\begin{itemize}
+\item Craqueamento catalítico: quebra de grandes moléculas de hidrocarbonetos perante um catalisador, gerando uma gasolina contendo aproximadamente 30\% de aromáti-\\cos e de 20 a 30\% de olefinas;
+\item Hidrocraqueamento: quebra e adiciona hidrogênio às moléculas, produzindo uma gasolina mais saturada e estável;
+\item Isomerização: aumenta a octanagem da gasolina convertendo cadeias retas em isômeros ramificados;
+\item Reforma: converte hidrocarbonetos saturados, de baixa octanagem, em outros com maior quantidade de octanas contendo aproximadamente 60\% de aromáticos;
+\item Alquilação: reage olefinas gasosas com isobutano para produzir um líquido composto por iso-alcanos com alta octanagem.
+\end{itemize}
+
+\subsection{Ensaios Normatizados}
+
+O controle das propriedades dos combustíveis é realizado através de ensaios normatizados ``que são métodos de medida nos quais o modo operatório foi normatizado por grandes organismos de normatização'', tais como \cite{Sant'Ana}:
+
+\begin{itemize}
+\item A.S.T.M. - American Society for Testing and Materials;
+\item I.P. - Institute of Petroleum;
+\item O.I.S. (ou ISO) - Organisation Internationale de Standardisation.
+\end{itemize}
+
+Os ensaios normatizados tanto podem referir-se a medidas físico-químicas quanto a ensaios de simulação (os quais colocam o produto em condições próximas àquelas encontradas em sua utilização).
+
+Os ensaios normatizados utilizados para aferir a qualidade da gasolina são agrupados nas seguintes famílias:
+
+\begin{enumerate}
+
+\item Ensaios relacionados à volatilidade
+
+Os ensaios que controlam a volatilidade da gasolina (como de qualquer outro produto petrolífero) têm como objetivos caracterizar por completo sua volatilidade (como a destilação ASTM, por exemplo) ou então determinar os teores de constituintes leves e pesados. Na limitação de leves, pode ser citado o ensaio de ponto de fulgor (\textit{ponto flash}), que é a ``temperatura à qual é preciso levar um produto petrolífero líquido para que ele emita, nas condições normatizadas, vapores em quantidade suficiente para que eles possam inflamar-se em presença de uma centelha'' \cite{Sant'Ana}. Um importante parâmetro na caracterização da gasolina é a quantidade de componentes pesados em sua constituição (ensaio de Ponto Final ASTM ou de Resíduo ASTM).
+
+As especificações definem as temperaturas nas quais diversas percentagens evaporam. Os limites de destilação incluem a máxima temperatura em que 10\% do total é evaporado, o mesmo acontecendo para 50\% e 90\% (podendo indicar, além da temperatura máxima, a mínima). Outras indicações importantes são os pontos inicial e final de ebulição -- PIE e PFE, respectivamente. Na análise da qualidade também é considerado o máximo resíduo de destilação permitido . Além disso, são ainda verificados os limites de pressão de vapor.
+
+\begin{citacao}
+A pressão de vapor é uma indicação da pressão que o material irá desenvolver dentro de um recipiente fechado e é particularmente importante para materiais cujos pontos de ebulição são tão baixos que não podem ser destilados em pressão atmosférica sem sérias perdas. O teste é importante com relação à segurança no transporte, isolamento do vapor em sistemas de alimentação de gasolina, tipos de tanque de estocagem utilizados, e nas características de partida de combustíveis de motores \cite[p.~22]{Petroleum_Refinery}.
+\end{citacao}
+
+O Ponto de Ebulição Inicial representa a temperatura do vapor quando a primeira gota de condesando cai do condensador. O Ponto Final de Ebulição é a máxima temperatura atingida.
+
+
+\item Ensaios relacionados à combustão
+
+A qualidade da combustão é um fator de grande importância tanto em relação à durabilidade e conservação dos motores quanto às questões de cunho ambiental. Existem diversos ensaios que controlam a combustão de produtos petrolíferos. Com relação à gasolina, pode-se destacar os ensaios de octanagem.
+
+O índice de octano é uma propriedade essencial da gasolina, caracterizando a aptidão desta em queimar num motor de ignição por centelha sem provocar detonação (a chamada batida de pino). Esse índice é determinado através dos ensaios RON e MON para motores de ignição por centelha.
+
+\begin{citacao}
+A ``batida de pino'' é conseqüência da combustão instantânea do combustível em um ponto da câmara de combustão, ao invés de uma combustão progressiva e rápida com a propagação normal da frente de chama, que é oriunda da centelha da vela \cite[p.~18]{Sant'Ana}.
+\end{citacao}
+
+Para um determinado combustível, a aparição da ``batida de pino'' depende de diversos fatores, tais como: pressão e temperatura locais, geometria da câmara de combustão, regulação da injeção/carburação, rotação do motor, regulagem do avanço da chama e taxa de compressão do motor. Deve-se salientar, entretanto, que, para um determinado motor, funcionando sob certas condições, a ocorrência da detonação depende \textbf{somente do combustível utilizado}.
+
+Os valores de referência da octanagem foram determinados utilizando o \textbf{n-heptano}, que favorece o surgimento da ``batida de pino'', como valor 0 e o \textbf{isooctano (2,2,4-trimetilpentano)}, que apresenta grande resistência à detonação, como valor 100.
+
+Existem dois métodos normatizados para determinar a octanagem da gasolina: RON (\textit{Research Octane Number}) e MON (\textit{Motor Octane Number}). O método MON utiliza condições de teste mais severas que o RON, resultando em valores menores de octanagem. A diferença entre os valores RON e MON é uma propriedade dos combustíveis chamada de sensibilidade. A sensibilidade do combustível determina se este é capaz ou não de trabalhar adequadamente em diversas condições de operação. Na determinação da qualidade da gasolina, um dado importante é o Índice Antidetonante (IAD), que é o resultado da média aritmética entre os valores MON e RON ($IAD = (RON + MON)/2$).
+
+\item Ensaios relacionados ao estoque e escoamento de produtos petrolíferos
+
+A propriedade essencial a ser estudada nesses ensaios é a viscosidade. Os métodos utilizados analisam tanto a viscosidade dinâmica, que leva em consideração o atrito entre as partículas do fluido, quanto a viscosidade cinemática, que, além do atrito interno, leva em consideração a densidade do fluido.
+
+\item Ensaios normatizados relacionados à poluição atmosférica e corrosão
+
+Os compostos sulfurados são os principais responsáveis pelos problemas de corrosão causados por produtos petrolíferos e também têm acentuada responsabilidade quanto à poluição ambiental. Em geral, todo o enxofre existente nos combustíveis se transforma em $SO_2$, responsável por diversos problemas do meio-ambiente. Para reduzir a poluição, tem-se limitado a quantidade permitida de enxofre na gasolina. Para as gasolinas de tipo C, o máximo permitido é de 0,10\%.
+
+Um ensaio importante relacionado à corrosão e analisado na apuração da qualidade da gasolina é o de corrosividade à lâmina de cobre. Uma lâmina de cobre fica exposta ao combustível sob certas condições e por um período de tempo determinado. Passado esse tempo, ela é comparada visualmente a alguns padrões. Dependendo da coloração da lâmina, o combustível indica uma maior ou menor quantidade de elementos corrosivos.
+
+\item Ensaios relacionados à estabilidade e à natureza química
+
+Para a gasolina, existem alguns testes importantes com relação à estabilidade e natureza química. Pode-se citar os teores de gomas, de água, de insolúveis e a cor.
+
+As gasolinas provenientes do processo de craqueamento catalítico (com alta octanagem) contêm altos teores de olefinas (podendo conter até mesmo uma pequena quantidade de diolefinas). Esses produtos são os menos estáveis da gasolina. Assim, quando em contato com o oxigênio dissolvido no combustível, reações químicas podem conduzir a uma polimerização, formando as chamadas \textbf{gomas}. Os ensaios relacionados às gomas tanto descrevem a quantidade existente no momento da análise (Goma Atual) quanto à possibilidade de sua formação. Para determinação deste último parâmetro, existe o ensaio de período de indução, que ``corresponde ao tempo a partir do qual se observa uma queda de pressão de oxigênio que corresponde a uma degradação do produto'' \cite[p.~38]{Sant'Ana}.
+
+\end{enumerate}
+
+
+\subsection{Aspectos de saúde e meio-ambiente na utilização da gasolina}
+
+Existem diversas substâncias tóxicas conhecidas na gasolina \cite{GasFAQ}, algumas das quais são confirmadamente cancerígenas. As mais famosas dessas toxinas são o chumbo e o benzeno -- que possuem teor regulado. Outros aromáticos e algumas olefinas tóxicas são também controlados. Entretanto, os teores permitidos de aromáticos nas gasolinas atualmente comercializadas no Brasil estão em níveis elevados, sendo um fator de risco para os usuários de combustíveis e trabalhadores do setor.
+
+A remoção de compostos de chumbo da gasolina certamente reduziu o nível de emissões tóxicas em motores com modernos sistemas de exaustão providos de catalisadores. Contudo, se esses catalisadores não forem utilizados, outras emissões tóxicas podem aumentar. Na substituição do chumbo, com o intuito de manter altos os valores de octanagem, foram adicionados aromáticos, que são, em geral, bastante tóxicos. Os catalisadores automotivos, como qualquer outro equipamento, têm vida limitada, e não são normalmente substituídos -- devido a seu alto custo e à pequena fiscalização dos órgãos oficiais -- quando estão inutilizáveis. Assim, a utilização de altos teores de aromáticos na gasolina -- como é o caso atualmente --, na ausência de catalisadores eficientes, também pode gerar diversos problemas de saúde à população.
+
+Os compostos sulfurados, corrosivos e não-corrosivos, são indesejáveis na gasolina (o teor de enxofre é limitado). Quando um combustível é queimado, o enxofre será transformado em óxidos, os quais, juntamente com a água proveniente da combustão, podem resultar em ácidos (sulfuroso e sulfúrico) que são muito corrosivos e provocam danos ao meio-ambiente (chuva ácida, por exemplo).
+

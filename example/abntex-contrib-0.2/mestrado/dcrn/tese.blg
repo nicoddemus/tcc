@@ -1,0 +1,66 @@
+This is BibTeX, Version 0.99c (Web2c 7.5.2)
+The top-level auxiliary file: tese.aux
+A level-1 auxiliary file: capa.aux
+A level-1 auxiliary file: folharosto.aux
+A level-1 auxiliary file: folhaaprovacao.aux
+A level-1 auxiliary file: dedicatoria.aux
+A level-1 auxiliary file: agradecimentos.aux
+A level-1 auxiliary file: epigrafe.aux
+A level-1 auxiliary file: resumo.aux
+A level-1 auxiliary file: abstract.aux
+A level-1 auxiliary file: introducao.aux
+A level-1 auxiliary file: cap1.aux
+A level-1 auxiliary file: cap2.aux
+A level-1 auxiliary file: cap3.aux
+A level-1 auxiliary file: conclusao.aux
+A level-1 auxiliary file: bibliografia.aux
+The style file: abnt-alf.bst
+A level-1 auxiliary file: anexo.aux
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: biblio.bib
++---------------------------------------------------------+
+| Estilo bibliográfico abnt-alf.bst versão 1.40           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://abntex.codigolivre.org.br                        |
++---------------------------------------------------------+
+You've used 39 entries,
+            5887 wiz_defined-function locations,
+            1341 strings with 14307 characters,
+and the built_in function-call counts, 27686 in all, are:
+= -- 2152
+> -- 901
+< -- 57
++ -- 367
+- -- 272
+* -- 1962
+:= -- 3730
+add.period$ -- 134
+call.type$ -- 39
+change.case$ -- 351
+chr.to.int$ -- 102
+cite$ -- 39
+duplicate$ -- 1448
+empty$ -- 2235
+format.name$ -- 1295
+if$ -- 6666
+int.to.chr$ -- 0
+int.to.str$ -- 0
+missing$ -- 641
+newline$ -- 187
+num.names$ -- 165
+pop$ -- 837
+preamble$ -- 1
+purify$ -- 142
+quote$ -- 0
+skip$ -- 1451
+stack$ -- 1
+substring$ -- 968
+swap$ -- 681
+text.length$ -- 36
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 220
+width$ -- 0
+write$ -- 606

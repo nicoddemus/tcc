@@ -1,0 +1,18 @@
+grep "eps.gz" ../*.tex | \
+sed "/Declare/d" | \
+sed "/:%/d" | \
+sed "s/\.\..*figuras\///" | \
+sed "s/}.*//" | \
+sed "s/^.*/cp voidfig.eps.gz &/"  > cp.conv
+chmod u+x cp.conv
+./cp.conv
+rm cp.conv
+grep "eps.gz" ../*.tex | \
+sed "/Declare/d" | \
+sed "/:%/d" | \
+sed "s/\.\..*figuras\///" | \
+sed "s/gz}.*/bb/" | \
+sed "s/^.*/cp voidfig.eps.bb &/"  > cp.conv
+chmod u+x cp.conv
+./cp.conv
+rm cp.conv

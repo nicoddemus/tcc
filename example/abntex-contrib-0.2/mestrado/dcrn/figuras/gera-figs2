@@ -1,0 +1,21 @@
+cp ../../../voidfig.eps .
+rm *.gz
+grep "eps.gz" ../*.tex | \
+sed "/Declare/d" | \
+sed "/:%/d" | \
+sed "s/\.\..*figuras\///" | \
+sed "s/.gz}.*//" | \
+sed "s/^.*/cp voidfig.eps &/"  > cp.conv
+chmod u+x cp.conv
+./cp.conv
+rm cp.conv voidfig.eps
+for I in *.eps
+  do
+  OLDBOX=$(grep BoundingBox $I)
+  NEWBOX=$(grep BoundingBox $I.bb)
+  mv $I $I.old
+  sed "s/$OLDBOX/$NEWBOX/" $I.old > $I
+  rm $I.old
+  gzip $I
+  done
+
