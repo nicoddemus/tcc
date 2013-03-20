@@ -6,4 +6,4 @@ Distributed C++ compilation jobs, similar to [distcc](https://distcc.googlecode.
 Written in Python.
 
 ---
-This is the source code for the my computer sciences graduation work, presented in 2005.
+This is the source for the my computer sciences graduation paper, presented in 2005.
